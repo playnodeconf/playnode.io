@@ -1,0 +1,26 @@
+{
+  "name": "playnode.io-2015",
+  "version": "0.1.0",
+  "description": "playnode conference 2015 official site",
+  "main": "index.js",
+  "directories": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playnodeconf/playnode.io-2015.git"
+  },
+  "keywords": [
+    "playnode",
+    "nodejs",
+    "conference"
+  ],
+  "author": "playnodeconf <playnodeconf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/playnodeconf/playnode.io-2015/issues"
+  },
+  "homepage": "https://github.com/playnodeconf/playnode.io-2015#readme"
+}
