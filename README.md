@@ -8,7 +8,7 @@ We welcome contributions of all kinds from anyone. We're actively looking for mo
 
 Please See also [guidelines for contributing](https://github.com/playnodeconf/playnode.io-2015/blob/master/CONTRIBUTING.md).
 
-# License
+## License
 
 Powered by playnodeconf  © 2015. Code licensed under the MIT. [See the detail](https://github.com/playnodeconf/playnode.io-2015/blob/master/LICENSE)
 
