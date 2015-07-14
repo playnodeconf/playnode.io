@@ -38,6 +38,34 @@ config.images = {
   }
 };
 
+config.scripts = {
+  taskname: 'scripts',
+  src: [
+    path.join(SCRIPTS_DIR, '**/*.js')
+  ],
+  output: 'app.min.js',
+  dest: {
+    build: path.join(BUILD_DIR, ASSETS_DIR, 'scripts')
+  }
+};
+
+config.styles = {
+  taskname: 'styles',
+  src: [
+    path.join(LESS_DIR, 'app.less'),
+  ],
+  all: [
+    path.join(LESS_DIR, '**/*.less'),
+  ],
+  output: 'app.min.css',
+  autoprefixer: [
+    'last 2 versions'
+  ],
+  dest: {
+    build: path.join(BUILD_DIR, ASSETS_DIR, 'styles')
+  }
+};
+
 config.clean = {
   taskname: 'clean',
   target: BUILD_DIR
@@ -66,6 +94,14 @@ config.watch = {
       task: config.images.taskname,
       src: config.images.src
     },
+    {
+      task: config.scripts.taskname,
+      src: config.scripts.src
+    },
+    {
+      task: config.styles.taskname,
+      src: config.styles.all
+    }
   ]
 };
 

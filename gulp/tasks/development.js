@@ -9,6 +9,8 @@ module.exports = gulp.task(config.development.taskname, [config.clean.taskname],
   runSequence(
     config.copyIndex.taskname,
     config.images.taskname,
+    config.scripts.taskname,
+    config.styles.taskname,
     config.watch.taskname
     , cb
   );
