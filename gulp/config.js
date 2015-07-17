@@ -53,9 +53,10 @@ config.styles = {
   taskname: 'styles',
   src: [
     path.join(LESS_DIR, 'app.less'),
+    path.join(MODULE_DIR, 'icono/dist/icono.min.css')
   ],
   all: [
-    path.join(LESS_DIR, '**/*.less'),
+    path.join(LESS_DIR, '**/*.less')
   ],
   output: 'app.min.css',
   autoprefixer: [
