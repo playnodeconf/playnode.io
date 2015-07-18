@@ -59,3 +59,29 @@
 .slide-image-8 {
   .slide-variant('/assets/images/slide-image-8.jpg');
 }
+
+// web cli
+#webcli {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 256px;
+  transform: translate3d(0,0,0);
+  z-index: 9999;
+  background-color: #0F0700;
+  border-left: 1px solid #5B5340;
+}
+
+#cli-handle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  bottom: 10px;
+  left: -40px;
+  position: absolute;
+  .icon {
+    transition: all 500ms ease;
+  }
+}
