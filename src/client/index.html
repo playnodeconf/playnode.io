@@ -27,12 +27,6 @@
   <link rel="stylesheet" href="/assets/styles/app.min.css">
 </head>
 <body layout="row">
-
-<aside id="webcli">
-  <div id="cli-handle" class="closed">
-    <span class="icono-terminal icon"></span>
-  </div>
-</aside>
 <section class="masthead" layout="column" flex>
   <ul class="slide-carousel" data-toggle="slideshow" layout="row">
     <li class="slide slide-image-1"></li>
@@ -49,8 +43,10 @@
   </div>
   <div class="masthead-backdrop"></div>
 </section>
-<aside class="sidebar" layout="column">
-  sidebar
+<aside class="sidebar" layout="column" id="webcli">
+  <div id="cli-handle">
+    <span class="icono-terminal icon"></span>
+  </div>
 </aside>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="/assets/scripts/app.min.js"></script>
