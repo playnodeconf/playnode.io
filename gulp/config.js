@@ -41,6 +41,7 @@ config.images = {
 config.scripts = {
   taskname: 'scripts',
   src: [
+    path.join(MODULE_DIR, 'jq-console/lib/jqconsole.js'),
     path.join(SCRIPTS_DIR, '**/*.js')
   ],
   output: 'app.min.js',
