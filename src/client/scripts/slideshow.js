@@ -7,46 +7,63 @@
       this.$slides        = this.$ele.children('li');
       this.timmer         = null;
       this.currentIndex   = 0; // Todo random start
+      if(this.options.shuffle) {
+        this.$slides = this.shuffle(this.$slides);
+      }
   };
 
   Slideshow.defulats = {
-    interval: 5000,
-    duration: 1200 
+    interval: 6000,
+    duration: 1500,
+    shuffle: true 
   };
 
   Slideshow.prototype.play = function() {
     var self = this;
-    this.timmer = setTimeout(function() {
-      self.next();
-    }, self.options.interval);
+    self.next();
   };
 
   Slideshow.prototype.pause = function() {
     //Todo
   };
 
+  Slideshow.prototype.shuffle = function(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+  };
+
   Slideshow.prototype.next = function() {
     var self = this;
-    var nextIndex = (this.$slides.length <= this.currentIndex + 1) ? 0 : this.currentIndex + 1;
+    var nextIndex = (self.$slides.length <= self.currentIndex + 1) ? 0 : self.currentIndex + 1;
     
-    var nextSlide = $(this.$slides[nextIndex]);
-    var currentSlide = $(this.$slides[this.currentIndex]);
+    var nextSlide = $(self.$slides[nextIndex]);
+    var currentSlide = $(self.$slides[self.currentIndex]);
     
     nextSlide
       .css('display', 'block')
-      .fadeTo(this.options.duration, 1, function() {
-        
+      .fadeTo(self.options.duration, 1, function() {
+
+        $(this).animate({
+          transform: 'scale(2) rotate(90deg)'
+        }, self.options.interval);
+
         self.currentIndex = nextIndex;
 
-        this.timmer = setTimeout(function() {
+        self.timmer = setTimeout(function() {
           self.next();
         }, self.options.interval);
       });
 
     currentSlide
-      .fadeTo(this.options.duration, 0, function() {
-          $(this).css('display', 'none');
-      });  
+      .fadeTo(self.options.duration, 0, function() {
+          $(self).css('display', 'none');
+      });
   };
 
   function Plugin(option) {
