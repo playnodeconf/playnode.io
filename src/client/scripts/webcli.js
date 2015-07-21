@@ -59,4 +59,29 @@
       runCli();
     }
   };
+  window.shareFb = function() {
+    var w = 400, h = 300,
+        l = (window.screen.width / 2) - ((400 / 2) + 10),
+        t = (window.screen.height / 2) - ((300 / 2) + 50);
+    var qs = "status=no,height=" + h + ",width=" + w + ",resizable=yes,left=" + l +
+      ",top=" + t + ",screenX=" + l + ",screenY=" + t +
+      ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+    var popupUrl = 'https://www.facebook.com/v2.0/dialog/share?app_id=857621464308493' +
+                   '&href=' + encodeURIComponent('http://playnode.io') +
+                   '&display=popup&redirect_uri=' + encodeURIComponent('http://playnode.io/fb-close.html');
+    window.open(popupUrl, 'play.node 2015', qs);
+  };
+  window.shareTw = function() {
+    var w = 400, h = 300,
+        l = (window.screen.width / 2) - ((400 / 2) + 10),
+        t = (window.screen.height / 2) - ((300 / 2) + 50);
+    var qs = "status=no,height=" + h + ",width=" + w + ",resizable=yes,left=" + l +
+      ",top=" + t + ",screenX=" + l + ",screenY=" + t +
+      ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+    var popupUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent('http://playnode.io') +
+                   '&text=' + encodeURIComponent('playnode 2015') + '&via=playnodeconf';
+    window.open(popupUrl, 'play.node 2015', qs);
+  };
 })(window.jQuery);
