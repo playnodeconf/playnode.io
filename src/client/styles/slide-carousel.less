@@ -1,23 +1,51 @@
 .slide-carousel {
   display: block;
-  position: relative;
   
-
   .slide {
-    
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    width: 100vw;
-    height: 100%;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
+  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     opacity: 0;
     transform: translate3d(0,0,0);
     z-index: 990;
+
+    &.slide-image-1 {
+      .slide-variant('/assets/images/slide-image-1.jpg');
+    }
+
+    &.slide-image-2 {
+      .slide-variant('/assets/images/slide-image-2.jpg');
+    }
+
+    &.slide-image-3 {
+      .slide-variant('/assets/images/slide-image-3.jpg');
+    }
+
+    &.slide-image-4 {
+      .slide-variant('/assets/images/slide-image-4.jpg');
+    }
+
+    &.slide-image-5 {
+      .slide-variant('/assets/images/slide-image-5.jpg');
+    }
+
+    &.slide-image-6 {
+      .slide-variant('/assets/images/slide-image-6.jpg');
+    }
+
+    &.slide-image-7 {
+      .slide-variant('/assets/images/slide-image-7.jpg');
+    }
+
+    &.slide-image-8 {
+      .slide-variant('/assets/images/slide-image-8.jpg');
+    }
   }
 }

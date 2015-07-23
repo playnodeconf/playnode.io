@@ -41,7 +41,6 @@ config.images = {
 config.scripts = {
   taskname: 'scripts',
   src: [
-    path.join(MODULE_DIR, 'jq-console/lib/jqconsole.js'),
     path.join(SCRIPTS_DIR, '**/*.js')
   ],
   output: 'app.min.js',
@@ -54,7 +53,6 @@ config.styles = {
   taskname: 'styles',
   src: [
     path.join(LESS_DIR, 'app.less'),
-    path.join(MODULE_DIR, 'icono/dist/icono.min.css')
   ],
   all: [
     path.join(LESS_DIR, '*.less'),
@@ -68,6 +66,30 @@ config.styles = {
     build: path.join(BUILD_DIR, ASSETS_DIR, 'styles')
   }
 };
+
+config.vendor = {
+  js: {
+    taskname: 'vendor:js',
+    src: [
+      path.join(MODULE_DIR, 'jquery/dist/jquery.min.js'),
+      path.join(MODULE_DIR, 'jq-console/jqconsole.min.js')
+    ],
+    output: 'vendor.min.js',
+    dest: {
+      build: path.join(BUILD_DIR, ASSETS_DIR, 'scripts')
+    }
+  },
+  css: {
+    taskname: 'vendor:css',
+    src: [
+      path.join(MODULE_DIR, 'icono/dist/icono.min.css')
+    ],
+    output: 'vendor.min.css',
+    dest: {
+      build: path.join(BUILD_DIR, ASSETS_DIR, 'styles')
+    }
+  }
+}
 
 config.clean = {
   taskname: 'clean',
