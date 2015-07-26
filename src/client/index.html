@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="/assets/styles/vendor.min.css">
   <link rel="stylesheet" href="/assets/styles/app.min.css">
 </head>
-<body layout="row">
+<body layout="row"> 
 <div layout="column" flex>
   <header class="top-header" layout="row" flex>
     <h1 class="logo">
@@ -48,8 +48,8 @@
   </header>
   <main class="main-content" layout-scroll-y flex role="main" data-toggle="sticky" data-target=".top-header" data-offset="88">
     <section class="masthead">
-      <div class="masthead-title-container" flex>
-        <div class="text-center">
+      <div class="masthead-title-container" layout>
+        <div class="container">
           <h2 class="masthead-title">
             <span class="green-darken">Retrun&nbsp;</span>
             <span class="gray">play.</span>
@@ -62,6 +62,10 @@
           <div>
             <a href="" class="cfs">Call for Speakers</a>
           </div>
+          <div class="shared">
+            <a href="#" id="share-fb" class="twitter">Shared on Twitter</a>
+            <a href="#" id="share-tw" class="facebook">Shared on Facebook</a>
+          <div>
         </div>
       </div>
     </section>
@@ -102,22 +106,18 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
-        <div class="aboutus">
-          <img src="/assets/images/logo.png" alt="play.node();">
-          <p class="">playnode 는 국내외 개발자들과 함께 node.js 에 관련된 정보와 경험을 공유하며 다양한 이야기를 나누는 node.js 개발자들을 위한 축제와 같은 행사 입니다. playnode 는 Organizer 들의 자발적인 참여와 봉사로 운영되고 있습니다.</p>
-        </div>
-        <div class="moreinfo" layout="row" flex>
-          <p>© playnode 2015.</p>
-          <div flex></div>
-          <address>
-            <span>Need Help?</span> <a href="https://github.com/playnodeconf/ama" target="_blank">Ask us.</a>
-            <a class="twitter-link" href="http://twitter.com/playnodeconf" target="_blank">@playnodeconf</a>
-          </address>
-          <div flex></div>
-          <p>Site developed by <a  target="_blank" href="https://twitter.com/Outsideris" >@Outsider</a> and <a target="_blank" href="https://twitter.com/insanehong">@Insanehong</a></p>
-          </div>
-        </div>
+      <div class="aboutus">
+        <img src="/assets/images/logo.png" alt="play.node();">
+        <p class="">playnode 는 국내외 개발자들과 함께 node.js 에 관련된 정보와 경험을 공유하며 다양한 이야기를 나누는 node.js 개발자들을 위한 축제와 같은 행사 입니다. playnode 는 Organizer 들의 자발적인 참여와 봉사로 운영되고 있습니다.</p>
+      </div>
+      <div class="moreinfo">
+        <address>
+          <span>Need Help?</span> <a href="https://github.com/playnodeconf/ama" target="_blank">Ask us.</a>
+          <span>Follow us on </span><a class="twitter-link" href="http://twitter.com/playnodeconf" target="_blank">Twitter</a>
+        </address>
+        <p>Site developed by <a  target="_blank" href="https://twitter.com/Outsideris" >@Outsider</a> and <a target="_blank" href="https://twitter.com/insanehong">@Insanehong</a></p>
+      </div>
+      <p>Copyright © playnode 2015.  All Rights Reserved.</p>
     </footer>
   </main>
   <aside class="sidebar" layout="column" id="webcli">
