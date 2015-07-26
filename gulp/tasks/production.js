@@ -3,8 +3,10 @@ var plumber         = require('gulp-plumber');
 var runSequence     = require('run-sequence');
 var config          = require('../config');
 
-module.exports = gulp.task(config.development.taskname, [config.clean.taskname], function (cb) {
-  cb = cb || function() {};
+module.exports = gulp.task(config.production.taskname, [config.clean.taskname], function (cb) {
+  cb = cb || function() {process.exit(1);};
+
+  global.RELEASE = true;
 
   runSequence(
     config.copyIndex.taskname,
@@ -12,8 +14,7 @@ module.exports = gulp.task(config.development.taskname, [config.clean.taskname],
     config.vendor.css.taskname,
     config.images.taskname,
     config.scripts.taskname,
-    config.styles.taskname,
-    config.watch.taskname
+    config.styles.taskname
     , cb
   );
 });

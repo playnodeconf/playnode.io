@@ -134,6 +134,19 @@ config.development = {
   taskname: 'dev'
 };
 
+config.production = {
+  taskname: 'prod'
+};
+
+config.ghpages = {
+  taskname: 'ghpages',
+  src: path.join(BUILD_DIR, '**/*')
+};
+
+config.release = {
+  taskname: 'release',
+};
+
 config.banner =  '/*!\n' +
     ' * ' + pkg.name.replace('-', ' ') + ' v' + pkg.version + ' - ' + pkg.homepage + '\n' +
     ' * Copyright ' + CURRENT_YEAR + ' playnodeconf and other ' + pkg.name + ' contributors\n' +
