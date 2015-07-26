@@ -41,11 +41,12 @@ gulp dev
 
 ## Release
 
-Todo..
+production build + gh-pages branch push (only build directory)
 
-## Deploy
+````
+gulp release
+````
 
-Todo..
 
 ## Contributing
 
