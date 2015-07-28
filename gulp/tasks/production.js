@@ -14,7 +14,8 @@ module.exports = gulp.task(config.production.taskname, [config.clean.taskname], 
     config.vendor.css.taskname,
     config.images.taskname,
     config.scripts.taskname,
-    config.styles.taskname
+    config.styles.taskname,
+    config.copyfiles.taskname
     , cb
   );
 });

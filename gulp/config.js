@@ -138,6 +138,13 @@ config.production = {
   taskname: 'prod'
 };
 
+config.copyfiles = {
+  taskname: 'copyfiles',
+  src: [
+    path.join(ROOT, 'CNAME')
+  ]
+};
+
 config.ghpages = {
   taskname: 'ghpages',
   src: path.join(BUILD_DIR, '**/*')
