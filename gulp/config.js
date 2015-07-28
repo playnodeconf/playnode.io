@@ -142,7 +142,10 @@ config.copyfiles = {
   taskname: 'copyfiles',
   src: [
     path.join(ROOT, 'CNAME')
-  ]
+  ],
+   dest: {
+    build: path.join(BUILD_DIR)
+  }
 };
 
 config.ghpages = {
