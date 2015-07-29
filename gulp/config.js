@@ -16,7 +16,7 @@ var config              = {};
 config.copyIndex = {
   taskname: 'copyIndex',
   src: [
-    path.join(CLIENT_DIR, 'index.html')
+    path.join(CLIENT_DIR, 'index.html'),
   ],
   dest: {
     build: BUILD_DIR
@@ -141,7 +141,8 @@ config.production = {
 config.copyfiles = {
   taskname: 'copyfiles',
   src: [
-    path.join(ROOT, 'CNAME')
+    path.join(ROOT, 'CNAME'),
+    path.join(CLIENT_DIR, 'fb-close.html')
   ],
    dest: {
     build: path.join(BUILD_DIR)

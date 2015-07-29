@@ -13,6 +13,7 @@ module.exports = gulp.task(config.development.taskname, [config.clean.taskname],
     config.images.taskname,
     config.scripts.taskname,
     config.styles.taskname,
+    config.copyfiles.taskname,
     config.watch.taskname
     , cb
   );
