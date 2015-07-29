@@ -67,7 +67,7 @@
       ",top=" + t + ",screenX=" + l + ",screenY=" + t +
       ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
 
-    var popupUrl = 'https://www.facebook.com/v2.0/dialog/share?app_id=857621464308493' +
+    var popupUrl = 'https://www.facebook.com/v2.0/dialog/share?app_id=808686202580087' +
                    '&href=' + encodeURIComponent('http://playnode.io') +
                    '&display=popup&redirect_uri=' + encodeURIComponent('http://playnode.io/fb-close.html');
     window.open(popupUrl, 'play.node 2015', qs);
