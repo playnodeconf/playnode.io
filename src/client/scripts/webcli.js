@@ -67,7 +67,7 @@
       ",top=" + t + ",screenX=" + l + ",screenY=" + t +
       ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
 
-    var popupUrl = 'https://www.facebook.com/v2.0/dialog/share?app_id=808686202580087' +
+    var popupUrl = 'https://www.facebook.com/dialog/share?app_id=808686202580087' +
                    '&href=' + encodeURIComponent('http://playnode.io') +
                    '&display=popup&redirect_uri=' + encodeURIComponent('http://playnode.io/fb-close.html');
     window.open(popupUrl, 'play.node 2015', qs);
@@ -81,7 +81,7 @@
       ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
 
     var popupUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent('http://playnode.io') +
-                   '&text=' + encodeURIComponent('playnode 2015') + '&via=playnodeconf';
+                   '&text=' + encodeURIComponent('node.js 컨퍼런스 playnode가 3년 만에 다시 여러분을 찾아 갑니다.') + '&via=playnodeconf';
     window.open(popupUrl, 'play.node 2015', qs);
   };
 })(window.jQuery);
