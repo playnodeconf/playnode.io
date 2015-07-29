@@ -7,5 +7,5 @@ var config          = require('../config').ghpages;
 module.exports = gulp.task(config.taskname, function() {
   return gulp.src(config.src)
     .pipe(plumber())
-    .pipe(ghPages());
+    .pipe(ghPages({force:true}));
 });
