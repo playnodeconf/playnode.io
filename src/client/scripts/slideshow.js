@@ -13,7 +13,7 @@
   };
 
   Slideshow.defulats = {
-    interval: 3000,
+    interval: 2500,
     duration: 1500,
     shuffle: true 
   };

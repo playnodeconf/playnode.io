@@ -30,9 +30,25 @@ ol {
 }
 
 .container {
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
+
+  &:after {
+    clear:both;
+    display:table;
+    content: ' ';
+  }
+
+  &:before {
+    clear:both;
+    display:table;
+    content: ' ';
+  }
+}
+
+.lg-title {
+  display: inline-block;
 }
 
 .screenreader {

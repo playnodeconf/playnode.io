@@ -4,7 +4,8 @@
   var Typingtext = function(ele, options) {
       this.options        = options;
       this.$ele           = $(ele);
-      this.$strings       = this.$ele.children('.typing-item');
+      this.$items         = this.$ele.children('span');
+      this.interval       = null;
   };
 
   Typingtext.defulats = {
@@ -13,6 +14,20 @@
 
   Typingtext.prototype.play = function() {
     var self = this;
+    var index = 0;
+    self.interval =  setInterval(function() {
+      if(index >= self.$items.length) {
+        clearInterval(self.interval);
+      }
+
+      $(self.$items[index]).css({
+        display: 'inline-block',
+        opacity: 1
+      });
+
+      index++;
+    }, 75);
+    
   };
 
   function Plugin(option) {
