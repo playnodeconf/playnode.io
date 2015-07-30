@@ -1,7 +1,14 @@
 !(function($) {
   'use strict';
 
-  $('#share-fb').click(function() { shareFb(); });
-  $('#share-tw').click(function() { shareTw(); });
+  $('.top-navigation').on('click', '.shared-btn', function(e) {
+    e.preventDefault();
 
+    if ($(this).data('target') === 'fb') {
+      shareFb();
+    } else if ($(this).data('target') === 'tw') {
+      shareTw();
+    }
+
+  });
 })(window.jQuery);
