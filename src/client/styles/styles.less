@@ -267,6 +267,10 @@
 .page-content {
   padding: 70px 0;
   
+  &.gray {
+    background-color: #f5f5f5;
+  }
+
   h3 {
     padding: 24px 64px;
     display: inline-block;
@@ -300,6 +304,30 @@
     line-height: 1.7;
     text-align: left;
     color: #666;
+  }
+}
+
+.banners {
+  list-style: none;
+  text-align: left;
+
+  > li {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    padding: 20px 10px 0;
+    vertical-align: top;
+    background-size: #f4f4f4;
+    
+    > a {
+      display: block;
+      background-color: #f3f3f3;
+      white-space: nowrap;
+      padding-bottom: 66%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
   }
 }
 
