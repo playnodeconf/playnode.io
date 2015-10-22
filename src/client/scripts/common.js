@@ -24,4 +24,12 @@
     window.open(popupUrl, 'play.node 2015', qs);
   });
 
+  $('#d-day').ready(function() {
+    var now = new Date();
+    var then = new Date("november 12,2015");
+    var gap = then.getTime() - now.getTime();
+    gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+    $('#d-day').text(' (d-' + gap + ')');
+  });
+
 })(window.jQuery);

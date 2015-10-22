@@ -17,6 +17,7 @@ config.copyIndex = {
   taskname: 'copyIndex',
   src: [
     path.join(CLIENT_DIR, 'index.html'),
+    path.join(CLIENT_DIR, 'index.new.html'),
   ],
   dest: {
     build: BUILD_DIR

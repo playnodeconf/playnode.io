@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
   .container {
     width: 980px;
   }
@@ -40,6 +40,16 @@
   .slideshow .pipe pre {
     font-size: 56px;
   }
+
+  // #organizers {
+  //   width: 500px;
+  //   margin: 0 auto;
+  // }
+
+  .signup {
+    padding: 16px;
+  }
+
 }
 
 @media (max-width: 996px) {
@@ -89,25 +99,30 @@
   .slideshow .pipe pre {
     font-size: 32px;
   }
+
+  .signup {
+    padding: 16px;
+  }
+
 }
 
 @media (max-width: 768px) {
   .top-header {
     height: 64px;
     padding: 10px 0;
-    
+
     .logo {
       width: 40px;
       height: 40px;
     }
-    
+
     .top-navigation {
-       > li { 
+       > li {
           line-height: 40px;
        }
     }
   }
-  
+
   .masthead .masthead-innter {
     .masthead-title {
       margin-right: -24px;
@@ -217,17 +232,17 @@
       width: 30px;
       height: 30px;
     }
-    
+
     .top-navigation {
-      > li { 
+      > li {
         line-height: 30px;
 
         > a,
         > a:visited {
-          
+
           &:active,
           &:hover {
-            color: @brand-primary;
+            color: @brand-primary-new;
             opacity: 1;
           }
         }
@@ -289,7 +304,35 @@
       text-align: center
     }
   }
-  
+
+  .masthead-new .masthead-innter {
+
+    .container {
+      text-align: center !important;
+    }
+
+    .masthead-title {
+      padding: 18px 0;
+
+      > span {
+        font-size: 24px;
+      }
+
+      &:after {
+        font-size: 24px;
+      }
+    }
+
+    .masthead-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 48px 0 0 0;
+    }
+  }
+
   .page-content {
     h3 {
       font-size: 26px;
@@ -299,6 +342,30 @@
     h4 {
       font-size: 20px;
     }
+  }
+
+  .page-content-new {
+    h3 {
+      margin: 0 0 18px 0;
+      padding: 12px 0 0 0;
+      font-size: 48px;
+      font-weight: 200;
+      color: black;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .signup {
+    padding: 4px;
   }
 
   .slideshow .pipe pre {
@@ -318,10 +385,27 @@
   }
 
   .banners {
-    
     > li {
       width: 50%;
     }
+  }
+
+  .banners-new {
+    > .platinum {
+      width: 100%;
+    }
+
+    > .partner {
+      width: 80%;
+    }
+
+    > li {
+      width: 33.33333333%;
+    }
+  }
+
+  .copyright {
+    font-size: 8pt;
   }
 
 }
