@@ -112,7 +112,7 @@
 
 .signup {
   margin: 20px 120px;
-  padding: 4px;
+  padding: 16px;
   border: 2px solid white;
   color: white;
   font-size: 11pt;
@@ -239,7 +239,13 @@
       text-align: center;
     }
 
-    .master-head-title {
+    .masthead-title {
+
+      > img {
+        width: 150px;
+        position: relative;
+        top: 36px;
+      }
       padding: 24px;
       text-align: center;
       // margin-right: -48px;
@@ -248,52 +254,55 @@
 
       > span {
         display:inline-block;
-        font-size: 44px;
+        font-family: @font-family-ko;
+        font-size: 150px;
+        color: white;
         opacity: 0;
         display:none;
 
-        &.green {
-          color: @brand-primary;
-        }
-
-        &.green-darken {
-          color: @brand-dark;
-        }
-
-        &.green-lighten {
-          color: @brand-light;
-        }
-
-        &.gray {
-          color: rgba(255, 255, 255, .55);
-        }
-
-        &.whitespace {
-          &:after {
-            content: " ";
-            width: 24px;
-            display: inline-block;
-          }
-        }
+        // &.green {
+        //   color: @brand-primary;
+        // }
+        //
+        // &.green-darken {
+        //   color: @brand-dark;
+        // }
+        //
+        // &.green-lighten {
+        //   color: @brand-light;
+        // }
+        //
+        // &.gray {
+        //   color: rgba(255, 255, 255, .55);
+        // }
+        //
+        // &.whitespace {
+        //   &:after {
+        //     content: " ";
+        //     width: 24px;
+        //     display: inline-block;
+        //   }
+        // }
       }
 
-      &:after {
-        content: "|";
-        display: inline-block;
-        padding:0 5px;
-        font-size: 48px;
-        vertical-align: top;
-        color: @brand-primary;
-        opacity: 1;
-        animation: blink .7s infinite;
-
-      }
-
-      @keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-      }
+      // &:after {
+      //   content: "|";
+      //   display: inline-block;
+      //   padding:0 5px;
+      //   font-family: @font-family-ko;
+      //   font-size: 150px;
+      //   vertical-align: top;
+      //   color: @brand-primary;
+      //   opacity: 1;
+      //   animation: blink .7s infinite;
+      //
+      // }
+      //
+      // @keyframes blink{
+      //   0% { opacity:1; }
+      //   50% { opacity:0; }
+      //   100% { opacity:1; }
+      // }
     }
 
     .masthead-subtitle {
@@ -518,6 +527,13 @@
   }
 
   .help {
+    h3 {
+      margin: 0px;
+    }
+    p {
+      margin: 0 0 22px 0;
+      text-align: center;
+    }
     a {
       text-decoration: none;
     }
