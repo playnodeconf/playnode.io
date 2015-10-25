@@ -53,7 +53,7 @@
     height: 64px;
     background-image: url('/assets/images/logo-playnode.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     animation: spin-logo 3.5s infinite;
     transition: all .25s;
 
@@ -112,7 +112,7 @@
 
 .signup {
   margin: 20px 120px;
-  padding: 4px;
+  padding: 16px;
   border: 2px solid white;
   color: white;
   font-size: 11pt;
@@ -133,14 +133,14 @@
   background-image: url("/assets/images/speakers.jpg");
   background-size: cover;
   background-position: center;
- 
+
   .masthead-innter {
     position: absolute;
     width: 100%;
     height: 100%;
     align-items: center;
     text-align: right;
-  
+
     div.container {
       text-align: right;
     }
@@ -151,7 +151,7 @@
       margin-right: -48px;
       font-size: 0;
       display: inline-block;
-      
+
       > span {
         display:inline-block;
         font-size: 84px;
@@ -239,7 +239,13 @@
       text-align: center;
     }
 
-    .master-head-title {
+    .masthead-title {
+
+      > img {
+        width: 200px;
+        position: relative;
+        top: 68px;
+      }
       padding: 24px;
       text-align: center;
       // margin-right: -48px;
@@ -248,52 +254,55 @@
 
       > span {
         display:inline-block;
-        font-size: 44px;
+        font-family: @font-family-ko;
+        font-size: 150px;
+        color: white;
         opacity: 0;
         display:none;
 
-        &.green {
-          color: @brand-primary;
-        }
-
-        &.green-darken {
-          color: @brand-dark;
-        }
-
-        &.green-lighten {
-          color: @brand-light;
-        }
-
-        &.gray {
-          color: rgba(255, 255, 255, .55);
-        }
-
-        &.whitespace {
-          &:after {
-            content: " ";
-            width: 24px;
-            display: inline-block;
-          }
-        }
+        // &.green {
+        //   color: @brand-primary;
+        // }
+        //
+        // &.green-darken {
+        //   color: @brand-dark;
+        // }
+        //
+        // &.green-lighten {
+        //   color: @brand-light;
+        // }
+        //
+        // &.gray {
+        //   color: rgba(255, 255, 255, .55);
+        // }
+        //
+        // &.whitespace {
+        //   &:after {
+        //     content: " ";
+        //     width: 24px;
+        //     display: inline-block;
+        //   }
+        // }
       }
 
-      &:after {
-        content: "|";
-        display: inline-block;
-        padding:0 5px;
-        font-size: 48px;
-        vertical-align: top;
-        color: @brand-primary;
-        opacity: 1;
-        animation: blink .7s infinite;
-
-      }
-
-      @keyframes blink{
-        0% { opacity:1; }
-        50% { opacity:0; }
-        100% { opacity:1; }
-      }
+      // &:after {
+      //   content: "|";
+      //   display: inline-block;
+      //   padding:0 5px;
+      //   font-family: @font-family-ko;
+      //   font-size: 150px;
+      //   vertical-align: top;
+      //   color: @brand-primary;
+      //   opacity: 1;
+      //   animation: blink .7s infinite;
+      //
+      // }
+      //
+      // @keyframes blink{
+      //   0% { opacity:1; }
+      //   50% { opacity:0; }
+      //   100% { opacity:1; }
+      // }
     }
 
     .masthead-subtitle {
@@ -325,7 +334,7 @@
     padding:0 64px;
 
     h3 {
-  
+
       text-align: right;
       font-size: 32px;
       text-transform: uppercase;
@@ -351,9 +360,9 @@
     text-transform: uppercase;
     width: 25%;
     min-height: 100px;
-    padding: 24px 64px;  
+    padding: 24px 64px;
     background-color: #689F38;
-     
+
     > * {
       vertical-align: middle;
     }
@@ -365,7 +374,7 @@
       display: block;
       color: #fff;
       text-decoration: none;
-      
+
       &:hover {
         background-color: darken(#689F38, 10%);
       }
@@ -387,7 +396,7 @@
 
 .page-content {
   padding: 70px 0;
-  
+
   &.gray {
     background-color: #f5f5f5;
   }
@@ -518,6 +527,13 @@
   }
 
   .help {
+    h3 {
+      margin: 0px;
+    }
+    p {
+      margin: 0 0 22px 0;
+      text-align: center;
+    }
     a {
       text-decoration: none;
     }
@@ -610,7 +626,7 @@
     padding: 20px 10px 0;
     vertical-align: top;
     background-size: #f4f4f4;
-    
+
     > a {
       display: block;
       background-color: #f3f3f3;
@@ -694,7 +710,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    
+
     pre {
       margin: 0 auto;
       text-align: left;
@@ -749,7 +765,7 @@
   background-color: #0F0700;
   border-left: 1px solid #5B5340;
   transition: all .2s ease;
-    
+
   &.active {
     transform: translate3d(-100%, 0, 0);
   }
@@ -757,7 +773,7 @@
 
 .footer {
   background-color: #262626;
-  
+
   .conference-info {
     display: flex;
     flex-direction: row;
@@ -905,7 +921,7 @@
   bottom: 10px;
   left: -50px;
   position: absolute;
-  
+
   * {
     color: @brand-primary;
   }
