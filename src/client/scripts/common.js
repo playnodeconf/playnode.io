@@ -75,4 +75,8 @@
     $('#top-naviation').addClass('active');
   });
 
+  $('.nav-close-button button').on('click', function() {
+    $('#top-naviation').removeClass('active');
+  });
+
 })(window.jQuery);

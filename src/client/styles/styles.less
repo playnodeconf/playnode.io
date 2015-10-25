@@ -67,6 +67,26 @@
       color: #000;
     }
   }
+  
+  .nav-close-button {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 100002;
+    visibility: hidden;
+    opacity: 0;
+
+    button {
+      background-color: transparent;
+      outline: 0 none;
+      border: none;
+      cursor: pointer;
+
+      > * {
+        color: @brand-primary;
+      }
+    }
+  }
 
   .top-navigation {
     margin: 0;
