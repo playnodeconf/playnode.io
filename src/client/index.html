@@ -30,165 +30,509 @@
   <link rel="stylesheet" href="/assets/styles/vendor.min.css">
   <link rel="stylesheet" href="/assets/styles/app.min.css">
 </head>
-<body layout="row"> 
-<div layout="column" flex>
-  <header class="top-header">
-    <div class="container" layout="row" flex>
-      <h1 class="logo">
-        <a href="/"><span class="screenreader">playnode</span></a>
-      </h1>
-      <div flex>
-      </div>
-      <nav>
-        <ul class="top-navigation" role="navigation">
-          <li>
-            <a href="#" class="shared-btn" data-target="tw" id="share-tw"><i class="icono-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" class="shared-btn" data-target="fb" id="share-fb"><i class="icono-facebook"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main-content" layout-scroll-y flex role="main" data-toggle="sticky" data-target=".top-header" data-offset="88">
-    <section class="masthead" >
-      <div class="masthead-innter" layout>
-        <div class="container">
-          <h2 class="masthead-title" data-toggle="typingtext">
-            <span class="green-darken">R</span>
-            <span class="green-darken">e</span>
-            <span class="green-darken">t</span>
-            <span class="green-darken">u</span>
-            <span class="green-darken">r</span>
-            <span class="green-darken">n</span>
-            <span class="withespace">&nbsp;</span>
-            <span class="gray">p</span>
-            <span class="gray">l</span>
-            <span class="gray">a</span>
-            <span class="gray">y</span>
-            <span class="gray">.</span>
-            <span class="green">n</span>
-            <span class="green">o</span>
-            <span class="green">d</span>
-            <span class="green">e</span>
-            <span class="green-lighten">(</span>
-            <span class="green-lighten">)</span>
-            <span class="green-lighten">;</span>
-          </h2>
-          <div class="masthead-subtitle">
-            <time datetime="2015-11">Thu, 12 November 2015</time>
-            <address class="red">서울특별시 동작구 보라매로5길 15 (신대방동,전문건설회관)</address>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="join">
-      <!-- <div class="cfs-title">
-        <h3>Call for Speakers <span class="lg-title">at playnode 2015 is Closed!</span></h3>
-        <p>Call closes on 16th October 2015</p>
-      </div>
-      <div class="cfs-info">
-         Thanks!
-      </div> -->
-      <button type="button" class="sponsor-btn" onclick="javascript:window.open('http://onoffmix.com/event/56124', '_blank')" id="sponsor-btn"><span>참가신청</span></button>
-    </div>
-    <section class="page-content" >
-      <div class="container">
-        <h3 id="about">About</h3>
-        <h4>playnode가 3년 만에 다시 여러분을 찾아 갑니다.</h4>
-        <p>playnode는 국내 node.js community인 octobersky.js 의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.</p>
-        <p>2015년을 기점으로 octobersky.js 로부터 분리되어 독자적인 브랜드로서 새롭게 출발합니다.</p>
-        <p class="about-logo"><img src="/assets/images/logo-log.png"></p>
-      </div>
-    </section>
-    <section class="slideshow">
-      <ul class="slide-carousel" data-toggle="slideshow" layout="row">
-        <li class="slide slide-image-1"></li>
-        <li class="slide slide-image-2"></li>
-        <li class="slide slide-image-3"></li>
-        <li class="slide slide-image-4"></li>
-        <li class="slide slide-image-5"></li>
-        <li class="slide slide-image-6"></li>
-        <li class="slide slide-image-7"></li>
-        <li class="slide slide-image-8"></li>
+<body> 
+<header class="top-header" data-spy="affix" data-offset-top="80">
+  <div class="container">
+    <h1 class="logo">
+      <a href="/"><span class="screenreader">playnode</span></a>
+    </h1>
+    <button class="navbar-toggle" type="button">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+      </button>
+    <nav id="top-naviation">
+      <ul class="top-navigation" role="navigation">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#speakers">Speakers</a>
+        </li>
+        <li>
+          <a href="#schedule">Schedule</a>
+        </li>
+        <li>
+          <a href="#venue">VENUE</a>
+        </li>
+        <li>
+          <a href="#sponsors">Sponsors</a>
+        </li>
+         <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
-      <div class="pipe" layout>
-        <div class="container">
-          <pre><code><span class="gray">play</span>.<span class="green">node</span>( <span class="green">function</span>(<span class="green-lighten">we</span>) { 
-    <span class="green-lighten">we</span>.<span class="green">pipe</span>(<span class="green-darken">you</span>); 
-});</code></pre>
-      </div>
-    </section>
-    <section class="page-content">
-       <div class="container">
-        <h3 id="spnsors">Sponsors</h3>
-        <h4>Platinum</h4>
-        <ul class="banners">
-          <li>
-            <a target="_blank" href="http://www.gsshop.com/" style="background-image:url(/assets/images/gsshop.jpg);"></a>
-          </li>
-        </ul>
-        <h4>Silver</h4>
-        <ul class="banners">
-          <li>
-            <a target="_blank" href="http://www.skplanet.com/" style="background-image:url(/assets/images/skplanet.png);"></a>
-          </li>
-          <li>
-            <a target="_blank" href="http://intro.renote.me/" style="background-image:url(/assets/images/riiid_logo_black.png);"></a>
-          </li>
-          <li>
-            <a target="_blank" href="http://d2.naver.com/" style="background-image:url(/assets/images/naver.png);"></a>
-          </li>
-        </ul>
-        <h4>Special thanks to our partner</h4>
-        <ul class="banners">
-          <li>
-            <h5>Partner</h5>
-            <a target="_blank" href="https://www.facebook.com/octoberskyjs/" style="background-image:url(/assets/images/octoberskyjs.jpg);"></a>
-          </li>
-        </ul>
-	     <button type="button" onclick="javascript:window.open('sponsor.html', '_blank')" class="sponsor-btn" id="sponsor-btn"><span>Sponsor with us</span></button>
-      </div>
-    </section>
-    <footer class="footer">
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+  <section class="masthead" >
+    <div class="masthead-innter" layout>
       <div class="container">
-        <div class="conference-info">
-          <div class="aboutus col">
-            <h4>playnode?</h4>
-            <p>playnode는 국내외 개발자들과 함께 node.js 에 관련된 정보와 경험을 공유하며 다양한 이야기를 나누는 node.js 개발자들을 위한 축제와 같은 행사입니다. playnode는 오거나이저의 자발적인 참여와 봉사로 운영되고 있습니다.</p>
-          </div>
-          <div class="help col">
-            <h4>Contact us</h4>
-            <address>
-              <ul>
-                <li><a target="_blank" href="https://github.com/playnodeconf/ama">Ask Us Anything.</a></li>
-                <li>Follow us on <a target="_blank" href="https://twitter.com/playnodeconf">Twitter</a></li>
-                <li>Follow us on <a target="_blank" href="https://github.com/playnodeconf">Github</a></li>
-              </ul>
-            </address>
-          </div>
-          <div class="help col">
-            <h4>Site developed by</h4>
-            <address>
-              <ul>
-                <li><a target="_blank" href="https://twitter.com/daclouds_">@daclouds_ </a></li>
-                <li><a target="_blank" href="https://twitter.com/insanehong">@insanehong</a></li>
-                <li><a target="_blank" href="https://twitter.com/Outsideris">@Outsider</a></li>
-              </ul>
-            </address>
-          </div>
+        <h2 class="masthead-title" data-toggle="typingtext">
+          <span class="green-darken">R</span>
+          <span class="green-darken">e</span>
+          <span class="green-darken">t</span>
+          <span class="green-darken">u</span>
+          <span class="green-darken">r</span>
+          <span class="green-darken">n</span>
+          <span class="withespace">&nbsp;</span>
+          <span class="gray">p</span>
+          <span class="gray">l</span>
+          <span class="gray">a</span>
+          <span class="gray">y</span>
+          <span class="gray">.</span>
+          <span class="green">n</span>
+          <span class="green">o</span>
+          <span class="green">d</span>
+          <span class="green">e</span>
+          <span class="green-lighten">(</span>
+          <span class="green-lighten">)</span>
+          <span class="green-lighten">;</span>
+        </h2>
+        <div class="masthead-subtitle">
+          <time datetime="2015-11">Thu, 12 November 2015</time>
+          <address class="red">서울특별시 동작구 보라매로5길 15 (신대방동,전문건설회관  4층 대회의실)</address>
         </div>
       </div>
-      <p class="copyright">Copyright © playnode 2015.  All Rights Reserved.</p>
-    </footer>
-  </main>
-  <aside class="sidebar" layout="column" id="webcli">
-    <div id="cli-handle">
-      <span class="icono-terminal icon"></span>
     </div>
-    <div id="console"></div>
-  </aside>
+  </section>
+  <div class="join">
+    <div class="join-title">
+      <h3><span class="lg-title">Let's join play.node 2015!</span></h3>
+      <p>Register closes on 10th November 2015</p>
+    </div>
+    <div class="join-info">
+       <a href="http://onoffmix.com/event/56124" class="cfs" target="_blank">Get Tickets</a>
+    </div>
+  </div>
+  <section class="page-content" >
+    <div class="container">
+      <h3 class="section-title" id="about">About</h3>
+      <h4 class="section-sub-title">playnode가 3년 만에 다시 여러분을 찾아 갑니다.</h4>
+      <p class="section-content">playnode는 국내 node.js community인 octobersky.js 의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.</p>
+      <p class="section-content">2015년을 기점으로 octobersky.js 로부터 분리되어 독자적인 브랜드로서 새롭게 출발합니다.</p>
+      <p class="about-logo"><img src="/assets/images/logo-log.png"></p>
+    </div>
+  </section>
+  <section class="page-content green" >
+    <div class="container">
+      <h3 class="section-title" id="speakers">Speakers</h3>
+      <ul class="speakers">
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" data-name="미정" data-company="" data-info="">
+            <figure class="profile-figure">
+              <img src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="미정" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">미정</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="https://pbs.twimg.com/profile_images/653806750223613952/v404jvw8.jpg" data-name="Kat Marchán" data-company="npm inc." data-info="<p>npm, Inc에서 CLI 개발을 담당하고 있으며 npm의 다음 버전은 npm v3에 집중하고 있고 Node.js의 컨트리뷰터이기도 하다.</p><p> 주로 대형 JavaScript 애플리케이션을 만들었지만 프로그래밍 언어에 관심이 많아서 Erlang이나 Common Lisp에도 관심을 가지고 있다.</p>" data-sns="https://twitter.com/maybekatz">
+            <figure class="profile-figure">
+              <img src="https://pbs.twimg.com/profile_images/653806750223613952/v404jvw8.jpg" alt="Kat Marchán" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">Kat Marchán</p>
+              <p class="profile-company">npm inc.</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/anjh.jpg" data-name="안재하" data-company="GS SHOP" data-info="<p>GS SHOP 소프트웨어구조개선팀 근무. </p><p>JavaScript에 관심이 많은 개발자.</p>" data-sns="https://github.com/eu81273">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/anjh.jpg" alt="안재하" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">안재하</p>
+              <p class="profile-company">GS Shop</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/leesw.jpg" data-name="이승우" data-company="Flitto" data-info="<p>온세상 개발자를 다 만나고 싶은 이승우입니다.</p>" data-sns="http://goo.gl/wQ6C6O">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/leesw.jpg" alt="이승우" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">이승우</p>
+              <p class="profile-company">Flitto</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/josy.jpg" data-name="조승연" data-company="KnowRe" data-info="<p>2006년에 씨디네트웍스의 시스템 엔지니어와 개발자로 커리어를 시작하여, 현재는 수학교육 스타트업 KnowRe의 CTO로 일하며 2012년부터 node.js를 이용하여 서비스를 개발하고 있습니다.</p><p> 언제나 내가, 혹은 우리 팀이 어떻게 하면 덜 고통받으면서 일할 수 있을까를 고민하고 있습니다.</p>" data-sns="">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/josy.jpg" alt="조승연" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">조승연</p>
+              <p class="profile-company">KnowRe</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/leebj.jpg" data-name="이병준" data-company="SK planet" data-info="<p>SK Planet에서 일하고 있습니다. 담당한 업무는 EDA(Exploratory Data Analysis) 도구인 Galleon을 개발하는 일을 하고 있습니다.</p><p>Data visualization에 관심이 많고 이를 위한 Front-end 기술을 많이 공부하고 있습니다. Hue와 같은 완성도 있는 플랫폼을 만들어서 github에 공개하고 이를 유지하는 목표를 가지고 꾸준히 개발하고 있습니다</p>" data-sns="">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/leebj.jpg" alt="이병준" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">이병준</p>
+              <p class="profile-company">SK planet</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/kimgw.jpg" data-name="김근우" data-company="Dable" data-info="<p>Omni-channel 개인화 플랫폼을 만드는 Dable이라는 스타트업에서 웹 프론트엔드 및 서버 개발을 맡고 있습니다. </p><p>즐겁게 일하고 행복하게 사는데 관심이 많습니다.</p>" data-sns="https://twitter.com/mctenshi">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/kimgw.jpg" alt="김근우" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">김근우</p>
+              <p class="profile-company">Dable</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/parkcw.jpg" data-name="박창우" data-company="freelancer" data-info="<p>백엔드를 주로 하는 프리랜서 개발자입니다. </p><p>팔랑거리며 여기저기 기웃거리고 있습니다만, 현실에서는 애를 보고 있습니다.</p>" data-sns="https://twitter.com/pismute">
+            <figure class="profile-figure">
+              <img src="/assets/images/speakers/parkcw.jpg" alt="박창우" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">박창우</p>
+              <p class="profile-company">freelancer</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/speakers/jangds.jpg" data-name="장동수" data-company="카카오" data-info="<p>제주사는/마이너지향/입코딩전문/독거중년/개발자</p>" data-sns="https://twitter.com/iolothebard">
+            <figure class="profile-figure" >
+              <img src="/assets/images/speakers/jangds.jpg" alt="장동수" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">장동수</p>
+              <p class="profile-company">카카오</p>
+            </address>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="page-content dark" >
+    <div class="container">
+      <h3 class="section-title" id="schedule">Schedule</h3>
+      <ul class="schedule-table">
+        <li>
+          <span class="schedule-time">08:30</span>
+          <div class="schedule-info">
+            <h3>Registration</h3>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">09:00</span>
+          <div class="schedule-info">
+            <h3>Welcome</h3>
+            <h4>Outsider</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">09:15</span>
+          <div class="schedule-info">
+            <h3>추후 업데이트 예정</h3>
+            <h4>미정</h4>
+          </div>  
+        </li>
+        <li>
+          <span class="schedule-time">10:05</span>
+          <div class="schedule-info">
+            <h3>npm@>=3</h3>
+            <h4>Kat Marchán@npm inc</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">10:55</span>
+          <div class="schedule-info">
+            <h3>node.js와 PhantomJS의 만남</h3>
+            <h4>안재하@GS Shop </h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">11:45</span>
+          <div class="schedule-info">
+            <h3>Node.js in Flitto</h3>
+            <h4>이승우@Flitto</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">12:25</span>
+          <div class="schedule-info">
+            <h3>Lunch Time</h3>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">13:30</span>
+          <div class="schedule-info">
+            <h3>Pipe: 콜백지옥의 또 다른 거짓 선지자</h3>
+            <h4>조승연@KnowRe</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">14:20</span>
+          <div class="schedule-info">
+            <h3>Express, Angular.js를 이용해서 Big Data 세계를 헤엄친 이야기, 나와 같은 실수를 반복하지 마세요</h3>
+            <h4>이병준@SK planet</h4>
+          </div>
+        </li>
+        
+        <li>
+          <span class="schedule-time">15:10</span>
+          <div class="schedule-info">
+            <h3>Gulp로 정적 페이지 생성하기</h3>
+            <h4>박창우@프리랜서</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">16:00</span>
+          <div class="schedule-info">
+            <h3>스프링과 Node.js의 공존</h3>
+            <h4>장동수@카카오</h4>
+          </div>
+        </li>
+        <li>
+          <span class="schedule-time">16:50</span>
+          <div class="schedule-info">
+            <h3>시간당 수백만 요청을 처리하는 node.js 서버 운영기</h3>
+            <h4>김군우@Dable</h4>
+          </div>
+        </li>
+      </ul>
+      <p class="info-text">발표시간과 순서는 변동될 수 있습니다.</p>
+    </div>
+  </section>
+  <section class="page-content">
+    <div class="container">
+      <h3 class="section-title" id="venue">Venue</h3>
+      <address>
+        <h4>Address</h4>
+        서울시 동작구 보라매로5길 15(신대방동,전문건설회관)
+      </address>
+      <h4>Map</h4>
+      <a href="http://map.naver.com/?lng=126.9241131&lat=37.4923285&dlevel=11&mapmode=0&pinId=19038943&pinType=site&enc=b64" target="blank" class="venue-image">
+        <img src="/assets/images/map.jpg" class="venue-image">
+      </a>
+      <h4>Infomation</h4>
+      <a href="http://www.kscfc.co.kr/rent/seoul_map.jsp" target="blank">
+        <img src="http://www.kscfc.co.kr/kscfc/images/map_seoul.gif" class="venue-image">
+        <img src="/assets/images/traffic.jpg" class="venue-image">
+      </a>
+    </div>
+  </section>
+  <section class="page-content">
+     <div class="container">
+      <h3 class="section-title" id="sponsors">Sponsors</h3>
+      <h4>Platinum</h4>
+        <ul class="banners">
+          <li class="platinum">
+            <a target="_blank" href="http://www.gsshop.com/" style="background-image:url(/assets/images/gsshop_logo.png);"></a>
+          </li>
+        </ul>
+      <h4>Silver</h4>
+      <ul class="banners">
+        <li>
+          <a target="_blank" href="http://www.skplanet.com/" style="background-image:url(/assets/images/skplanet.png);"></a>
+        </li>
+        <li>
+          <a target="_blank" href="http://intro.renote.me/" style="background-image:url(/assets/images/riiid_logo_black.png);"></a>
+        </li>
+        <li>
+          <a target="_blank" href="http://d2.naver.com/" style="background-image:url(/assets/images/naver.png);"></a>
+        </li>
+      </ul>
+      <h4>Special thanks to our partner</h4>
+      <ul class="banners">
+        <li class="partner">
+          <a target="_blank" href="https://www.facebook.com/octoberskyjs/" style="background-image:url(/assets/images/octoberskyjs.jpg);"></a>
+        </li>
+      </ul>
+     <button type="button" onclick="javascript:window.open('sponsor.html', '_blank')" class="sponsor-btn" id="sponsor-btn"><span>Sponsor with us</span></button>
+    </div>
+  </section>
+  <section class="page-content green" >
+    <div class="container">
+      <h3 class="section-title" id="organizers">Organizers</h3>
+      <ul class="speakers">
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/byunjh.jpg" data-name="변정훈
+          (@outsideris)" data-company="SK planet" data-info="<p>코딩을 좋아하는 개발자</p>" data-sns=" https://twitter.com/outsideris">
+            <figure class="profile-figure">
+              <img src="/assets/images/byunjh.jpg" alt="@Outsdier" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@Outsdier</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/kimdh.jpg" data-name="김덕홍(@insanehong)" data-company="NAVER Corp" data-info="<p>NAVER 에서 Front-End Engineer 로 일하고 있으며 겨우겨우 입에 풀칠하고 사는 입개발 전문 개발자입니다.</p><p>js, git, nodejs, open source 를 좋아한다고 사기를 치고 다닙니다.</p>" data-sns="http://twitter.com/insanehong">
+            <figure class="profile-figure">
+              <img src="/assets/images/kimdh.jpg" alt="@insanehong" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@insanehong</p>
+            </address>
+          </a>
+        </li>
+        
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/kimgy.jpg" data-name="김경열(@chitacan)" data-company="Riiid" data-info="<p>스타트업 Riiid! 에서 개발자로 일하고 있는 김경열입니다.</p><p>회사에서 대부분의 시간을 프론트엔드 개발에 쏟고 있지만, 만능 잡부로 거듭나기 위해 다양한 기술적 시도를 두려워하지 않습니다. (css 제외 ㄷ) 
+개발자 커뮤니티에 첫발을 내딛게 해준 node.js 에는 각별한 애정을 가지고 있습니다.</p>" data-sns="https://twitter.com/chitacan">
+            <figure class="profile-figure">
+              <img src="/assets/images/kimgy.jpg" alt="@chitacan" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@chitacan</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/seokji.jpg" data-name="석종일(@daclouds_)" data-company="SK planet" data-info="<p>'서당개 삼년이면 풍월을 읊는다'라고 하나라도 주워 들으려고 이곳저곳 따라다니고 있구요. 이것저것 주워들은걸 써먹다보니 하는 일도 프론트엔드-백엔드 구분없이 했던 것 같습니다. 특별히 잘하는게 없다는게 함정 입니다</p>" data-sns="https://github.com/eu81273">
+            <figure class="profile-figure">
+              <img src="/assets/images/seokji.jpg" alt="@daclouds" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@daclouds</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/besh.jpg" data-name="배성환(@makecake)" data-company="SK planet" data-info="<p>다양한 행사의 오거나이저로 활동해 오고 있어 언젠가 한 번은 만났을 사람, 음악과 이야기가 좋은 반도의 흔한 잡덕.</p><p>이번 play.node 2015 컨퍼런스에선 일반인 또는 비개발자의 시각을 운영진에 제공중입니다. Do or do not, there is no try.이라는 마스터 요다의 가르침을 믿고 있습니다.</p>" data-sns="https://brunch.co.kr/@makecake">
+            <figure class="profile-figure">
+              <img src="/assets/images/besh.jpg" alt="@makecake" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@makecake</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/parkih.jpg" data-name="박일호(@imazine)" data-company="GS Shop" data-info="<p>무엇이든 만드는 것을 좋아하는 철부지 입니다</p>" data-sns="https://www.facebook.com/imazine80">
+            <figure class="profile-figure">
+              <img src="/assets/images/parkih.jpg" alt="@imazine" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@imazine</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/kimhy.jpg" data-name="김호연(@mrfoundation21)" data-company="NEXON" data-info="<p>node.js는 회사에서 주로 사용하지 않더라도 관심을 가지게 되는 매력적인 언어입니다. 이번 기회를 계기로 node.js 관련 다양한 사례들이 알려지고, node.js에 빠져드는 분들이 더 많았으면 좋겠습니다.</p><p>그래서 또 다시 2015년 playnode 컨퍼런스에 오거나이저로 참여하게 되었습니다.</p>" data-sns="https://www.facebook.com/mrfoundation21">
+            <figure class="profile-figure">
+              <img src="/assets/images/kimhy.jpg" alt="@mrfoundation21" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@mrfoundation</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/kimms.png" data-name="김명수(@anarcher)" data-company="" data-info="<p>대체로 무해한 개발자입니다</p>" data-sns="http://twitter.com/anarcher">
+            <figure class="profile-figure">
+              <img src="/assets/images/kimms.png" alt="@anarcher" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@anarcher</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/parksc.jpg" data-name="박수철(@POD)" data-company="Spoqa" data-info="<p>개발자를 꿈꾸는 일반인 입니다.</p>" data-sns="http://twitter.com/masterguru9">
+            <figure class="profile-figure">
+              <img src="/assets/images/parksc.jpg" alt="@POD" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@POD</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/limdh.jpg" data-name="임대현(@iamdenny)" data-company="NAVER Corp" data-info="<p>nodejs 를 좋아하는 개발자 입니다.</p>" data-sns="https://www.facebook.com/iamdenny">
+            <figure class="profile-figure">
+              <img src="/assets/images/limdh.jpg" alt="@anarcher" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@iamdenny</p>
+            </address>
+          </a>
+        </li>
+        <li>
+          <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/jinyl.jpg" data-name="진유림(@jayjin)" data-company="Smart Study" data-info="<p>디자인과 프론트엔드를 좋아하는 잡식 개발자 입니다. 사람들의 생산성을 높여 삶의 질을 좋게 만드는 일에 관심이 많습니다.</p><p>아름다운 웹과 iOS 개발, 새로운 언어와 프레임워크 그리고 개발자들 오프라인 모임과 그들의 개그를 사랑합니다. 사람들을 만나는 것을 좋아하지만, 집에서 뒹굴며 만화책을 보는것도 그만큼 행복해합니다.</p><p>뜬금없는 특기는 절대음감이라서 모든 곡을 듣고 바로 칠 수 있다는 것입니다</p>" data-sns="https://www.facebook.com/jay.jin.0427">
+            <figure class="profile-figure">
+              <img src="/assets/images/jinyl.jpg" alt="@jayjin" class="profile-img">
+            </figure>
+            <address>
+              <p class="profile-name">@jayjin</p>
+            </address>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="conference-info" id="contact">
+        <div class="aboutus col">
+          <h4>playnode?</h4>
+          <p>playnode는 국내외 개발자들과 함께 node.js 에 관련된 정보와 경험을 공유하며 다양한 이야기를 나누는 node.js 개발자들을 위한 축제와 같은 행사입니다. playnode는 오거나이저의 자발적인 참여와 봉사로 운영되고 있습니다.</p>
+        </div>
+        <div class="help col">
+          <h4>Contact us</h4>
+          <address>
+            <ul>
+              <li><a target="_blank" href="https://github.com/playnodeconf/ama">Ask Us Anything.</a></li>
+              <li>Follow us on <a target="_blank" href="https://twitter.com/playnodeconf">Twitter</a></li>
+              <li>Follow us on <a target="_blank" href="https://github.com/playnodeconf">Github</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="help col">
+          <h4>Site developed by</h4>
+          <address>
+            <ul>
+              <li><a target="_blank" href="https://twitter.com/daclouds_">@daclouds_ </a></li>
+              <li><a target="_blank" href="https://twitter.com/insanehong">@insanehong</a></li>
+              <li><a target="_blank" href="https://twitter.com/Outsideris">@Outsider</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Copyright © playnode 2015.  All Rights Reserved.</p>
+  </footer>
+</main>
+<aside class="sidebar" layout="column" id="webcli">
+  <div id="cli-handle">
+    <span class="icono-terminal icon"></span>
+  </div>
+  <div id="console"></div>
+</aside>
+
+<div class="profile-modal-container">
+  <div class="profile-modal">
+    <div class="profile-modal-close-button">
+      <button type="button"><span class="icon icono-cross"></span></button>
+    </div>
+    <figure class="profile-modal-figure">
+      <img src="images/speakers/chris-wanstrath.jpg" alt="" class="profile-modal-img" id="profileModalImg">
+    </figure>
+    <address>
+      <p class="profile-modal-name" id="profileModalName"></p>
+      <p class="profile-modal-company" id="profileModalCompany"></p>
+      <p class="profile-modal-contact" id="profileModalContact"></p>
+    </address>
+    <div class="profile-modal-info" id="profileModalInfo"></div>
+  </div>
 </div>
 <script src="/assets/scripts/vendor.min.js"></script>
 <script src="/assets/scripts/app.min.js"></script>
