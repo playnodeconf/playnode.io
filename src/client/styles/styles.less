@@ -157,6 +157,7 @@
       margin-right: -48px;
       font-size: 0;
       display: inline-block;
+      word-spacing: .1em;
 
       > span {
         display:inline-block;
@@ -277,7 +278,8 @@
       display: block;
       color: #fff;
       text-decoration: none;
-
+      font-size: 24px;
+      
       &:hover {
         background-color: darken(#689F38, 10%);
       }
@@ -620,41 +622,19 @@ body.modal-open {
 
     li {
       flex: 1;
-
       margin: 4px;
-      // border: 1px solid @gray-new;
       vertical-align: top;
 
       > a {
         display: block;
-        // background-color: #f3f3f3;
         padding-bottom: 4px;
         color: black;
 
         > img {
-          // width: 100%;
-          // height: auto;
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
         }
       }
     }
-  }
-}
-
-.cfs {
-  display: inline-block;
-  padding: 12px 24px;
-  text-decoration: none;
-  background-color: @brand-dark;
-  color: #fff;
-  width: 300px;
-  font-size: 32px;
-
-  &:visited,
-  &:active,
-  &:hover {
-    color: #fff;
-    opacity: 1;
   }
 }
 
