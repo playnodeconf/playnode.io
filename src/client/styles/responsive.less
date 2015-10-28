@@ -353,8 +353,16 @@
     font-size: 16px;
   }
   
-  .speakers > li {
-    width: 50%;
+  .speakers {
+    > li {
+      width: 50%;
+    }
+
+    &.organizers {
+      > li {
+        width: 33.33333333%;
+      }
+    }
   }
   
   .top-header .nav-close-button {
@@ -529,8 +537,16 @@
     }
   }
   
-  .speakers > li {
-    width: 100%;
+  .speakers {
+    > li {
+      width: 100%;
+    }
+
+    &.organizers {
+      > li {
+        width: 50%;
+      }
+    }
   }
   
   .schedule-table > li:before {
