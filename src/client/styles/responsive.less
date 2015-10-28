@@ -509,16 +509,23 @@
   }
 
   .banners {
-    > .platinum {
+    width: 100%;
+    clear: both;
+
+    > li {
+      display: inline-block;
+    }
+
+    &.platinum > li {
       width: 100%;
     }
 
-    > .partner {
-      width: 80%;
+    &.partner > li {
+      width: 50%;
     }
 
-    > li {
-      width: 33.33333333%;
+    &.silver > li {
+      width: 30%;
     }
   }
   
