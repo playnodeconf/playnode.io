@@ -84,7 +84,8 @@
           </h2>
           <!-- <img src="/assets/images/white_logo_icon.png" width="100%" alt="play.node();"> -->
           <div class="masthead-subtitle">
-            <time datetime="2015-11">2015. 11. 12 THU<span id="d-day"></span></time>
+            <time datetime="2015-11">2015. 11. 12 THU</time>
+            <div id="d-day"></div>
             <p>서울특별시 동작구 보라매로5길 15<br>신대방동,전문건설회관 4층 대회의실</p>
           </div>
           <div target="_blank" onclick="javascript:window.open('http://onoffmix.com/event/56124', '_blank')" class="signup">참가신청</div>
@@ -94,10 +95,11 @@
     <section class="page-content-new" >
       <div class="container">
         <h3 id="about">About</h3>
-        <!-- <h4>playnode가 3년 만에 다시 여러분을 찾아 갑니다.</h4> -->
+        <h4>playnode가 3년 만에 다시 여러분을 찾아 갑니다.</h4>
         <p>playnode는 국내 node.js community인 octobersky.js 의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.</p>
-        <p>2015년을 기점으로 octobersky.js 로부터 분리되어 독자적인 브랜드로서 새롭게 출발합니다.</p>
-        <!-- <p class="about-logo"><img src="/assets/images/logo-log.png"></p> -->
+        <p>Node.js는 올해 Node.js 재단을 설립하고 io.js와 다시 합친 뒤 엔터프라이즈 Node.js를 지원하기 위해서 LTS 버전을 릴리즈 하는 등 새로운 단계에 진입했습니다. 그동안 개발이 느리고 io.js가 분리되는 등의 이슈가 있었지만, 지금은 Node.js 재단 아래 커뮤니티 주도로 모여서 이전보다 더욱 활발하게 개발이 진행되고 있고 여기에 IBM, 레드햇, Microsoft, Intel 등에서도 적극적으로 지원하고 있습니다. 이런 상황에서 국내에서 Node.js에 대한 경험을 공유하고 앞으로 Node.js가 나아가는 방향에 대해서 이야기 해 볼 수 있는 좋은 자리입니다.</p>
+        <p>2015년을 기점으로 OctoberSkyJs 로부터 분리되어 독자적인 브랜드로서 새롭게 출발합니다.</p>
+        <p class="about-logo"><img src="/assets/images/logo-log.png"></p>
       </div>
     </section>
     <section class="page-content-new">
@@ -107,7 +109,7 @@
           <li class="animation-element bounce-up">
             <div class="subject">
               <p>08:30 - 09:00</p>
-              <img src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="open">
+              <img src="/assets/images/open.png" alt="open">
               <p>Check in</p>
             </subject>
           </li>
@@ -115,70 +117,97 @@
             <div class="subject">
               <p>09:00 - 09:40</p>
               <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="rauchg">
-              <p>Guillermo Rauch<br><span>freelancer</span><br>socket.io</p>
+              <p>미정 <span></span><br>
+
+                <small></small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>09:50 - 10:30</p>
-              <img class="clip" src="https://avatars2.githubusercontent.com/u/17535?v=3&s=200" alt="zkat">
-              <p>Kat Marchán<br><span>npm, Inc.</span><br>npm 3</p>
+              <p>10:05 - 10:55</p>
+              <img class="clip" src="https://pbs.twimg.com/profile_images/653806750223613952/v404jvw8.jpg" width="160" height="160" alt="zkat">
+              <p>Kat Marchán <span>(npm, Inc.)</span><br>
+                npm@>=3<br>
+                <small>현재 Node.js 4.2.x LTS 버전에 포함된 npm 2.x의 다음 버전인 npm v3에 대해서 npm cli 개발자가 직접 설명한다. npm@3에서 프론트앤드 라이브러리 지원을 위한 준비작업인 peerDependencies의 변경과 flat하게 설치하는 의존성 등 npm@3가 어떻게 달라졌는지를 설명한다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>10:40 - 11:20</p>
-              <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="">
-              <p>안재하<br><span>GS Shop</span><br></p>
+              <p>10:55 - 11:45</p>
+              <img class="clip" src="http://playnode.io/assets/images/speakers/kimyh.jpg" width="160" height="160" alt="">
+              <p>김요한 <span>(GS SHOP)</span><br>
+                Node.js 기반의 대용량 분산 서버 아키텍처 설계 사례<br>
+                <small>Node.js 에 적합한 시스템은 어떤 것이며, 무중단 확장이 가능한 시스템을 구축하기 위한 다양한 방법을 실제 구축 사례를 기반으로 실무에 활용할 수 있는 다양한 Tip을 공유하고자 합니다. - 실제 프로젝트나 솔루션에서 Node.js 와 다양한 오픈소스의 조합을 통해 대용량 트래픽을 처리할 수 있는 무중단 서비스 개발에 도움이 될 것입니다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
               <p>11:30 - 12:10</p>
               <img class="clip" src="https://avatars3.githubusercontent.com/u/1094945?v=3&s=200" alt="asbubam">
-              <p>이승우<br><span>Flitto</span><br>Node.js in Flitto</p>
+              <p>이승우 <span>(Flitto)</span><br>
+                Node.js in Flitto
+                <small>집단지성 번역 플랫폼 Flitto(플리토)는 Node.js로 서버, 웹 개발을 하고 있습니다. Flitto 서버의 전반적인 구조를 설명하고, 개발하면서 경험했던 시행착오를 공유합니다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>12:10 - 13:30</p>
+              <p>11:45 - 12:25</p>
               <img src="assets/images/lunch_icon_150.png" width="150" height="150" alt="lunch">
               <p>점심시간</p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>13:30 - 14:10</p>
-              <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="">
-              <p>조승연<br><span>KnowRe</span><br>Async tasks, callback hell, pipeline pattern</p>
+              <p>13:30 - 14:20</p>
+              <img class="clip" src="http://playnode.io/assets/images/speakers/josy.jpg" width="160" height="160" alt="">
+              <p>조승연 <span>(KnowRe)</span><br>
+                Async tasks, callback hell, pipeline pattern
+                <small>자바스크립트가 진지하게 연구되고 비동기 프로그래밍에 대한 이해가 깊어질수록 사람들은 점점 더 콜백지옥에 고통받게 되었고, 그러면서 그 고통에서 해방시켜 주겠다는 수많은 거짓된 선지자들이 나타났습니다. 저는 발표를 통해 콜백지옥을 해방시켜 준다고 주장하는 또 다른 거짓된 선지자를 소개하고자 합니다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>14:20 - 15:00</p>
-              <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="">
-              <p>이병준<br><span>SK planet</span><br>Node.js 기반 Hive Server2 탐색 시스템 Galleon 개발기</p>
+              <p>14:20 - 15:10</p>
+              <img class="clip" src="http://playnode.io/assets/images/speakers/leebj.jpg" width="160" height="160" alt="">
+              <p>이병준 <span>(SK planet)</span><br>
+                Node.js 기반 Hive Server2 탐색 시스템 Galleon 개발기
+                <small>자바스크립트는 TIOBE Index에서 2015년 10월 기준 8위를 차지할 정도로 많은 성장을 거듭하였습니다. 다양한 분야에서 사용되고 있지만 아무래도 Node.js는 특성 상 Big Data 세계에서는 그 사용 례가 그리 많지 않습니다. 사내에서 여러가지 이유로 인해서 Hue를 사용할 수 없게 되어 Galleon이라는 대체할 플랫폼을 개발하기 위해 주력 플랫폼으로 Node.js를 선택하여 겪은 경험담을 공유하려고 합니다. - Node.js에서 Hive를 다루어보고 싶은 분이라면 이번 세션이 도움이 될 것 입니다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>15:10 - 15:50</p>
-              <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="">
-              <p>김민정<br><span></span><br>Spring-boot 에서 node.js 로 바꾼 이유</p>
-            </div>
-          </li>
-          <li class="animation-element bounce-up">
-            <div class="subject">
-              <p>16:00 - 16:40</p>
-              <img class="clip" src="https://avatars3.githubusercontent.com/u/569879?v=3&s=200" alt="mctenshi">
-              <p>김근우<br><span>Dable</span><br>큰 상용 서비스에서의 node.js 운영기</p>
-            </div>
-          </li>
-          <li class="animation-element bounce-up">
-            <div class="subject">
-              <p>16:50 - 17:30</p>
+              <p>15:10 - 16:00</p>
               <img class="clip" src="https://avatars0.githubusercontent.com/u/853528?v=3&s=200" alt="pismute">
-              <p>박창우<br><span>freelancer</span><br>gulp로 정적 사이트 만들기</p>
+              <p>박창우 <span>(freelancer)</span><br>
+                gulp로 정적 사이트 만들기
+                <small>바야흐로 대 정적 페이지시대! Gulp와 Handlebars로 정적 페이지를 만드는 과정을 공유합니다.</small>
+              </p>
+            </div>
+          </li>
+          <li class="animation-element bounce-up">
+            <div class="subject">
+              <p>16:00 - 16:50</p>
+              <img class="clip" src="http://playnode.io/assets/images/speakers/jangds.jpg" width="160" height="160" alt="">
+              <p>장동수 <span>(Kakao)</span><br>
+                Spring 과 Node.js의 공존
+                <small>자바 기반의 레거시 웹 서비스를 마이크로서비스 아키텍쳐와 node.js로 현대화 하는 과정을 실제 사례를 통해 알아봅니다.</small>
+              </p>
+            </div>
+          </li>
+          <li class="animation-element bounce-up">
+            <div class="subject">
+              <p>16:50 - 17:40</p>
+              <img class="clip" src="https://avatars3.githubusercontent.com/u/569879?v=3&s=200" alt="mctenshi">
+              <p>김군우 <span>(Dable)</span><br>
+                큰 상용 서비스에서의 node.js 운영기
+                <small>Amazon Web Service에서 node.js를 이용하여 시간당 수백만 요청을 처리하는 서버를 운영하면서 얻게된 노하우, 삽질기, 느낀점 등을 공유하려 합니다.</small>
+              </p>
             </div>
           </li>
           <li class="animation-element bounce-up">
@@ -188,7 +217,7 @@
               <p>Networking Party</p>
             </div>
           </li>
-
+          <p>※ 발표시간과 순서는 변동될 수 있습니다.</p>
         </ul>
       </div>
     </section>
@@ -237,6 +266,15 @@
             <a target="_blank" href="https://www.facebook.com/octoberskyjs/" style="background-image:url(/assets/images/octoberskyjs.jpg);"></a>
           </li>
         </ul>
+        <h4>Media</h4>
+        <ul class="banners-new">
+          <li class="silver">
+            <a target="_blank" href="http://onoffmix.com/" style="background-image:url(/assets/images/onoffmix.jpg)"></a>
+          </li>
+          <li class="silver">
+            <a target="_blank" href="http://www.jpub.kr/" style="background-image:url(/assets/images/jpub.jpg)"></a>
+          </li>
+        </ul>
 	     <!-- <button type="button" class="sponsor-btn" id="sponsor-btn"><span>Sponsor with us</span></button> -->
        <div class="help">
          <h3>Contact us</h3>
@@ -270,7 +308,7 @@
             <a href="https://github.com/chitacan"><img src="https://avatars2.githubusercontent.com/u/286950?v=3&s=100" alt="chitacan"><br>@chitacan</a>
           </li>
           <li>
-            <a href="https://github.com/milooy"><img src="https://avatars0.githubusercontent.com/u/3839771?v=3&s=100" alt="milooy"><br>@milooy</a>
+            <a href="https://www.facebook.com/iamdenny"><img src="/assets/images/limdh.jpg" width="100" height="100" alt="iamdenny"><br>@iamdenny</a>
           </li>
           <li>
             <a href="https://github.com/imazine"><img src="https://avatars0.githubusercontent.com/u/2697933?v=3&s=100" alt="iMaZiNe"><br>@iMaZiNe</a>
@@ -286,6 +324,15 @@
           <li>
             <a href="https://twitter.com/masterguru9"><img src="http://nodeconf.kr/2012/img/organizers/pod.jpg" alt="masterguru9"><br>@masterguru9</a>
           </li>
+        </ul>
+        <ul layout>
+          <li>
+            <a href="https://www.facebook.com/jay.jin.0427"><img src="/assets/images/jinyl.jpg" width="100" height="100" alt="jayjin"><br>@jayjin</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/anarcher"><img src="/assets/images/shinms.jpg" width="100" height="100" alt="anarcher"><br>@anarcher</a>
+          </li>
+          <li></li>
         </ul>
       </div>
     </section>
