@@ -249,14 +249,12 @@
     padding:0 64px;
 
     h3 {
-
       text-align: right;
       font-size: 32px;
       text-transform: uppercase;
       line-height: 40px;
       margin: 0;
       margin-top:20px;
-
     }
 
     p {
@@ -264,6 +262,17 @@
       margin: 5px 0 0;
       font-size: 18px;
       margin: 0;
+    }
+
+    &:after {
+      content: '';
+      float: right;
+      margin: -81px -64px;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-right: 30px solid #689F38;
     }
   }
 
@@ -292,8 +301,15 @@
       font-size: 24px;
       
       &:hover {
-        background-color: darken(#689F38, 10%);
+        text-shadow: 0px 0px 8px #ccffcc;
       }
+    }
+
+    &:before {
+      content: "\25CF";
+      margin-top: 22px;
+      float: left;
+      color: #262626;
     }
   }
 
@@ -516,6 +532,18 @@
     padding: 0 24px;
     margin: 25px auto 0;
     width: 512px;
+
+    a {
+	font-weight: bold;
+	text-decoration: none;
+
+	&:hover,
+	&:visited,
+	&:active {
+          color: black;
+	  font-weight: bold;
+	}
+    }
   }
 }
 
