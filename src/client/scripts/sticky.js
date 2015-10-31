@@ -9,7 +9,7 @@
   };
 
   Sticky.defulats = {
-    
+
   };
 
   Sticky.prototype.init = function() {
@@ -62,7 +62,7 @@
           data    = $this.data('sticky'),
           options = $.extend({}, Sticky.defulats, $this.data(), typeof option == 'object' && option);
 
-      if (!data) $this.data('sticky', (data = new Sticky(this, options)));    
+      if (!data) $this.data('sticky', (data = new Sticky(this, options)));
       if(typeof options === 'string') data[options]();
       else data.init();
     });

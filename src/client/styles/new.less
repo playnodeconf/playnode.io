@@ -146,7 +146,7 @@
     font-size: 22px;
     font-weight: 300;
     line-height: 1.7;
-    text-align: left;
+    text-align: center;
     color: #666;
   }
 
@@ -173,37 +173,37 @@
      }
     }
 
-    /* scroll-based animation */
-    .animation-element {
-      position: relative;
-      margin: auto;
-    }
-
-    /*bounce up animation for the subject*/
-    .bounce-up .subject {
-      opacity: 0;
-      -moz-transition: all 700ms ease-out;
-      -webkit-transition: all 700ms ease-out;
-      -o-transition: all 700ms ease-out;
-      transition: all 700ms ease-out;
-      -moz-transform: translate3d(0px, 200px, 0px);
-      -webkit-transform: translate3d(0px, 200px, 0px);
-      -o-transform: translate(0px, 200px);
-      -ms-transform: translate(0px, 200px);
-      transform: translate3d(0px, 200, 0px);
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-
-    .bounce-up.in-view .subject {
-      opacity: 1;
-      -moz-transform: translate3d(0px, 0px, 0px);
-      -webkit-transform: translate3d(0px, 0px, 0px);
-      -o-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-      transform: translate3d(0px, 0px, 0px);
-    }
+    // /* scroll-based animation */
+    // .animation-element {
+    //   position: relative;
+    //   margin: auto;
+    // }
+    //
+    // /*bounce up animation for the subject*/
+    // .bounce-up .subject {
+    //   opacity: 0;
+    //   -moz-transition: all 700ms ease-out;
+    //   -webkit-transition: all 700ms ease-out;
+    //   -o-transition: all 700ms ease-out;
+    //   transition: all 700ms ease-out;
+    //   -moz-transform: translate3d(0px, 200px, 0px);
+    //   -webkit-transform: translate3d(0px, 200px, 0px);
+    //   -o-transform: translate(0px, 200px);
+    //   -ms-transform: translate(0px, 200px);
+    //   transform: translate3d(0px, 200, 0px);
+    //   -webkit-backface-visibility: hidden;
+    //   -moz-backface-visibility: hidden;
+    //   backface-visibility: hidden;
+    // }
+    //
+    // .bounce-up.in-view .subject {
+    //   opacity: 1;
+    //   -moz-transform: translate3d(0px, 0px, 0px);
+    //   -webkit-transform: translate3d(0px, 0px, 0px);
+    //   -o-transform: translate(0px, 0px);
+    //   -ms-transform: translate(0px, 0px);
+    //   transform: translate3d(0px, 0px, 0px);
+    // }
 
   }
 
@@ -515,7 +515,7 @@
       width: 100%;
     }
 
-    > .partner {
+    > .gold, .partner {
       width: 80%;
     }
 
