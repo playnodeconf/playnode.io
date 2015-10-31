@@ -31,31 +31,50 @@
   <link rel="stylesheet" href="assets/styles/vendor.min.css">
   <link rel="stylesheet" href="assets/styles/app.min.css">
 </head>
-<body layout="row">
-  <div layout="column" flex>
-    <div class="top-ruler"></div>
-    <!-- <header class="top-header">
-      <div class="container" layout="row" flex>
-        <h1 class="logo">
-          <a href="/"><span class="screenreader">playnode</span></a>
-        </h1>
-        <div flex>
-        </div>
-        <nav>
-          <ul class="top-navigation" role="navigation">
-            <li>
-              <a href="#" class="shared-btn" data-target="tw" id="share-tw"><i class="icono-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#" class="shared-btn" data-target="fb" id="share-fb"><i class="icono-facebook"></i></a>
-            </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#organizers">Organizers</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
+<body>
+  <header class="top-header top-ruler">
+    <div class="container">
+      <h1 class="logo">
+        <a href="/"><span class="screenreader">playnode</span></a>
+      </h1>
+      <button class="navbar-toggle" type="button">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+      </button>
+      <nav id="top-naviation">
+        <ul class="top-navigation" role="navigation">
+          <div class="nav-close-button">
+            <button type="button"><span class="icon icono-cross"></span></button>
+          </div>
+          <li>
+            <a href="#" class="shared-btn" data-target="tw" id="share-tw"><i class="icono-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="shared-btn" data-target="fb" id="share-fb"><i class="icono-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#speakers">Speakers</a>
+          </li>
+          <!-- <li>
+            <a href="#schedule">Schedule</a>
+          </li> -->
+          <!-- <li>
+            <a href="#venue">Venue</a>
+          </li> -->
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+           <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main class="main-content" layout-scroll-y flex role="main" data-toggle="sticky" data-target=".top-header" data-offset="88">
     <section id="top" class="masthead-new" >
       <div class="masthead-inner" layout>
@@ -94,7 +113,7 @@
     </section>
     <section class="page-content-new" >
       <div class="container">
-        <h3 id="about">About</h3>
+        <h3 class="section-title" id="about">About</h3>
         <h4>playnode가 3년 만에 다시 여러분을 찾아 갑니다.</h4>
         <p>playnode는 국내 node.js community인 octobersky.js 의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.</p>
         <p>Node.js는 올해 Node.js 재단을 설립하고 io.js와 다시 합친 뒤 엔터프라이즈 Node.js를 지원하기 위해서 LTS 버전을 릴리즈 하는 등 새로운 단계에 진입했습니다. 그동안 개발이 느리고 io.js가 분리되는 등의 이슈가 있었지만, 지금은 Node.js 재단 아래 커뮤니티 주도로 모여서 이전보다 더욱 활발하게 개발이 진행되고 있고 여기에 IBM, 레드햇, Microsoft, Intel 등에서도 적극적으로 지원하고 있습니다. 이런 상황에서 국내에서 Node.js에 대한 경험을 공유하고 앞으로 Node.js가 나아가는 방향에 대해서 이야기 해 볼 수 있는 좋은 자리입니다.</p>
@@ -104,8 +123,8 @@
     </section>
     <section class="page-content-new">
       <div class="container">
-        <h3>Agenda</h3>
-        <ul id="agenda">
+        <h3 class="section-title" id="speakers">Agenda</h3>
+        <ul>
           <li class="animation-element bounce-up">
             <div class="subject">
               <p>08:30 - 09:00</p>
@@ -115,12 +134,22 @@
           </li>
           <li class="animation-element bounce-up">
             <div class="subject">
-              <p>09:00 - 09:40</p>
-              <img class="clip" src="https://avatars1.githubusercontent.com/u/13041?v=3&s=200" alt="rauchg">
-              <p>미정 <span></span><br>
-
-                <small></small>
+              <p>09:00 - 09:15</p>
+              <img class="clip" src="https://avatars0.githubusercontent.com/u/390146?v=3&s=160" alt="outsideris">
+              <p>Outsider <span>play.node</span><br>
+                Welcome<br>
               </p>
+              <small></small>
+            </div>
+          </li>
+          <li class="animation-element bounce-up">
+            <div class="subject">
+              <p>09:15 - 10:05</p>
+              <img class="clip" src="https://avatars2.githubusercontent.com/u/43438?v=3&s=160" alt="timoxley">
+              <p>Tim Oxley <span>NodeSource</span><br>
+                Modular vs Monolith<br/>- The Structure of Node.JS Applications<br>
+              </p>
+              <small>Node.js와 npm 생태계는 "극단적인 모듈화 문화"를 적극적으로 지지해서 지금 npm 저장소에는 수십만 개의 패키지가 생겨났습니다. 계속해서 발전하는 실제 애플리케이션을 개발할 때 이러한 모듈화 패턴을 어떻게 적용할 수 있는지를 살펴봅니다.</small>
             </div>
           </li>
           <li class="animation-element bounce-up">
@@ -140,7 +169,7 @@
               <p>김요한 <span>(GS SHOP)</span><br>
                 Node.js 기반의 대용량 분산 서버 아키텍처 설계 사례<br>
               </p>
-              <small>Node.js 에 적합한 시스템은 어떤 것이며, 무중단 확장이 가능한 시스템을 구축하기 위한 다양한 방법을 실제 구축 사례를 기반으로 실무에 활용할 수 있는 다양한 Tip을 공유하고자 합니다. - 실제 프로젝트나 솔루션에서 Node.js 와 다양한 오픈소스의 조합을 통해 대용량 트래픽을 처리할 수 있는 무중단 서비스 개발에 도움이 될 것입니다.</small>
+              <small>Node.js 기반의 주로 어떤 시스템이 적합할까? 무중단 Scalability 를 고려하려면 어떻게 해야할까? 실제 구축 사례를 기반으로 실무에 활용할 수 있는 방법들을 공유하고자 합니다. 실제 프로젝트나 서비스 구축시 Node.js 와 다양한 오픈소스의 조합을 통해 대용량 트래픽을 처리하는데 도움이 되고자 합니다.</small>
             </div>
           </li>
           <li class="animation-element bounce-up">
@@ -241,13 +270,20 @@
     </section> -->
     <section class="page-content-new">
        <div class="container">
-        <h3 id="sponsors">Sponsors</h3>
+        <h3 class="section-title" id="sponsors">Sponsors</h3>
         <h4>Platinum</h4>
           <ul class="banners-new">
             <li class="platinum">
               <a target="_blank" href="http://www.gsshop.com/" style="background-image:url(/assets/images/gsshop_logo.png);"></a>
             </li>
           </ul>
+
+        <h4>Silver</h4>
+        <ul class="banners-new">
+          <li>
+            <a class="kakao" target="_blank" href="http://www.kakao.com/" style="background-image:url(/assets/images/kakao_ci.png);"></a>
+          </li>
+        </ul>
         <h4>Silver</h4>
         <ul class="banners-new">
           <li>
@@ -258,6 +294,9 @@
           </li>
           <li>
             <a target="_blank" href="http://d2.naver.com/" style="background-image:url(/assets/images/naver.png);"></a>
+          </li>
+          <li>
+            <a target="_blank" href="http://www.eakorea.co.kr/" style="background-image:url(/assets/images/ea-logo.png); background-size: 60%;"></a>
           </li>
         </ul>
         <h4>Special thanks to our partner</h4>
@@ -277,7 +316,7 @@
         </ul>
 	     <!-- <button type="button" class="sponsor-btn" id="sponsor-btn"><span>Sponsor with us</span></button> -->
        <div class="help">
-         <h3>Contact us</h3>
+         <h3 class="section-title" id="contact">Contact us</h3>
          <p>Follow and Ask us anything</p>
          <a target="_blank" id="github" href="https://github.com/playnodeconf/ama">
            <img src="assets/images/github_icon_72.png" width="72" height="72" alt="github">
@@ -291,7 +330,7 @@
        </div>
       </div>
       <h3>Organizers</h3>
-      <div id="organizers">
+      <div class="section-title" id="organizers">
         <ul class="speakers center" layout>
           <li>
             <a class="speakers-button" data-toggle="speakers" data-img="/assets/images/kimdh.jpg" data-name="김덕홍(@insanehong)" data-company="NAVER Corp" data-info="<p>NAVER 에서 Front-End Engineer 로 일하고 있으며 겨우겨우 입에 풀칠하고 사는 입개발 전문 개발자입니다.</p><p>js, git, nodejs, open source 를 좋아한다고 사기를 치고 다닙니다.</p>" data-sns="http://twitter.com/insanehong">
@@ -397,7 +436,6 @@
     </div>
     <div id="console"></div>
   </aside>
-</div>
 <div class="profile-modal-container">
   <div class="profile-modal">
     <div class="profile-modal-close-button">
