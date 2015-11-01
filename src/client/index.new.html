@@ -62,9 +62,9 @@
           <!-- <li>
             <a href="#schedule">Schedule</a>
           </li> -->
-          <!-- <li>
+          <li>
             <a href="#venue">Venue</a>
-          </li> -->
+          </li>
           <li>
             <a href="#sponsors">Sponsors</a>
           </li>
@@ -250,6 +250,30 @@
         </ul>
       </div>
     </section>
+    <section class="page-content-new">
+      <div class="container">
+        <h3 class="section-title" id="venue">Location</h3>
+        <!-- * Daum 지도 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1446353681829" class="root_daum_roughmap root_daum_roughmap_landing" style="margin: auto;"></div>
+
+        <!--
+        	2. 설치 스크립트
+        	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+        	new daum.roughmap.Lander({
+        		"timestamp" : "1446353681829",
+        		"key" : "6ecd",
+        		"mapWidth" : "295",
+        		"mapHeight" : "300"
+        	}).render();
+        </script>
+      </div>
+    </section>
     <!-- <section class="slideshow">
       <ul class="slide-carousel" data-toggle="slideshow" layout="row">
         <li class="slide slide-image-1"></li>
@@ -296,6 +320,9 @@
           </li>
           <li>
             <a target="_blank" href="http://www.eakorea.co.kr/" style="background-image:url(/assets/images/ea-logo.png); background-size: 60%;"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.elastic.co/" style="background-image:url(/assets/images/logo-elastic.png); background-size: 60%;"></a>
           </li>
         </ul>
         <h4>Special thanks to our partner</h4>
@@ -417,7 +444,7 @@
             </address>
           </div> -->
           <div class="help col">
-            <h5>Designed by <span><a target="_blank" href="https://instagram.com/sunnnnnmm/">@sunnnnnmm</a></span></h5>
+            <h5>Designed by <span><a target="_blank" href="https://instagram.com/sunnn_thing">@sunnn_thing</a></span></h5>
             <h5>Work by
               <span>
                 <a target="_blank" href="https://twitter.com/insanehong">@insanehong</a>,
