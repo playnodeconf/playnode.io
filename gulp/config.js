@@ -10,6 +10,7 @@ var CLIENT_DIR          = path.join(SRC_DIR, 'client');
 var SCRIPTS_DIR         = path.join(CLIENT_DIR, 'scripts');
 var LESS_DIR            = path.join(CLIENT_DIR, 'styles');
 var IMAGES_DIR          = path.join(CLIENT_DIR, 'images');
+var DOWNLOAD_DIR        = path.join(CLIENT_DIR, 'download');
 var ASSETS_DIR          = 'assets';
 var config              = {};
 
@@ -65,6 +66,16 @@ config.styles = {
   ],
   dest: {
     build: path.join(BUILD_DIR, ASSETS_DIR, 'styles')
+  }
+};
+
+config.download = {
+  taskname: 'download',
+  src: [
+    path.join(DOWNLOAD_DIR, '**/*')
+  ],
+  dest: {
+    build: path.join(BUILD_DIR, ASSETS_DIR, 'download')
   }
 };
 
