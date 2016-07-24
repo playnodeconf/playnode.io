@@ -155,11 +155,20 @@ config.copyfiles = {
   src: [
     path.join(ROOT, 'CNAME'),
     path.join(CLIENT_DIR, 'fb-close.html'),
-    path.join(CLIENT_DIR, '2012.html'),
     path.join(CLIENT_DIR, 'sponsor.html')
   ],
    dest: {
     build: path.join(BUILD_DIR)
+  }
+};
+
+config.copy2012 = {
+  taskname: 'copy2012',
+  src: [
+    path.join(CLIENT_DIR, '2012/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2012')
   }
 };
 
