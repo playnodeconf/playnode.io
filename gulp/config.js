@@ -120,6 +120,16 @@ config.browsersync = {
   uiport: 3001
 };
 
+config.copy2016 = {
+  taskname: 'copy2016',
+  src: [
+    path.join(CLIENT_DIR, '2016/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2016')
+  }
+};
+
 config.watch = {
   taskname: 'watch',
   watcher : [
@@ -138,6 +148,10 @@ config.watch = {
     {
       task: config.styles.taskname,
       src: config.styles.all
+    },
+    {
+      task: config.copy2016.taskname,
+      src: config.copy2016.src
     }
   ]
 };
