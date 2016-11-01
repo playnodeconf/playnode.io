@@ -18,6 +18,7 @@ module.exports = gulp.task(config.production.taskname, [config.clean.taskname], 
     config.download.taskname,
     config.copyfiles.taskname,
     config.copy2012.taskname,
+    config.copy2015.taskname,
     config.copy2016.taskname
     , cb
   );

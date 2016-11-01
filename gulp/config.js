@@ -7,11 +7,11 @@ var BUILD_DIR           = path.join(ROOT, 'build');
 var MODULE_DIR          = path.join(ROOT, 'node_modules');
 var SRC_DIR             = path.join(ROOT, 'src');
 var CLIENT_DIR          = path.join(SRC_DIR, 'client');
-var SCRIPTS_DIR         = path.join(CLIENT_DIR, 'scripts');
-var LESS_DIR            = path.join(CLIENT_DIR, 'styles');
+var SCRIPTS_DIR         = path.join(CLIENT_DIR, '2015/scripts');
+var LESS_DIR            = path.join(CLIENT_DIR, '2015/styles');
 var IMAGES_DIR          = path.join(CLIENT_DIR, 'images');
 var DOWNLOAD_DIR        = path.join(CLIENT_DIR, 'download');
-var ASSETS_DIR          = 'assets';
+var ASSETS_DIR          = '2015/assets';
 var config              = {};
 
 config.copyIndex = {
@@ -169,7 +169,7 @@ config.copyfiles = {
   src: [
     path.join(ROOT, 'CNAME'),
     path.join(CLIENT_DIR, 'fb-close.html'),
-    path.join(CLIENT_DIR, 'sponsor.html')
+    path.join(CLIENT_DIR, 'index.html')
   ],
    dest: {
     build: path.join(BUILD_DIR)
@@ -183,6 +183,16 @@ config.copy2012 = {
   ],
    dest: {
     build: path.join(BUILD_DIR, '2012')
+  }
+};
+
+config.copy2015 = {
+  taskname: 'copy2015',
+  src: [
+    path.join(CLIENT_DIR, '2015/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2015')
   }
 };
 
