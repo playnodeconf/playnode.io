@@ -5,194 +5,372 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>playnode 2016 - NodeJS Conference</title>
-  <meta name="description" content="playnode는 국내 node.js community의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <title>play.node 2016 - Node.js Conference</title>
+  <meta name="description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
   <link rel="canonical" href="http://playnode.io">
   <meta name="keywords" content="playnode, nodejs, node, node.js, conference">
   <meta name="robots" content="'index, follow">
-  <meta property="og:title" content="playnode 2016 - NodeJS Conference">
+  <meta property="og:title" content="play.node 2016 - Node.js Conference">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://playnode.io">
-  <meta property="og:image" content="http://playnode.io/assets/images/og-image.jpg">
+  <meta property="og:image" content="/2016/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:description" content="playnode는 국내 node.js community의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
-  <meta property="og:site_name" content="playnode 2016">
+  <meta property="og:description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <meta property="og:site_name" content="play.node 2016">
   <meta property="og:locale" content="ko_KR">
   <meta property="fb:app_id" content="808686202580087">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@playnodeconf">
   <meta name="twitter:creator" content="@playnodeconf">
-  <meta name="twitter:title" content="playnode 2016 - NodeJS Conference">
-  <meta name="twitter:description" content="playnode는 국내 node.js community의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
-  <meta name="twitter:image" content="http://playnode.io/assets/images/twitter-card.jpg">
-  <meta name="twitter:url" content="http://playnode.io">
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
-  <!-- <link rel="stylesheet" href="/assets/styles/vendor.min.css"> -->
-  <!-- <link rel="stylesheet" href="/assets/styles/app.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta name="twitter:title" content="play.node 2016 - Node.js Conference">
+  <meta name="twitter:description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <meta name="twitter:image" content="/2016/img/twitter-card.jpg">
+  <meta name="twitter:url" content="http://playnode.io/2016">
+  <link rel="shortcut icon" type="image/x-icon" href="/2016/favicon.ico">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="/assets/images/logo-playnode.png" alt="Logo"></a>
-      <!-- <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul> -->
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+  <nav role="navigation">
+    <ul>
+      <li><a data-scroll href="#about">About</a></li>
+      <li><a data-scroll href="#speakers">Speakers</a></li>
+      <li><a data-scroll href="#schedule">Schedule</a></li>
+      <li><a data-scroll href="#venue">Venue</a></li>
+      <li><a data-scroll href="#sponsors">Sponsors</a></li>
+      <li><a data-scroll href="#contactus">Contact</a></li>
+    </ul>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">play.node(); 2016</h1>
-        <div class="row center">
-          <h5 class="header col s12 light"></h5>
-        </div>
-        <div class="row center">
-          <a href="https://playnode.typeform.com/to/ca6agg" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Call for Speakers</a>
-          <a href="https://playnode.typeform.com/to/Dk8BH6" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Apply Volunteer</a>
-        </div>
-        <br><br>
+  <section id="breadcrumb" class="dark wide">
+    <img src="/2016/img/polygon.png" srcset="/2016/img/polygon.png 1x, /2016/img/polygon@2x.png 2x" class="polygon-left">
+    <img src="/2016/img/logo-play-node-color.png" srcset="/2016/img/logo-play-node-color.png 1x, /2016/img/logo-play-node-color@2x.png 2x" class="main-logo">
+    <img src="/2016/img/polygon.png" srcset="/2016/img/polygon.png 1x, /2016/img/polygon@2x.png 2x" class="polygon-right">
+    <h1>play.node 2016 x IBM Developer Connect</h1>
+    <h2>2016. 11. 23 (Wed)</h2>
+    <a href="http://ibm.biz/playnode2016" class="attend">Get your ticket</a>
+    <a data-scroll href="#about" class="scroll-down">Scroll down</a>
+  </section>
 
-      </div>
+  <section id="about" class="wide">
+    <div class="body">
+      <img src="/2016/img/play-node-logo.png" srcset="/2016/img/play-node-logo.png 1x, /2016/img/play-node-logo@2x.png 2x">
+      <p>play.node는 커뮤니티 주관으로 열리는 비영리 Node.js 개발자 콘퍼런스입니다.</p>
+      <p>
+        2012년 Node.js 커뮤니티인 octobersky.js의 주최로 처음 시작된 이후 올해 3회째 열리고 있습니다.
+        작년 Node.js 재단이 설립된 이후 Node.js는 안정적인 릴리스를 하면서 서버 개발, 프런트 앤드 도구, 데스크톱 애플리케이션 등 다양한 분야에서
+        인기를 끌고 있습니다. 이번 play.node에서는 국내에서 Node.js를 사용하는 개발자를 모여 그동안 쌓아온 경험을 공유하는 자리가 되기를 바라고 있습니다.
+      </p>
+      <p>
+        올해 play.node는 IBM의 후원을 받아
+        <a href="http://www-903.ibm.com/kr/devcon2016/" target="_blank">IBM Developer Connect 2016</a>와
+        한자리에서 공동으로 개최합니다. play.node에 참가하면 IBM Developer Connect의 세션도 함께 참가해서 들을 수 있습니다.
+      </p>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Skill Up</h5>
-
-            <p class="light"></p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Communication</h5>
-
-            <p class="light"></p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Share</h5>
-
-            <p class="light"></p>
-          </div>
-        </div>
-      </div>
-
+  <section id="speakers" class="dark wide">
+    <div class="body">
+      <h2>Speakers</h2>
+      <ul>
+        <li>
+          <img src="/2016/img/speakers/bert.png" srcset="/2016/img/speakers/bert.png 1x, /2016/img/speakers/bert@2x.png 2x" class="profile">
+          <span class="who">Bert Belder</span>
+          <span class="company">StrongLoop</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/michael.png" srcset="/2016/img/speakers/michael.png 1x, /2016/img/speakers/michael@2x.png 2x" class="profile">
+          <span class="who">Michael Shilman</span>
+          <span class="company">Partner, Lab80</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/kangdonghan.png" srcset="/2016/img/speakers/kangdonghan.png 1x, /2016/img/speakers/kangdonghan@2x.png 2x" class="profile">
+          <span class="who">강동한</span>
+          <span class="company">Flitto</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/firejune.png" srcset="/2016/img/speakers/firejune.png 1x, /2016/img/speakers/firejune@2x.png 2x" class="profile">
+          <span class="who">경준호</span>
+          <span class="company">알서포트</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/kimhyungyeol.png" srcset="/2016/img/speakers/kimhyungyeol.png 1x, /2016/img/speakers/kimhyungyeol@2x.png 2x" class="profile">
+          <span class="who">김경열</span>
+          <span class="company">Riiid</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/ibare.png" srcset="/2016/img/speakers/ibare.png 1x, /2016/img/speakers/ibare@2x.png 2x" class="profile">
+          <span class="who">김민태</span>
+          <span class="company">우아한형제들</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/kimseokjun.png" srcset="/2016/img/speakers/kimseokjun.png 1x, /2016/img/speakers/kimseokjun@2x.png 2x" class="profile">
+          <span class="who">김석준</span>
+          <span class="company">쏘카 (SOCAR)</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/rhiokim.png" srcset="/2016/img/speakers/rhiokim.png 1x, /2016/img/speakers/rhiokim@2x.png 2x" class="profile">
+          <span class="who">김양원</span>
+          <span class="company">CDNetworks</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/parkjonggun.png" srcset="/2016/img/speakers/parkjonggun.png 1x, /2016/img/speakers/parkjonggun@2x.png 2x" class="profile">
+          <span class="who">박종건</span>
+          <span class="company">Circulus 대표/수원대학교 조교수</span>
+          <span class="triangle"></span>
+        </li>
+        <li>
+          <img src="/2016/img/speakers/kivoloid.png" srcset="/2016/img/speakers/kivoloid.png 1x, /2016/img/speakers/kivoloid@2x.png 2x" class="profile">
+          <span class="who">조승연</span>
+          <span class="company">Knowre (CTO)</span>
+          <span class="triangle"></span>
+        </li>
+        <li class="last">
+          <img src="/2016/img/speakers/fluke8259.png" srcset="/2016/img/speakers/fluke8259.png 1x, /2016/img/speakers/fluke8259@2x.png 2x" class="profile">
+          <span class="who">최준영</span>
+          <span class="company">Kyushu University</span>
+          <span class="triangle"></span>
+        </li>
+      </ul>
     </div>
-  </div>
+  </section>
 
+  <section id="schedule" class="wide">
+    <div class="body">
+      <h2>play.node Keynotes</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Time</td>
+            <td>Session</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:30~10:30</td>
+            <td class="session">Registration</td>
+          </tr>
+          <tr>
+            <td rowspan="2">10:00~10:05</td>
+            <td class="session">환영사</td>
+          </tr>
+          <tr>
+            <td class="speaker">김원종 IBM Korea 수석부사장</td>
+          </tr>
+          <tr>
+            <td>10:10~10:30</td>
+            <td class="session">개발자와 IBM, 새로운 관계의 시작</td>
+          </tr>
+          <tr>
+            <td rowspan="2">10:30~11:00</td>
+            <td class="session">Growing up with Node.js</td>
+          </tr>
+          <tr>
+            <td class="speaker">Bert Belder / StrongLoop</td>
+          </tr>
+          <tr>
+            <td>11:00~11:30</td>
+            <td class="session">Let's Talk about Watson</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Share your knowledge</h5>
-        </div>
-      </div>
+      <h2>play.node Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Time</td>
+            <td>play.node Track D</td>
+            <td>play.node Track E</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">11:50~12:30</td>
+            <td class="session">최신 트렌드의 Electron과 React 그리고 Webpack으로 만드는 멀티플랫폼 데스크톱 앱!</td>
+            <td class="session">JavaScript Everywhere - 하나의 프로그래밍 언어로 천하통일을 꿈꾸는 메이커</td>
+          </tr>
+          <tr>
+            <td class="speaker">최준영 / Kyushu University</td>
+            <td class="speaker">박종건 / Circulus</td>
+          </tr>
+          <tr>
+            <td>12:30~13:30</td>
+            <td colspan="2">Lunch</td>
+          </tr>
+          <tr>
+            <td rowspan="2">13:30~14:10</td>
+            <td class="session">Compose async with rxjs</td>
+            <td class="session">((((2016년에 자바스크립트를 배우는 것)을 읽는다는 것)에 관한 강연)을 듣는다는 것)</td>
+          </tr>
+          <tr>
+            <td class="speaker">김경열 / Riiid</td>
+            <td class="speaker">조승연 / Knowre</td>
+          </tr>
+          <tr>
+            <td rowspan="2">14:20~15:00</td>
+            <td class="session">Electron을 이용한 모바일 테스트 자동화 소프트웨어 개발</td>
+            <td class="session">Node.js를 이용한 대규모 글로벌(+중국) 서비스</td>
+          </tr>
+          <tr>
+            <td class="speaker">경준호 / 알서포트</td>
+            <td class="speaker">강동한 / 플리토</td>
+          </tr>
+          <tr>
+            <td rowspan="2">15:10~15:50</td>
+            <td class="session">Project Gorae</td>
+            <td class="session">Dockerize Node.js application</td>
+          </tr>
+          <tr>
+            <td class="speaker">Rhio Kim(김양원) / CDNetworks</td>
+            <td class="speaker">김석준 / 쏘카</td>
+          </tr>
+          <tr>
+            <td rowspan="2">16:00~16:40</td>
+            <td class="session">A Javascript Testing Buffet</td>
+            <td class="session">IBM 블루믹스 핸즈온</td>
+          </tr>
+          <tr>
+            <td class="speaker">Michael Shilman / Lab80</td>
+            <td class="speaker"></td>
+          </tr>
+          <tr>
+            <td rowspan="2">16:50~17:30</td>
+            <td class="session">V8 Debugging Protocol 로 Javascript Playgrounds 만들기</td>
+            <td class="session">IBM 블루믹스 핸즈온</td>
+          </tr>
+          <tr>
+            <td class="speaker">김민태 / 우아한형제들</td>
+            <td class="speaker"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>IBM Developer Connect Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Time</td>
+            <td>IBM Track A</td>
+            <td>IBM Track B</td>
+            <td>IBM Track C</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:50~12:30</td>
+            <td class="session">101Watson : Hello, Watson</td>
+            <td class="session">ESP8266을 활용한 스마트한 IoT홈 사례 공유</td>
+            <td class="session">15분만에 뚝딱! IBM Bluemix 맛보기</td>
+          </tr>
+          <tr>
+            <td>12:30~13:30</td>
+            <td colspan="3">Lunch</td>
+          </tr>
+          <tr>
+            <td rowspan="2">13:30~14:10</td>
+            <td class="session">How the node.js event loop works</td>
+            <td class="session">몇대몇, IoT기반 휴대용 점수판 개발 이야기</td>
+            <td class="session">클라우드를 활용한 글로벌 서비스 개발 시 고려해야 할 사항들 - 그라비티 사례</td>
+          </tr>
+          <tr>
+            <td class="speaker">Bert Belder / StrongLoop</td>
+            <td class="speaker"></td>
+            <td class="speaker"></td>
+          </tr>
+          <tr>
+            <td>14:20~15:00</td>
+            <td class="session">Loopback을 이용한 API 서버 구축</td>
+            <td class="session">한글 왓슨 API,  실제로 구현해보기</td>
+            <td class="session">Apache Spark으로 빅데이터 분석하기</td>
+          </tr>
+          <tr>
+            <td>15:10~15:50</td>
+            <td class="session">쉽게 끝내는 DevOps 7단계</td>
+            <td class="session">IoT의 결정판, Connected Car를 소개합니다</td>
+            <td class="session">왓슨으로 희귀포켓몬을 득템했다! 왓슨 시각인식 API 실행하기</td>
+          </tr>
+          <tr>
+            <td>16:00~16:40</td>
+            <td class="session">사람일까? 로봇일까? 자연어 대화 서비스 알아보기</td>
+            <td class="session">IBM Kitura : Swift로 개발하는 웹 서버</td>
+            <td class="session">사례로 살펴보는 클라우드 데이터 서비스의 모든 것</td>
+          </tr>
+          <tr>
+            <td>16:50~17:30</td>
+            <td class="session">Go언어 기반의 블럭체인 서비스 개발</td>
+            <td class="session">서버 없이 돌아가는 node.js</td>
+            <td class="session">클라우드 개발 환경과 애플리케이션 구축 패턴</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">play.node(); 2016 에서 발표자와 운영진을 모집 중 입니다.
-          <br>발표자 모집 기간은 10월 21일 까지이며 모집 기간 종료 후 일주일 이내에 선정 결과를 알려드립니다.
-          <br>
-          <br>운영진은 이번 행사 뿐만 아니라 앞으로의 행사를 기획하고 운영해 나갈 분들을 모시고자 합니다. 다음 분야에 전문성을 가진 분들을 우선적으로 찾고 있습니다.
-          <br>[영어], [디자인], [홍보]
-          <br>
-          <br>스폰서 문의는 <a href="mailto:playnodeconf@gmail.com">메일</a>로 해주시기 바랍니다. <a href="mailto:playnodeconf@gmail.com">playnodeconf@gmail.com</a>
-          <br><br>고맙습니다.
-          </p>
-          <img src="/assets/images/github_icon.png" alt="Github" onclick="location.href='https://github.com/playnodeconf/ama';">
-          <img src="/assets/images/twitter_icon.png" alt="Twitter" onclick="location.href='https://twitter.com/playnodeconf';">
-          <img src="/assets/images/facebook_icon.png" alt="Facebook" onclick="location.href='https://www.facebook.com/playnodeconf';">
-        </div>
-      </div>
-
+  <section id="venue" class="dark wide">
+    <div class="body">
+      <h2>Venue</h2>
+      <h4 class="address">Address</h4>
+      <p>
+        135-907 서울시 강남구 봉은사로 120, 리츠칼튼 호텔 금강룸<br>
+        120, Bongeunsa-ro, Gangnam-ku, Seoul, Republic of Korea
+      </p>
+      <h4 class="map">Map</h4>
+      <div id="map" style="width:100%;height:408px;"></div>
+      <img src="/2016/img/polygon-left.png" srcset="/2016/img/polygon-left.png 1x, /2016/img/polygon-left@2x.png 2x" class="bg">
     </div>
-  </div>
+  </section>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Connect</h5>
-        </div>
-      </div>
+  <section id="sponsors" class="wide">
+    <div class="body">
+      <img src="/2016/img/ibm.png" srcset="/2016/img/ibm.png 1x, /2016/img/ibm@2x.png 2x">
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+  </section>
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About Us</h5>
-          <p class="grey-text text-lighten-4">playnode는 국내 node.js community의 주최로 2012년 11월 20일에 처음으로 열린 node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">History</h5>
-          <ul>
-            <li><a class="white-text" href="../2012/index.html">2012</a></li>
-            <li><a class="white-text" href="../index.html">2015</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://github.com/playnodeconf/ama">Github</a></li>
-            <li><a class="white-text" href="https://twitter.com/playnodeconf">Twitter</a></li>
-            <li><a class="white-text" href="https://www.facebook.com/playnodeconf">Facebook</a></li>
-            <li><a class="white-text" href="mailto:playnodeconf@gmail.com">E-Mail</a></li>
-          </ul>
-        </div>
-      </div>
+  <footer id="contactus">
+    <div class="contactus">
+      <img src="/2016/img/playnode.png" srcset="/2016/img/playnode.png 1x, /2016/img/playnode@2x.png 2x" class="logo">
+      <h6>Contact us</h6>
+      <span><a href="https://github.com/playnodeconf/ama">Ask anything here</a></span>
+      <span>
+        <a href="https://twitter.com/playnodeconf">
+          <img src="/2016/img/twitter.png" srcset="/2016/img/twitter.png 1x, /2016/img/twitter@2x.png 2x">
+        </a>
+        <a href="https://github.com/playnodeconf">
+          <img src="/2016/img/github.png" srcset="/2016/img/github.png 1x, /2016/img/github@2x.png 2x">
+        </a>
+      </span>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+    <div class="developedby">
+      <h6>Site developed by</h6>
+      <a href="https://twitter.com/daclouds_">@daclouds_</a>
+      <a href="https://twitter.com/insanehong">@insanehong</a>
+      <a href="https://twitter.com/outsideris">@outsideris</a>
     </div>
+    <div class="designedby">
+      <h6>Site designed by</h6>
+      <span>Yoonji Lee</span>
+      <img src="/2016/img/polygon-right-2.png" srcset="/2016/img/polygon-right-2.png 1x, /2016/img/polygon-right-2@2x.png 2x" class="bg1">
+      <img src="/2016/img/polygon-left2.png" srcset="/2016/img/polygon-left2.png 1x, /2016/img/polygon-left2@2x.png 2x" class="bg2">
+    </div>
+    <div class="copyright">
+      Copyright © play.node 2016. All Rights Reserved.
+    </div>
+    <img src="/2016/img/polygon-right-1.png" srcset="/2016/img/polygon-right-1.png 1x, /2016/img/polygon-right-1@2x.png 2x" class="bg3">
   </footer>
 
-  <!--  Scripts-->
-  <script src="/assets/scripts/vendor.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-  <script src="js/materialize.js"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=3u2TPgI0Ite0WHU7pwS_"></script>
+  <script src="js/smooth-scroll.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
