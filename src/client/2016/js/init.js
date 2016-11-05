@@ -131,4 +131,18 @@
       el.className = 'desc';
     });
   });
+
+  // mobile nav
+  document.querySelector('nav h1').addEventListener('click', function(evt) {
+    if (!nav.classList.contains('on')) {
+      nav.className = 'on';
+    } else {
+      nav.className = '';
+    }
+  });
+  document.querySelector('nav ul').addEventListener('click', function(evt) {
+    if (nav.classList.contains('on')) {
+      nav.className = '';
+    }
+  });
 })();
