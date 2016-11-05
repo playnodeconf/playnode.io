@@ -21,12 +21,15 @@ nav {
   -ms-transition: background-color 500ms linear, color 500ms linear;
   transition: background-color 500ms linear, color 500ms linear;
 }
+nav h1 {
+  display: none;
+}
 nav ul {
   list-style: none;
   text-align: center;
   margin-top: 14px;
+  padding-left: 0;
 }
-
 nav ul li {
   display: inline-block;
   margin: 0 38px;
@@ -44,6 +47,59 @@ nav.dark ul li a {
 }
 nav.dark ul li.on a {
   color: #2e3031;
+}
+@media screen and (max-width: 700px) {
+  nav ul li {
+    margin: 0 25px;
+  }
+}
+@media screen and (max-width: 570px) {
+  nav.dark {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  nav h1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    background-color: #1b272d;
+    border-bottom: 1px solid #283840;
+    font-size: 16px;
+    line-height: 50px;
+    position: relative;
+    z-index: 999;
+  }
+  nav h1 .fold-arrow {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    margin-left: -52px;
+  }
+  nav ul {
+    padding-left: 0;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: -223px;
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 38px;
+    width: 100%;
+    background-color: #121e24;
+    border: solid 1px #283840;
+    line-height: 50px;
+    font-size: 16px;
+    margin: 0;
+  }
+  nav.on ul {
+    top: 36px;
+  }
+  nav.on h1 .fold-arrow {
+    display: none;
+
+  }
 }
 
 h2 {
@@ -63,6 +119,16 @@ section.wide .body{
   width: 770px;
   margin: 0 auto;
 }
+@media screen and (max-width: 830px) {
+  section.wide .body{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.wide .body{
+    width: 85%;
+  }
+}
 section.dark {
   background-color: #1b2931;
   color: #fff;
@@ -77,7 +143,7 @@ section.dark {
 }
 #breadcrumb h1 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 50px;
 }
 #breadcrumb h2 {
@@ -94,6 +160,9 @@ section.dark {
 #breadcrumb .polygon-right {
   margin-left: -141px;
   vertical-align: top;
+}
+#breadcrumb .polygon-mobile {
+  display: none;
 }
 #breadcrumb a.attend, #breadcrumb a.attend:visited {
   color: #fff;
@@ -123,15 +192,44 @@ section.dark {
 #breadcrumb .scroll-down:before {
   content: "";
   background-image: url('../img/scroll-down.png');
-  width: 39px;
-  height: 19px;
+  width: 20px;
+  height: 10px;
   display: block;
   margin: 0 auto 10px;
 }
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
   #breadcrumb .scroll-down:before {
     background-image: url('../img/scroll-down@2x.png');
-    background-size: 39px 19px;
+    background-size: 20px 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #breadcrumb {
+    padding-top: 151px;
+    height: 75%;
+  }
+  #breadcrumb h1 {
+    font-size: 16px;
+    margin-top: 36px;
+  }
+  #breadcrumb h2 {
+    font-size: 14px;
+    margin: 36px 0 28px;
+  }
+  #breadcrumb .main-logo, #breadcrumb .polygon-left, #breadcrumb .polygon-right {
+    display: none;
+  }
+  #breadcrumb .polygon-mobile {
+    display: inline-block;
+  }
+  #breadcrumb a.attend, #breadcrumb a.attend:visited {
+    font-size: 14px;
+    padding: 11px 44px;
+  }
+  #breadcrumb a.scroll-down {
+    font-size: 10px;
+    margin-left: -25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -151,12 +249,45 @@ section.dark {
 #about p {
   margin: 30px 0;
 }
-#about img {
+#about .logo {
   margin-left: 20px;
   margin-bottom: 41px;
 }
+#about .logo-mobile {
+  display: none;
+}
 #about a, #about a:visited {
   color: #3d83e1;
+}
+@media screen and (max-width: 830px) {
+  #about p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  #about {
+    padding: 89px 0 40px;
+    background-image: url('../img/m-img-logo-playnode-grey.png');
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
+    #about {
+      background-image: url('../img/m-img-logo-playnode-grey@2x.png');
+      background-size: 197px 227px;
+    }
+  }
+  #about .logo {
+    display: none;
+  }
+  #about .logo-mobile {
+    display: inline-block;
+  }
+  #about .body {
+    text-align: center;
+  }
+  #about p {
+    text-align: left;
+    font-size: 13px;
+  }
 }
 
 #speakers {
@@ -243,7 +374,7 @@ section.dark {
 }
 #speakers ul li .detail {
   width: 560px;
-  height: 95px;
+  min-height: 95px;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -267,6 +398,60 @@ section.dark {
 #speakers ul li .detail.right {
   margin-left: -470px;
 }
+@media screen and (max-width: 768px) {
+  #speakers ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  #speakers ul li {
+    margin: 0 auto 20px;
+    width: 48%;
+  }
+
+  #speakers ul li .detail {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  #speakers ul li .detail.center {
+    margin-left: 0;
+  }
+
+  #speakers ul li .detail.right {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #speakers {
+    background-image: url('../img/m-polygon-center.png');
+    padding: 83px 0 50px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
+    #speakers {
+      background-image: url('../img/m-polygon-center@2x.png');
+      background-size: 275px 317px;
+    }
+  }
+  #speakers h2 {
+    font-size: 14px;
+  }
+  #speakers ul {
+    margin-top: 45px;
+  }
+  #speakers ul li {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+  #speakers .who {
+    font-size: 13px;
+  }
+  #speakers .company {
+    font-size: 13px;
+  }
+}
 
 #schedule {
   background-color: #fafcfc;
@@ -276,7 +461,6 @@ section.dark {
   width: 820px;
 }
 #schedule h2 {
-  padding-left: 27px;
   margin-bottom: 36px;
 }
 #schedule h2:before {
@@ -301,6 +485,7 @@ section.dark {
   text-align: center;
   font-size: 14px;
   margin-bottom: 62px;
+  table-layout: fixed;
 }
 #schedule table thead tr {
   background-color: #1a405c;
@@ -312,6 +497,9 @@ section.dark {
 #schedule table td {
   border: 2px solid #fafcfc;
   padding: 15px 26px;
+}
+#schedule table td.time {
+  width: 130px;
 }
 #schedule table td.session {
   padding: 15px 38px;
@@ -356,6 +544,60 @@ section.dark {
 }
 #schedule .desc p {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 860px) {
+  #schedule .body {
+    width: 90%;
+  }
+  #schedule .desc {
+    width: 90%;
+    margin-left: -45%;
+    top: 40%;
+  }
+  #schedule table td.time {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #schedule {
+    padding: 104px 0 51px;
+  }
+  #schedule .body {
+    width: 85%;
+  }
+  #schedule h2 {
+    font-size: 14px;
+    margin-bottom: 23px;
+  }
+  #schedule table {
+    margin-bottom: 30px;
+  }
+  #schedule table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+  #schedule table thead td {
+    font-size: 12px;
+  }
+  #schedule table td.time {
+    width: 50px;
+  }
+  #schedule table td.session {
+    padding: 5px;
+    font-size: 10px;
+  }
+  #schedule table td.speaker {
+    font-size: 10px;
+  }
+  #schedule .desc {
+    width: 94%;
+    left: 50%;
+    margin-left: -47%;
+    padding: 20px 25px;
+  }
+  #schedule .desc h5, #schedule .desc p {
+    font-size: 11px;
+  }
 }
 
 #venue {
@@ -403,11 +645,60 @@ section.dark {
   right: 50%;
   margin-right: -700px;
 }
+@media screen and (max-width: 640px) {
+  #venue {
+    padding: 90px 0 100px;
+    background-color: #263137;
+  }
+  #venue h2 {
+    font-size: 14px;
+  }
+  #venue h2 {
+    margin-bottom: 76px;
+  }
+  #venue h4 {
+    font-size: 13px;
+  }
+  #venue p {
+    font-size: 11px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #venue h4.address {
+    margin-bottom: 20px;
+  }
+  #venue h4.map {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #venue .bg {
+    margin-right: 0;
+    right: 0;
+    left: 70%;
+  }
+}
 
 #sponsors {
   background-color: #1b2931;
-  padding: 210px 0 162px;
+  padding: 210px 0 62px;
   text-align: center;
+}
+#sponsors .sponsor {
+  display: inline-block;
+}
+#sponsors .sponsor-mobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  #sponsors {
+    padding: 117px 0 42px;
+  }
+  #sponsors .sponsor {
+    display: none;
+  }
+  #sponsors .sponsor-mobile {
+    display: inline-block;
+  }
 }
 
 footer {
@@ -416,6 +707,8 @@ footer {
   min-height: 340px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+  padding-top: 100px;
 }
 footer h6 {
   font-size: 16px;
@@ -482,11 +775,16 @@ footer .designedby .bg1 {
   position: absolute;
   top: -76px;
   left: -32px;
+  display: inline-block;
 }
 footer .designedby .bg2 {
   position: absolute;
   top: 11px;
   left: 44px;
+  display: inline-block;
+}
+footer .designedby .bg1-mobile, footer .designedby .bg2-mobile, footer .bg3-mobile {
+  display: none;
 }
 footer a {
   font-size: 14px;
@@ -505,6 +803,89 @@ footer .bg3 {
   bottom: 0;
   left: 50%;
   margin-left: -650px;
+}
+@media screen and (max-width: 940px) {
+  footer .contactus {
+    width: 140px;
+    margin-left: 50px;
+  }
+  footer .developedby {
+    width: 100px;
+    margin-left: 40px;
+  }
+  footer .designedby {
+    width: 150px;
+    margin-left: 100px;
+  }
+  footer .bg3 {
+    margin-left: -500px;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer .developedby {
+    margin-left: 20px;
+  }
+  footer .designedby {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 540px) {
+  footer {
+    text-align: left;
+    min-height: 290px;
+  }
+  footer .contactus {
+    display: block;
+    margin-left: 80px;
+    border: none;
+    height: 115px;
+  }
+  footer h6 {
+    font-size: 13px;
+  }
+  footer a {
+    font-size: 12px;
+  }
+  footer .developedby {
+    margin-left: 80px;
+    width: auto;
+  }
+  footer .developedby a {
+    margin-bottom: 5px;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .designedby {
+    margin-left: 5%;
+    width: 120px;
+    font-size: 12px;
+  }
+  footer .designedby .bg1, footer .designedby .bg2, footer .bg3 {
+    display: none;
+  }
+  footer .designedby .bg1-mobile {
+    display: inline-block;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+  }
+  footer .designedby .bg2-mobile {
+    position: absolute;
+    top: -26px;
+    left: 56px;
+    display: inline-block;
+  }
+  footer .bg3-mobile {
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    display: inline-block;
+  }
+  footer .copyright {
+    font-size: 9px;
+    bottom: 15px;
+  }
 }
 
 .overlay {
