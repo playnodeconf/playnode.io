@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font: 18px 'Noto Sans', 'Noto Sans KR', 'Apple SD Gothic Neo','AppleSDGothicNeo','Malgun Gothic','맑은 고딕',dotum,'돋움','Times New Roman',Times,serif;
+  font: 18px 'Source Sans Pro', 'Noto Sans KR', 'Apple SD Gothic Neo','AppleSDGothicNeo','Malgun Gothic','맑은 고딕',dotum,'돋움','Times New Roman',Times,serif;
   font-weight: 400;
   color: #1D2523;
   background-color: #fff;
@@ -11,24 +11,39 @@ body {
 
 nav {
   width: 100%;
-  height: 70px;
+  height: 51px;
   position: fixed;
   color: #fff;
   z-index: 100;
+  -webkit-transition: background-color 500ms linear, color 500ms linear;
+  -moz-transition: background-color 500ms linear, color 500ms linear;
+  -o-transition: background-color 500ms linear, color 500ms linear;
+  -ms-transition: background-color 500ms linear, color 500ms linear;
+  transition: background-color 500ms linear, color 500ms linear;
 }
 nav ul {
   list-style: none;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 14px;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0 69.7px;
+  margin: 0 38px;
 }
 nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+nav.dark {
+  background-color: #fff;
+  border-bottom: solid 2px #eaefef;
+}
+nav.dark ul li a {
+  color: #a6aeae;
+}
+nav.dark ul li.on a {
+  color: #2e3031;
 }
 
 h2 {
@@ -45,7 +60,7 @@ section.wide {
   width: 100%;
 }
 section.wide .body{
-  width: 970px;
+  width: 770px;
   margin: 0 auto;
 }
 section.dark {
@@ -66,16 +81,19 @@ section.dark {
   margin-top: 50px;
 }
 #breadcrumb h2 {
-  margin: 90px 0 45px;
+  margin: 94px 0 50px;
 }
 #breadcrumb .main-logo {
   position: relative;
+  margin-top: 10px;
 }
 #breadcrumb .polygon-left {
   margin-right: -141px;
+  vertical-align: top;
 }
 #breadcrumb .polygon-right {
   margin-left: -141px;
+  vertical-align: top;
 }
 #breadcrumb a.attend, #breadcrumb a.attend:visited {
   color: #fff;
@@ -94,11 +112,12 @@ section.dark {
 #breadcrumb a.scroll-down {
   display: block;
   margin-bottom: 40px;
-  margin-left: -50px;
+  margin-left: -35px;
   position: absolute;
   left: 50%;
   bottom: 0;
   color: #fff;
+  font-size: 14px;
   text-decoration: none;
 }
 #breadcrumb .scroll-down:before {
@@ -129,9 +148,12 @@ section.dark {
     background-size: 246px 284px;
   }
 }
+#about p {
+  margin: 30px 0;
+}
 #about img {
-  margin-left: -30px;
-  margin-bottom: 54px;
+  margin-left: 20px;
+  margin-bottom: 41px;
 }
 #about a, #about a:visited {
   color: #3d83e1;
@@ -140,7 +162,7 @@ section.dark {
 #speakers {
   background-image: url('../img/polygon-center.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 350px;
   padding: 127px 0 111px;
 }
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
@@ -175,9 +197,17 @@ section.dark {
   width: 150px;
   display: inline-block;
   margin: 0 45px 20px;
+  cursor: pointer;
+  vertical-align: top;
 }
 #speakers ul li.last {
   float: right;
+}
+#speakers ul:after {
+  content: "";
+  clear: both;
+  display: block;
+
 }
 #speakers img.profile {
   display: inline-block;
@@ -199,7 +229,43 @@ section.dark {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 8px solid #3d83e1;
+  border-bottom: none;
   display: inline-block;
+  -webkit-transition: border 100ms linear;
+  -moz-transition: border 100ms linear;
+  -o-transition: border 100ms linear;
+  -ms-transition: border 100ms linear;
+  transition: border 100ms linear;
+}
+.triangle.on {
+  border-top: none;
+  border-bottom: 8px solid #efeff2;
+}
+#speakers ul li .detail {
+  width: 560px;
+  height: 95px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: #efeff2;
+  padding: 20px 30px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #2e3031;
+  margin-top: 10px;
+  display: none;
+  text-align: left;
+}
+#speakers ul li .detail.on {
+  display: block;
+}
+#speakers ul li .detail.center {
+  margin-left: -230px;
+}
+#speakers ul li .detail.right {
+  margin-left: -470px;
 }
 
 #schedule {
@@ -207,7 +273,7 @@ section.dark {
   padding: 113px 0 63px;
 }
 #schedule .body {
-  width: 1024px;
+  width: 820px;
 }
 #schedule h2 {
   padding-left: 27px;
@@ -249,6 +315,7 @@ section.dark {
 }
 #schedule table td.session {
   padding: 15px 38px;
+  cursor: pointer;
 }
 #schedule table td.session:hover {
   background-color: #e1e1e6;
@@ -256,13 +323,48 @@ section.dark {
 #schedule table td.speaker {
   padding: 5px;
 }
+#schedule table td.speaker.hover {
+  background-color: #e1e1e6;
+}
+#schedule .desc {
+  width: 704px;
+  min-height: 280px;
+  background-color: #fafcfc;
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  margin-left: -352px;
+  margin-top: -140px;
+  border-radius: 4px;
+  border-left: 6px solid #1a405c;
+  text-align: left;
+  padding: 30px 40px;
+  color: #2e3031;
+  box-sizing: border-box;
+  display: none;
+}
+#schedule .desc.on {
+  display: block;
+}
+
+#schedule .desc h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a405c;
+  margin: 0 0 8px 0;
+}
+#schedule .desc p {
+  margin-bottom: 20px;
+}
 
 #venue {
   padding: 121px 0 70px;
   position: relative;
+  overflow: hidden;
 }
 #venue h2 {
-  margin-bottom: 85px;
+  margin-bottom: 88px;
 }
 #venue h2:before {
   content: "";
@@ -274,7 +376,7 @@ section.dark {
   vertical-align: middle;
 }
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
-  #schedule h2:before {
+  #venue h2:before {
     background-image: url('../img/venue@2x.png');
     background-size: 27px 36px;
   }
@@ -284,11 +386,12 @@ section.dark {
   font-weight: 400;
 }
 #venue h4.address {
-  margin-bottom: 28px;
-}
-#venue h4.address {
   margin-top: 41px;
-  margin-bottom: 21px;
+  margin-bottom: 29px;
+}
+#venue h4.map {
+  margin-top: 58px;
+  margin-bottom: 22px;
 }
 #venue p {
   font-size: 14px;
@@ -296,7 +399,7 @@ section.dark {
 }
 #venue .bg {
   position: absolute;
-  top: 0;
+  top: -150px;
   right: 50%;
   margin-right: -700px;
 }
@@ -330,7 +433,7 @@ footer h6:before {
 }
 footer .contactus {
   height: 150px;
-  width: 192px;
+  width: 189px;
   display: inline-block;
   text-align: left;
   position: relative;
@@ -399,7 +502,21 @@ footer .copyright {
 }
 footer .bg3 {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 50%;
-  margin-left: -600px;
+  margin-left: -650px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.overlay.on {
+  display: block;
 }
