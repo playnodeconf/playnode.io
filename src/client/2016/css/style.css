@@ -77,7 +77,7 @@ section.dark {
 }
 #breadcrumb h1 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 50px;
 }
 #breadcrumb h2 {
@@ -123,15 +123,15 @@ section.dark {
 #breadcrumb .scroll-down:before {
   content: "";
   background-image: url('../img/scroll-down.png');
-  width: 39px;
-  height: 19px;
+  width: 20px;
+  height: 10px;
   display: block;
   margin: 0 auto 10px;
 }
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
   #breadcrumb .scroll-down:before {
     background-image: url('../img/scroll-down@2x.png');
-    background-size: 39px 19px;
+    background-size: 20px 10px;
   }
 }
 
@@ -276,7 +276,6 @@ section.dark {
   width: 820px;
 }
 #schedule h2 {
-  padding-left: 27px;
   margin-bottom: 36px;
 }
 #schedule h2:before {
@@ -406,7 +405,7 @@ section.dark {
 
 #sponsors {
   background-color: #1b2931;
-  padding: 210px 0 162px;
+  padding: 210px 0 62px;
   text-align: center;
 }
 
@@ -416,6 +415,8 @@ footer {
   min-height: 340px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+  padding-top: 100px;
 }
 footer h6 {
   font-size: 16px;
