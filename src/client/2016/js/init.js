@@ -55,24 +55,24 @@
     }
 
     if (top < aboutTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
     } else if (top >= aboutTop && top < speakersTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[0].className = "on";
     } else if (top >= speakersTop && top < scheduleTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[1].className = "on";
     } else if (top >= scheduleTop && top < venueTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[2].className = "on";
     } else if (top >= venueTop && top < sponsorsTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[3].className = "on";
     } else if (top >= speakersTop && top < contactusTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[4].className = "on";
     } else if (top >= contactusTop) {
-      navMenus.forEach(function(el) { el.className=""; });
+      Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[5].className = "on";
     }
 
@@ -99,7 +99,7 @@
   // speakers
   var deatilAll = document.querySelectorAll('#speakers li .detail');
   var triangleAll = document.querySelectorAll('#speakers li .triangle');
-  document.querySelectorAll('#speakers li').forEach(function(el) {
+  Array.prototype.forEach.call(document.querySelectorAll('#speakers li'), function(el) {
     el.addEventListener('click', function(evt) {
       var detail = el.querySelector('.detail');
       var oldClassNames = detail.className;
@@ -108,8 +108,8 @@
           detail.classList.remove("on");
           el.querySelector('.triangle').className = "triangle";
         } else {
-          deatilAll.forEach(function(el) { el.classList.remove("on"); });
-          triangleAll.forEach(function(el) { el.classList.remove("on"); });
+          Array.prototype.forEach.call(deatilAll, function(el) { el.classList.remove("on"); });
+          Array.prototype.forEach.call(triangleAll, function(el) { el.classList.remove("on"); });
           detail.className = oldClassNames + " on";
           el.querySelector('.triangle').className = "triangle on";
         }
@@ -118,7 +118,7 @@
   });
   // schedule
   var overlay = document.querySelector('.overlay');
-  document.querySelectorAll('.session').forEach(function(el) {
+  Array.prototype.forEach.call(document.querySelectorAll('.session'), function(el) {
     el.addEventListener('mouseover', function(evt) {
       if (el.parentNode.nextElementSibling) {
         var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
@@ -153,7 +153,7 @@
   var sessionDesc = document.querySelectorAll('.session .desc');
   overlay.addEventListener('click', function(evt) {
     overlay.className = 'overlay';
-    sessionDesc.forEach(function(el) {
+    Array.prototype.forEach.call(sessionDesc, function(el) {
       el.className = 'desc';
     });
   });
