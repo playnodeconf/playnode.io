@@ -72,7 +72,7 @@ nav.dark ul li.on a {
   }
   nav h1 .fold-arrow {
     position: absolute;
-    bottom: -14px;
+    bottom: -16px;
     left: 50%;
     margin-left: -52px;
   }
@@ -92,6 +92,10 @@ nav.dark ul li.on a {
     line-height: 50px;
     font-size: 16px;
     margin: 0;
+  }
+  nav ul li a {
+    width: 100%;
+    display: inline-block;
   }
   nav.on ul {
     top: 36px;
@@ -135,6 +139,7 @@ section.dark {
 }
 
 #breadcrumb {
+  min-height: 470px;
   height: 80%;
   padding-top: 200px;
   padding-bottom: 0;
@@ -852,6 +857,8 @@ footer .bg3 {
   }
   footer .developedby a {
     margin-bottom: 5px;
+    position: relative;
+    z-index: 50;
   }
   footer .copyright {
     text-align: center;
@@ -861,6 +868,10 @@ footer .bg3 {
     width: 120px;
     font-size: 12px;
   }
+  footer .developedby h6, footer .designedby h6, footer .designedby span {
+    position: relative;
+    z-index: 50;
+  }
   footer .designedby .bg1, footer .designedby .bg2, footer .bg3 {
     display: none;
   }
@@ -869,18 +880,21 @@ footer .bg3 {
     position: absolute;
     top: -60px;
     left: 20px;
+    z-index: 10;
   }
   footer .designedby .bg2-mobile {
     position: absolute;
     top: -26px;
     left: 56px;
     display: inline-block;
+    z-index: 10;
   }
   footer .bg3-mobile {
     position: absolute;
     bottom: -60px;
     left: -60px;
     display: inline-block;
+    z-index: 10;
   }
   footer .copyright {
     font-size: 9px;
