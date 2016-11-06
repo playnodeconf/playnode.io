@@ -11,7 +11,7 @@
     mapTypeControl: true,
     zoom: 12
   });
-  
+
   var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.504836, 127.027206),
     map: map
@@ -29,6 +29,18 @@
   var venueTop = document.querySelector('#venue').offsetTop - navHeight;
   var sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
   var contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+
+  setInterval(function() {
+    aboutTop = document.querySelector('#about').offsetTop - navHeight;
+    speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
+    scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
+    venueTop = document.querySelector('#venue').offsetTop - navHeight;
+    sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
+    contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+  }, 1000);
+
+  var speakersbg = document.querySelector('#speakers .bg-mobile');
+  var speakersbgClassNames = speakersbg.className;
 
   var navHandler = function() {
     var top = body.scrollTop;
@@ -62,6 +74,20 @@
     } else if (top >= contactusTop) {
       navMenus.forEach(function(el) { el.className=""; });
       navMenus[5].className = "on";
+    }
+
+    if (top > speakersTop + 67 && top < scheduleTop - 550) {
+      if (!speakersbg.classList.contains('show')) {
+        speakersbg.className = speakersbgClassNames + ' show';
+      }
+    } else if (top < scheduleTop - 67) {
+      if (speakersbg.classList.contains('show')) {
+        speakersbg.className = speakersbgClassNames;
+      }
+    } else if (top > scheduleTop - 550) {
+      if (speakersbg.classList.contains('show')) {
+        speakersbg.className = speakersbgClassNames;
+      }
     }
   };
 

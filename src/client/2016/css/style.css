@@ -307,6 +307,9 @@ section.dark {
     background-size: 538px 622px;
   }
 }
+#speakers .bg-mobile {
+  display: none;
+}
 #speakers h2:before {
   content: "";
   background-image: url('../img/speaker.png');
@@ -430,14 +433,24 @@ section.dark {
 }
 @media screen and (max-width: 576px) {
   #speakers {
-    background-image: url('../img/m-polygon-center.png');
+    background-image: none;
     padding: 83px 0 50px;
   }
-  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
-    #speakers {
-      background-image: url('../img/m-polygon-center@2x.png');
-      background-size: 275px 317px;
-    }
+  #speakers .bg-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 50%;
+    margin-left: -137px;
+    top: 200px;
+    z-index: 10;
+  }
+  #speakers .bg-mobile.show {
+    display: block;
+  }
+  #speakers .body {
+    position: relative;
+    z-index: 50;
   }
   #speakers h2 {
     font-size: 14px;
@@ -525,7 +538,7 @@ section.dark {
   background-color: #fafcfc;
   position: fixed;
   z-index: 10000;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-left: -352px;
   margin-top: -140px;
@@ -536,6 +549,8 @@ section.dark {
   color: #2e3031;
   box-sizing: border-box;
   display: none;
+  max-height: 70%;
+  overflow: auto;
 }
 #schedule .desc.on {
   display: block;
