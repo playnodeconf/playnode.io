@@ -525,7 +525,7 @@ section.dark {
   background-color: #fafcfc;
   position: fixed;
   z-index: 10000;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-left: -352px;
   margin-top: -140px;
@@ -536,6 +536,8 @@ section.dark {
   color: #2e3031;
   box-sizing: border-box;
   display: none;
+  max-height: 70%;
+  overflow: auto;
 }
 #schedule .desc.on {
   display: block;
