@@ -30,18 +30,6 @@
   var sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
   var contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
 
-  setInterval(function() {
-    aboutTop = document.querySelector('#about').offsetTop - navHeight;
-    speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
-    scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
-    venueTop = document.querySelector('#venue').offsetTop - navHeight;
-    sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
-    contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
-  }, 1000);
-
-  var speakersbg = document.querySelector('#speakers .bg-mobile');
-  var speakersbgClassNames = speakersbg.className;
-
   var navHandler = function() {
     var top = body.scrollTop;
     if (top > 100) {
@@ -74,20 +62,6 @@
     } else if (top >= contactusTop) {
       Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
       navMenus[5].className = "on";
-    }
-
-    if (top > speakersTop + 67 && top < scheduleTop - 550) {
-      if (!speakersbg.classList.contains('show')) {
-        speakersbg.className = speakersbgClassNames + ' show';
-      }
-    } else if (top < scheduleTop - 67) {
-      if (speakersbg.classList.contains('show')) {
-        speakersbg.className = speakersbgClassNames;
-      }
-    } else if (top > scheduleTop - 550) {
-      if (speakersbg.classList.contains('show')) {
-        speakersbg.className = speakersbgClassNames;
-      }
     }
   };
 
@@ -171,4 +145,13 @@
       nav.className = '';
     }
   });
+
+  setInterval(function() {
+    aboutTop = document.querySelector('#about').offsetTop - navHeight;
+    speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
+    scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
+    venueTop = document.querySelector('#venue').offsetTop - navHeight;
+    sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
+    contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+  }, 2000);
 })();
