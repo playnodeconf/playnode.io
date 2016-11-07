@@ -139,7 +139,7 @@ section.dark {
 }
 
 #breadcrumb {
-  min-height: 470px;
+  min-height: 740px;
   height: 80%;
   padding-top: 200px;
   padding-bottom: 0;
@@ -211,6 +211,7 @@ section.dark {
 @media screen and (max-width: 640px) {
   #breadcrumb {
     padding-top: 151px;
+    min-height: 470px;
     height: 75%;
   }
   #breadcrumb h1 {
@@ -683,6 +684,9 @@ section.dark {
   background-color: #1b2931;
   padding: 210px 0 62px;
   text-align: center;
+}
+#sponsors a {
+  display: inline-block;
 }
 #sponsors .sponsor {
   display: inline-block;
