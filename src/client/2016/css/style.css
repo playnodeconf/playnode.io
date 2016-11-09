@@ -183,6 +183,23 @@ section.dark {
 #breadcrumb a.attend:hover {
   background-color: rgba(254, 254, 254, 0.3);
 }
+#breadcrumb .desc {
+  display: block;
+  width: 70%;
+  margin: 35px auto;
+}
+#breadcrumb .desc br.mobile {
+  display: none;
+}
+#breadcrumb .desc a, #breadcrumb .desc a:visited {
+  color: #3d83e1;
+}
+@media screen and (max-width: 640px) {
+  #breadcrumb .desc {
+    font-size: 14px;
+    width: 80%;
+  }
+}
 #breadcrumb a.scroll-down {
   display: block;
   margin-bottom: 40px;
@@ -211,7 +228,7 @@ section.dark {
 @media screen and (max-width: 640px) {
   #breadcrumb {
     padding-top: 151px;
-    min-height: 470px;
+    min-height: 550px;
     height: 75%;
   }
   #breadcrumb h1 {
@@ -236,6 +253,9 @@ section.dark {
     font-size: 10px;
     margin-left: -25px;
     margin-bottom: 20px;
+  }
+  #breadcrumb .desc br.mobile{
+    display: block;
   }
 }
 
