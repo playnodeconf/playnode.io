@@ -1,4 +1,4 @@
-# Contributing to playnode.io 2015
+# Contributing to playnode.io 
 
 We welcome contributions of all kinds from anyone. We're actively looking for more contributors.
 
@@ -26,9 +26,9 @@ Features of all kinds requests are welcome.
 
 1. Fork and clone the repo.
    ```
-   git clone https://github.com/<your-username>/playnode.io-2015
-   cd playnode.io-2015
-   git remote add upstream https://github.com/playnodeconf/playnode.io-2015
+   git clone https://github.com/<your-username>/playnode.io
+   cd playnode.io
+   git remote add upstream https://github.com/playnodeconf/playnode.io
    ```
 
 2. Check out the master branch and Get the latest changes from upstream:
