@@ -1,6 +1,6 @@
-# playnode.io 2015 
+# playnode.io 
 
-playnode.io is playnode 2015 official web site.
+playnode.io is playnode official web site.
 
 ## Building
 
@@ -52,10 +52,10 @@ gulp release
 
 We welcome contributions of all kinds from anyone. We're actively looking for more contributors.
 
-Please See also [guidelines for contributing](https://github.com/playnodeconf/playnode.io-2015/blob/master/CONTRIBUTING.md).
+Please See also [guidelines for contributing](https://github.com/playnodeconf/playnode.io/blob/master/CONTRIBUTING.md).
 
 ## License
 
-Powered by playnodeconf  © 2015. Code licensed under the MIT. [See the detail](https://github.com/playnodeconf/playnode.io-2015/blob/master/LICENSE)
+Powered by playnodeconf  © 2015. Code licensed under the MIT. [See the detail](https://github.com/playnodeconf/playnode.io/blob/master/LICENSE)
 
 Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
