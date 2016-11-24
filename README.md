@@ -1,61 +1,39 @@
 # playnode.io 
 
-playnode.io is playnode official web site.
+[playnode.io](http://playnode.io) is the official web site.
 
 ## Building
 
-Developers can easily build using NPM and gulp.
+You can build and run this playnode.io site locally by following these steps.
 
-### Requirements
+1. You will need [Node.js](http://nodejs.org) to be preinstalled.
+2. Install `gulp` globally that is used to run the build script.
 
-Before you can build and test, you must install and configure the following products on your development machine:
+        npm install -g gulp
 
-- [Node.js](http://nodejs.org)
-- [NPM](https://www.npmjs.com)
+3. Install Node dependencies:
 
-### Installing NPM Modules
+        cd playnode.io
+        npm i
 
-Install the nodejs packages needed to build and test
-
-###gs Step1. globally installing package as follows:
-
-````
-npm install -g gulp or sudo npm install -g gulp
-````
-
-### Step2. Install adn update project dependencies as follows:
-
-````
-npm install
-npm update
-
-````
-
-### Development
-
-Next, Simply use `gulp dev` during development.
-
-````
-gulp dev
-````
+4. Run `gulp dev` during development.
 
 ## Release
 
-production build + gh-pages branch push (only build directory)
+Once you are ready to publish the changes, run:
 
-````
-gulp release
-````
-
+    gulp release
 
 ## Contributing
 
 We welcome contributions of all kinds from anyone. We're actively looking for more contributors.
 
-Please See also [guidelines for contributing](https://github.com/playnodeconf/playnode.io/blob/master/CONTRIBUTING.md).
+See [Contribution Guidelines](https://github.com/playnodeconf/playnode.io/blob/master/CONTRIBUTING.md) for details.
 
 ## License
 
-Powered by playnodeconf  © 2015. Code licensed under the MIT. [See the detail](https://github.com/playnodeconf/playnode.io/blob/master/LICENSE)
+Powered by playnodeconf © 2015.
+
+Code licensed under the [MIT](https://github.com/playnodeconf/playnode.io/blob/master/LICENSE).
 
 Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
