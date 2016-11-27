@@ -534,6 +534,9 @@ section.dark {
 #schedule table td.speaker.hover {
   background-color: #e1e1e6;
 }
+#schedule a.slide {
+  color: #3d83e1;
+}
 #schedule .desc {
   width: 704px;
   min-height: 280px;

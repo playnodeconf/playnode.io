@@ -113,7 +113,7 @@
     });
     el.addEventListener('click', function(evt) {
       var desc = el.querySelector('.desc');
-      if (desc) {
+      if (!evt.target.classList.contains('slide') && desc) {
         if (!desc.classList.contains('on')) {
           desc.className += ' on';
           overlay.className += ' on';
