@@ -45,7 +45,8 @@ section.dark {
 #intro {
   text-align: center;
   position: relative;
-  background-image: url("/2017/img/back-1@2x.png");
+  background-image: url("/2017/img/back-1.png");
+  background-size: auto 800px;
   background-repeat: repeat-x;
 }
 #intro img {
@@ -63,8 +64,7 @@ section.dark {
 #intro .main-logo {
   position: relative;
   margin-top: 66px;
-  width: 407px;
-  height: 127px;
+  width: 90%;
   object-fit: contain;
 }
 #intro .makenode {
@@ -74,6 +74,21 @@ section.dark {
   height: 202px;
   object-fit: contain;
 }
+@media screen and (min-width: 800px) {
+  #intro {
+    background-image: url("/2017/img/back-1@2x.png");
+    background-size: auto 916px;
+    background-repeat: repeat-x;
+  }
+  #intro .main-logo {
+    width: 647px;
+    height: 202px;
+  }
+  #intro .arrow {
+    background-color: #f6f6f6;
+  }
+}
+
 #cfs {
   margin-top: 141px;
 }
@@ -107,13 +122,17 @@ section.dark {
   background-color: #2d2b76;
   margin: 90px auto 0 auto;  
 }
-#cfs .apply .content {
+#cfs .apply a {
   display: table-cell;
   vertical-align: middle;
+  text-decoration: none;
+}
+#cfs .apply a .content {
+  color: white;
   font-size: 24.5px;
   line-height: 1.18px;
-  color: white;
 }
+
 @media screen and (max-width: 640px) {
   #intro .desc {
     font-size: 14px;
@@ -158,10 +177,6 @@ section.dark {
     font-size: 14px;
     margin: 36px 0 28px;
   }
-  #intro .main-logo {
-    width: 84.8%;
-    object-fit: contain;
-  }
   #intro .makenode {
     width: 298px;
     height: 166px;
@@ -194,25 +209,35 @@ footer div {
   /* display: table-cell; */
   vertical-align: middle;
 }
+footer .social {
+  margin-top: 64px;
+  text-align: center;
+}
+footer .social a ~ a {
+  margin-left: 33px;
+}
 footer .copyright {
   color: #525252;
   line-height: 40px;
   font-family: NanumSquareWeb;
   font-size: 18px;
-  /* margin-left: 80px; */
+  margin-top: 32px;
 }
-footer .social {
-  text-align: center;
-}
-footer .social img {
-  margin-left: 33px;
-}
-
 @media screen and (max-width: 540px) {
   footer {
     text-align: left;
   }
   footer .copyright {
     text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  #cfs .content {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  footer .copyright {
+    font-size: 14px;
   }
 }
