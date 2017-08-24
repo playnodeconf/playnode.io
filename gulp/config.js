@@ -7,8 +7,8 @@ var BUILD_DIR           = path.join(ROOT, 'build');
 var MODULE_DIR          = path.join(ROOT, 'node_modules');
 var SRC_DIR             = path.join(ROOT, 'src');
 var CLIENT_DIR          = path.join(SRC_DIR, 'client');
-var SCRIPTS_DIR         = path.join(CLIENT_DIR, '2015/scripts');
-var LESS_DIR            = path.join(CLIENT_DIR, '2015/styles');
+var SCRIPTS_DIR         = path.join(CLIENT_DIR, '2017/scripts');
+var LESS_DIR            = path.join(CLIENT_DIR, '2017/styles');
 var IMAGES_DIR          = path.join(CLIENT_DIR, 'images');
 var DOWNLOAD_DIR        = path.join(CLIENT_DIR, 'download');
 var ASSETS_DIR          = '2015/assets';
@@ -120,6 +120,26 @@ config.browsersync = {
   uiport: 3001
 };
 
+config.copy2012 = {
+  taskname: 'copy2012',
+  src: [
+    path.join(CLIENT_DIR, '2012/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2012')
+  }
+};
+
+config.copy2015 = {
+  taskname: 'copy2015',
+  src: [
+    path.join(CLIENT_DIR, '2015/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2015')
+  }
+};
+
 config.copy2016 = {
   taskname: 'copy2016',
   src: [
@@ -127,6 +147,16 @@ config.copy2016 = {
   ],
    dest: {
     build: path.join(BUILD_DIR, '2016')
+  }
+};
+
+config.copy2017 = {
+  taskname: 'copy2017',
+  src: [
+    path.join(CLIENT_DIR, '2017/**/*')
+  ],
+   dest: {
+    build: path.join(BUILD_DIR, '2017')
   }
 };
 
@@ -150,8 +180,8 @@ config.watch = {
       src: config.styles.all
     },
     {
-      task: config.copy2016.taskname,
-      src: config.copy2016.src
+      task: config.copy2017.taskname,
+      src: config.copy2017.src
     }
   ]
 };
@@ -173,26 +203,6 @@ config.copyfiles = {
   ],
    dest: {
     build: path.join(BUILD_DIR)
-  }
-};
-
-config.copy2012 = {
-  taskname: 'copy2012',
-  src: [
-    path.join(CLIENT_DIR, '2012/**/*')
-  ],
-   dest: {
-    build: path.join(BUILD_DIR, '2012')
-  }
-};
-
-config.copy2015 = {
-  taskname: 'copy2015',
-  src: [
-    path.join(CLIENT_DIR, '2015/**/*')
-  ],
-   dest: {
-    build: path.join(BUILD_DIR, '2015')
   }
 };
 
