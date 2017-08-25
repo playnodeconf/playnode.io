@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: NanumSquareWeb;
+  font-family: NanumSquare, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #1D2523;
   background-color: #f6f6f6;
@@ -94,7 +94,6 @@ section.dark {
 #cfs {
   position: relative;
   margin-top: 151px;
-  font-family: NanumSquareWeb;
   background-color: #f6f6f6;
   text-align: center;
 }
@@ -105,7 +104,6 @@ section.dark {
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
-  font-family: NanumSquareWeb;
   font-size: 20px;
   line-height: 40px;
 }
@@ -211,7 +209,6 @@ footer .social a ~ a {
 footer .copyright {
   color: #525252;
   line-height: 40px;
-  font-family: NanumSquareWeb;
   font-size: 18px;
   margin-top: 32px;
 }
