@@ -65,29 +65,22 @@ section.dark {
 }
 #intro .main-logo {
   position: relative;
-  margin-top: 66px;
-  width: 90%;
+  margin-top: 40px;
+  width: 60%;
   object-fit: contain;
 }
 #intro .makenode {
   margin-top: 143px;
   vertical-align: top;
-  width: 729px;
-  height: 202px;
+  width: 80%;
   object-fit: contain;
 }
 @media screen and (min-width: 800px) {
-  #intro {
-    background-image: url("/2017/img/back-1@2x.png");
-    background-size: auto 916px;
-    background-repeat: repeat-x;
-  }
   #intro .main-logo {
-    width: 647px;
-    height: 202px;
+    width: 40%;
   }
-  #intro .arrow {
-    background-color: #f6f6f6;
+  #intro .makenode {
+    width: 60%;
   }
 }
 
@@ -115,14 +108,13 @@ section.dark {
   font-family: NanumSquareWeb;
   font-size: 20px;
   line-height: 40px;
-  width: 352px;
 }
 #cfs .apply {
   display: table;
   width: 208px;
   height: 82px;
   background-color: #2d2b76;
-  margin: 90px auto 0 auto;  
+  margin: 90px auto 0 auto;
 }
 #cfs .apply a {
   display: table-cell;
@@ -180,8 +172,6 @@ section.dark {
     margin: 36px 0 28px;
   }
   #intro .makenode {
-    width: 298px;
-    height: 166px;
     object-fit: contain;
     margin-top: 131px;
   }
