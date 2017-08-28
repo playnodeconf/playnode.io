@@ -67,12 +67,14 @@ section.dark {
   position: relative;
   margin-top: 40px;
   width: 60%;
+  max-width: 450px;
   object-fit: contain;
 }
 #intro .makenode {
   margin-top: 143px;
   vertical-align: top;
   width: 80%;
+  max-width: 700px;
   object-fit: contain;
 }
 @media screen and (min-width: 800px) {
