@@ -90,8 +90,7 @@ section.dark {
   margin-top: 141px;
 }
 #cfs .title img {
-  width: 298px;
-  height: 32px;
+  width: 500px;
 }
 #cfs {
   position: relative;
@@ -131,6 +130,9 @@ section.dark {
   #intro .desc {
     font-size: 14px;
     width: 80%;
+  }
+  #cfs .title img {
+    width: 400px;
   }
 }
 #intro a.scroll-down {
