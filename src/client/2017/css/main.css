@@ -1,4 +1,5 @@
 body {
+  font-family: "Fugaz One", NanumSquare, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   position: relative;
   background: #2e2a76;
@@ -7,22 +8,64 @@ body {
   background: linear-gradient(to bottom, #2e2a76 0%,#2e2a76 42%,#352b76 45%,#423076 48%,#5a3e76 53%,#946680 64%,#dea397 73%,#efb29e 75%,#fcbda4 78%,#ffc5a9 80%,#ffd5b9 85%,#ffe3ce 90%,#fff4f0 95%,#fff7f5 97%,#fff7f5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2a76', endColorstr='#fff7f5',GradientType=0 );
 
-  font-family: 'Fugaz One';
   margin: 0;
   padding: 0;
 }
 
 section {
-  font-family: 'Fugaz One';
+  width: 320px;
   font-size: 34px;
   text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+pre {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  border-top: solid 2px #fbbda4;
+  border-bottom: solid 8px #fbbda4;
+}
+
+.logo {
+  margin-top: 137px;
+}
+
+.logo-thumb {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 28px;
+  right: 18px;
+
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-radius: 4px;
+  
+  border-top: 16px solid #2d2b76;
+}
+
+.intro_txt {
+  margin-top: 40px;
+  object-fit: contain;
   color: #ffffff;
 }
 
 .hexagon {
   margin: 0 auto;
   position: relative;
-  width: 70px; 
+  width: 70px;
   height: 42px;
   background-color: transparent;
   border-left: solid 2px white;
@@ -55,12 +98,6 @@ section {
   border-left: solid 2px white;
 }
 
-.intro_txt {
-  object-fit: contain;
-  font-family: 'Fugaz One';
-  color: #ffffff;
-}
-
 .apply {
   display: table;
   width: 208px;
@@ -81,19 +118,20 @@ section {
 }
 
 #about {
-  margin: 160px auto;
-  min-width: 320px;
-  min-height: 680px;
+  margin: 167px auto 0 auto;
 }
 
 #about img {
   display: block;
-  margin: 30px auto;
 }
 
 #about .title {
   position: absolute;
   left: -16px;
+}
+
+#speakers {
+  margin-top: 147px;
 }
 
 #speakers .title {
@@ -105,7 +143,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  margin: 40px auto;
+  margin-top: 40px;
 }
 
 #speakers .list > div {
@@ -127,19 +165,29 @@ section {
   font-size: 8pt;
 }
 
-.playnode {
+.play-node {
   width: 188px;
   height: 93px;
   object-fit: contain;
-  font-family: 'Fugaz One';
   font-size: 49.1px;
   line-height: 0.42;
   text-align: left;
   color: #ffffff;
 }
 
+.hexagon-png {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.makenode {
+  width: 229px;
+  height: 127px;
+  object-fit: contain;
+}
+
 .playnode-desc {
-  margin: 0 auto;
+  margin: 24px auto;
   width: 350px;
   height: 147px;
   font-family: NanumSquareR;
