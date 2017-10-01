@@ -167,6 +167,75 @@ pre {
   font-size: 8pt;
 }
 
+#schedule {
+  margin-top: 110px;
+}
+
+#schedule .subtitle {
+  display: inline-block;
+  margin-top: 43px;
+}
+
+#schedule .subtitle span {
+  font-family: "Fugaz One";
+  font-size: 22px;
+  line-height: 0.6;
+  text-align: left;
+  color: #2e2a76;
+}
+
+#schedule table {
+  font-family: "Fugaz One";
+  font-size: 18px;
+  line-height: 1.25;
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+#schedule table th {
+  width: 90px;
+  height: 40px;
+  background-color: #2e2a76;
+  color: white;
+}
+
+#schedule table td {
+  width: 90px;
+  height: 60px;
+  background-color: white;
+  color: #2e2a76;
+
+  margin-left: 12px;
+}
+
+#venue {
+  margin-top: 93px;
+}
+
+#sponsor {
+  margin-top: 147px;
+}
+
+#sponsor .ibm {
+  margin-top: 153px;
+}
+
+#contact {
+  margin-top: 247px;
+}
+
+#contact .playnode-desc {
+  margin-top: 40px;
+}
+
+#contact .email {
+  font-family: NanumSquareR;
+  font-size: 26px;
+  line-height: 0.8;
+  text-align: left;
+  color: #ffffff;
+}
+
 .play-node {
   width: 188px;
   height: 93px;
