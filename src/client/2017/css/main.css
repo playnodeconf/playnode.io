@@ -1,5 +1,5 @@
 body {
-  font-family: "Fugaz One", NanumSquare, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fugaz One", NanumSquare, SDGdGulim, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   position: relative;
   background: #2e2a76;
@@ -24,6 +24,12 @@ section {
 
 pre {
   margin: 0;
+}
+
+section .subtitle span {
+  font-size: 22px;
+  line-height: 0.6;
+  text-align: left;
 }
 
 .navbar {
@@ -212,6 +218,16 @@ pre {
   margin-top: 93px;
 }
 
+#venue .subtitle {
+  margin-top: 60px;
+}
+#venue .subtitle span {
+  color: #2e2a76;
+  font-family: SDGdGulim;
+  font-size: 22px;
+  line-height: 0.6;
+}
+
 #sponsor {
   margin-top: 147px;
 }
@@ -235,6 +251,33 @@ pre {
   text-align: left;
   color: #ffffff;
 }
+
+#contact .list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-top: 40px;
+}
+
+#contact .list > div {
+  display: block;
+  margin: 32px 16px;
+}
+
+#contact .list .hexagon .text {
+  position: relative;
+  top: 56px;
+  left: 34px;
+}
+
+#contact .list .hexagon .text .name {
+  font-size: 12pt;
+}
+
+#contact .list .hexagon .text .organization {
+  font-size: 8pt;
+}
+
 
 .play-node {
   width: 188px;
@@ -266,6 +309,32 @@ pre {
   line-height: 1.25;
   text-align: left;
   color: #ffffff;
+}
+
+.desc-purple {
+  margin: 24px auto;
+  object-fit: contain;
+  font-family: SDGdGulim;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #2e2a76;
+}
+
+.map {
+  width: 320px;
+  height: 476px;
+  background-color: white;
+}
+
+#contact .subtitle {
+  margin-top: 109px;
+}
+
+#contact .makenode {
+  margin-top: 287px;
+  width: 298px;
+  height: 166px;
 }
 
 footer {
