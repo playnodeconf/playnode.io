@@ -14,6 +14,14 @@ body {
   height: 7500px;
 }
 
+.menu {
+  display: none;
+}
+
+.intro_png {
+  display: none;
+}
+
 section {
   width: 320px;
   font-size: 34px;
@@ -22,8 +30,18 @@ section {
   margin: 0 auto;
 }
 
+/* section .title {
+  margin: 0 auto;
+  width: 87px;
+  height: 98px;
+} */
+
 pre {
   margin: 0;
+}
+
+section .subtitle img {
+  vertical-align: middle;
 }
 
 section .subtitle span {
@@ -129,13 +147,13 @@ section .subtitle span {
   margin: 167px auto 0 auto;
 }
 
-#about img {
-  display: block;
-}
-
 #about .title {
   position: absolute;
   left: -16px;
+}
+
+#about img {
+  display: block;
 }
 
 #speakers {
@@ -151,7 +169,7 @@ section .subtitle span {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 
 #speakers .list > div {
@@ -175,6 +193,11 @@ section .subtitle span {
 
 #schedule {
   margin-top: 110px;
+}
+
+#schedule .title {
+  position: absolute;
+  left: -48px;
 }
 
 #schedule .subtitle {
@@ -218,6 +241,11 @@ section .subtitle span {
   margin-top: 93px;
 }
 
+#venue .title {
+  position: absolute;
+  left: -16px;
+}
+
 #venue .subtitle {
   margin-top: 60px;
 }
@@ -232,12 +260,22 @@ section .subtitle span {
   margin-top: 147px;
 }
 
+#sponsor .title {
+  position: absolute;
+  left: -32px;
+}
+
 #sponsor .ibm {
   margin-top: 153px;
 }
 
 #contact {
   margin-top: 247px;
+}
+
+#contact .title {
+  position: absolute;
+  left: -32px;
 }
 
 #contact .playnode-desc {
@@ -289,8 +327,12 @@ section .subtitle span {
   color: #ffffff;
 }
 
+.horizontal-line {
+  height: 1px;
+  border: solid 2px #ffffff;
+}
+
 .hexagon-png {
-  width: 100%;
   margin: 24px 0;
 }
 
@@ -366,4 +408,103 @@ footer .copyright {
   line-height: 40px;
   font-size: 18px;
   margin-top: 32px;
+}
+
+@media screen and (min-width: 960px) {
+  section {
+    width: 960px;
+  }
+
+  /* section .title {
+    width: 122px;
+    height: 140px;
+  } */
+
+  .arrow-down {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 27px;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #2e2a76;
+  }
+
+  .logo {
+    width: 316px;
+    height: 345px;
+    margin-top: 90px;
+  }
+
+  .intro_txt {
+    display: none;
+  }
+
+  .intro_png {
+    display: block;
+    margin: 24px auto;
+  }
+
+  .play-node {
+    width: 325px;
+    height: 160px;
+    float: left;
+  }
+
+  .playnode-desc {
+    float: right;
+  }
+
+  .makenode {
+    width: 382px;
+    height: 214px;
+  }
+
+  #speakers .list {
+    width: 960px;
+    margin-top: 71px;
+  }
+
+  #speakers .list .hexagon {
+    width: 143px;
+    height: 84px;
+    margin: 0px 40px 95px;
+  }
+
+  #speakers .list .hexagon:before,
+  #speakers .list .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    /* -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg); */
+    background-color: inherit;
+    left: 21px;
+  }
+
+  #speakers .list .hexagon:before {
+    top: -50px;
+    border-top: solid 2px white;
+    border-right: solid 2px white;
+  }
+  
+  #speakers .list .hexagon:after {
+    bottom: -50px;
+    border-bottom: solid 2px white;
+    border-left: solid 2px white;
+  }
 }
