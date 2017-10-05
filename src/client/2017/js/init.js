@@ -4,7 +4,7 @@
 
   // map
   var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(37.504836, 127.027206),
+    center: new naver.maps.LatLng(37.5048160, 127.0271528),
     scaleControl: true,
     zoomControl: true,
     scrollWheel: false,
@@ -13,7 +13,7 @@
   });
 
   var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.504836, 127.027206),
+    position: new naver.maps.LatLng(37.5048160, 127.0271528),
     map: map
   });
 
@@ -27,20 +27,20 @@
   var speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
   var scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
   var venueTop = document.querySelector('#venue').offsetTop - navHeight;
-  var sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
-  var contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+  var sponsorsTop = document.querySelector('#sponsor').offsetTop - navHeight;
+  var contactusTop = document.querySelector('#contact').offsetTop - navHeight;
 
   var navHandler = function() {
     var top = body.scrollTop;
-    if (top > 100) {
-      if (nav.className === "") {
-        nav.className = "dark";
-      }
-    } else {
-      if (nav.className === "dark") {
-        nav.className = "";
-      }
-    }
+    // if (top > 100) {
+    //   if (nav.className === "") {
+    //     nav.className = "dark";
+    //   }
+    // } else {
+    //   if (nav.className === "dark") {
+    //     nav.className = "";
+    //   }
+    // }
 
     if (top < aboutTop) {
       Array.prototype.forEach.call(navMenus, function(el) { el.className = ""; });
@@ -91,67 +91,67 @@
     });
   });
   // schedule
-  var overlay = document.querySelector('.overlay');
-  Array.prototype.forEach.call(document.querySelectorAll('.session'), function(el) {
-    el.addEventListener('mouseover', function(evt) {
-      if (el.parentNode.nextElementSibling) {
-        var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
-        if (speakers.length > 0) {
-          var index = el.getAttribute('data-order');
-          speakers[index].className += ' hover';
-        }
-      }
-    });
-    el.addEventListener('mouseout', function(evt) {
-      if (el.parentNode.nextElementSibling) {
-        var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
-        if (speakers.length > 0) {
-          var index = el.getAttribute('data-order');
-          speakers[index].classList.remove('hover');
-        }
-      }
-    });
-    el.addEventListener('click', function(evt) {
-      var desc = el.querySelector('.desc');
-      if (!evt.target.classList.contains('slide') && desc) {
-        if (!desc.classList.contains('on')) {
-          desc.className += ' on';
-          overlay.className += ' on';
-        } else {
-          desc.classList.remove('on');
-          overlay.className = 'overlay';
-        }
-      }
-    });
-  });
-  var sessionDesc = document.querySelectorAll('.session .desc');
-  overlay.addEventListener('click', function(evt) {
-    overlay.className = 'overlay';
-    Array.prototype.forEach.call(sessionDesc, function(el) {
-      el.className = 'desc';
-    });
-  });
-
+  // var overlay = document.querySelector('.overlay');
+  // Array.prototype.forEach.call(document.querySelectorAll('.session'), function(el) {
+  //   el.addEventListener('mouseover', function(evt) {
+  //     if (el.parentNode.nextElementSibling) {
+  //       var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
+  //       if (speakers.length > 0) {
+  //         var index = el.getAttribute('data-order');
+  //         speakers[index].className += ' hover';
+  //       }
+  //     }
+  //   });
+  //   el.addEventListener('mouseout', function(evt) {
+  //     if (el.parentNode.nextElementSibling) {
+  //       var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
+  //       if (speakers.length > 0) {
+  //         var index = el.getAttribute('data-order');
+  //         speakers[index].classList.remove('hover');
+  //       }
+  //     }
+  //   });
+  //   el.addEventListener('click', function(evt) {
+  //     var desc = el.querySelector('.desc');
+  //     if (!evt.target.classList.contains('slide') && desc) {
+  //       if (!desc.classList.contains('on')) {
+  //         desc.className += ' on';
+  //         overlay.className += ' on';
+  //       } else {
+  //         desc.classList.remove('on');
+  //         overlay.className = 'overlay';
+  //       }
+  //     }
+  //   });
+  // });
+  // var sessionDesc = document.querySelectorAll('.session .desc');
+  // overlay.addEventListener('click', function(evt) {
+  //   overlay.className = 'overlay';
+  //   Array.prototype.forEach.call(sessionDesc, function(el) {
+  //     el.className = 'desc';
+  //   });
+  // });
+  // 
   // mobile nav
-  document.querySelector('nav h1').addEventListener('click', function(evt) {
-    if (!nav.classList.contains('on')) {
-      nav.className = 'on';
-    } else {
-      nav.className = '';
-    }
-  });
-  document.querySelector('nav ul').addEventListener('click', function(evt) {
-    if (nav.classList.contains('on')) {
-      nav.className = '';
-    }
-  });
-
-  setInterval(function() {
-    aboutTop = document.querySelector('#about').offsetTop - navHeight;
-    speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
-    scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
-    venueTop = document.querySelector('#venue').offsetTop - navHeight;
-    sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
-    contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
-  }, 2000);
+  // document.querySelector('nav h1').addEventListener('click', function(evt) {
+  //   if (!nav.classList.contains('on')) {
+  //     nav.className = 'on';
+  //   } else {
+  //     nav.className = '';
+  //   }
+  // });
+  // document.querySelector('nav ul').addEventListener('click', function(evt) {
+  //   if (nav.classList.contains('on')) {
+  //     nav.className = '';
+  //   }
+  // });
+  // 
+  // setInterval(function() {
+  //   aboutTop = document.querySelector('#about').offsetTop - navHeight;
+  //   speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
+  //   scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
+  //   venueTop = document.querySelector('#venue').offsetTop - navHeight;
+  //   sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
+  //   contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+  // }, 2000);
 })();
