@@ -23,7 +23,6 @@ body {
 }
 
 section {
-  width: 320px;
   font-size: 34px;
   text-align: center;
   color: #ffffff;
@@ -35,10 +34,6 @@ section {
   width: 87px;
   height: 98px;
 } */
-
-pre {
-  margin: 0;
-}
 
 section .subtitle img {
   vertical-align: middle;
@@ -145,6 +140,10 @@ section .subtitle span {
 
 #about {
   margin: 167px auto 0 auto;
+  background-image: url('/2017/img/hexagon.png');
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: 0% 56%;
 }
 
 #about .title {
@@ -172,27 +171,41 @@ section .subtitle span {
   margin: 40px auto 0;
 }
 
-#speakers .list > div {
+#speakers .list > .speaker {
   display: block;
-  margin: 32px 16px;
+  margin: 32px 10px;
+  width: 84px;
+  height: 95px;
 }
 
-#speakers .list .hexagon .text {
+#speakers .list .speaker .profile {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  -webkit-clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+
+#speakers .list .speaker .profile#imazine {
+  background-position-x: -58px;
+}
+
+#speakers .list .speaker .text {
   position: relative;
-  top: 56px;
-  left: 34px;
+  left: 26px;
 }
 
-#speakers .list .hexagon .text .name {
+#speakers .list .speaker .text .name {
   font-size: 12pt;
 }
 
-#speakers .list .hexagon .text .organization {
+#speakers .list .speaker .text .organization {
   font-size: 8pt;
 }
 
 #schedule {
   margin-top: 110px;
+  text-align: left;
 }
 
 #schedule .title {
@@ -202,7 +215,7 @@ section .subtitle span {
 
 #schedule .subtitle {
   display: inline-block;
-  margin-top: 43px;
+  margin: 43px 0 0 40px;
 }
 
 #schedule .subtitle span {
@@ -214,11 +227,18 @@ section .subtitle span {
 }
 
 #schedule table {
+  table-layout: fixed;
+  width: 320px;
   font-family: "Fugaz One";
   font-size: 18px;
   line-height: 1.25;
   text-align: center;
-  margin: 40px auto 0;
+  margin: 0 auto;
+  border-spacing: 11px 12px;
+}
+
+#schedule table .desc {
+  width: 300px;
 }
 
 #schedule table th {
@@ -286,7 +306,7 @@ section .subtitle span {
   font-family: NanumSquareR;
   font-size: 26px;
   line-height: 0.8;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -294,7 +314,7 @@ section .subtitle span {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
 }
 
 #contact .list > div {
@@ -316,10 +336,11 @@ section .subtitle span {
   font-size: 8pt;
 }
 
-
 .play-node {
   width: 188px;
   height: 93px;
+  margin-top: 53px;
+  margin-left: 77px;
   object-fit: contain;
   font-size: 49.1px;
   line-height: 0.42;
@@ -333,10 +354,14 @@ section .subtitle span {
 }
 
 .hexagon-png {
+  position: absolute;
+  left: 0;
   margin: 24px 0;
 }
 
-.makenode {
+#about .makenode {
+  margin-top: 110px;
+  margin-left: 200px;
   width: 229px;
   height: 127px;
   object-fit: contain;
@@ -354,6 +379,7 @@ section .subtitle span {
 }
 
 .desc-purple {
+  width: 320px;
   margin: 24px auto;
   object-fit: contain;
   font-family: SDGdGulim;
@@ -377,6 +403,7 @@ section .subtitle span {
   margin-top: 287px;
   width: 298px;
   height: 166px;
+  object-fit: contain;
 }
 
 footer {
@@ -408,6 +435,21 @@ footer .copyright {
   line-height: 40px;
   font-size: 18px;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 320px) {
+
+  #about .makenode {
+    margin-left: 75px;
+  }
+
+  .playnode-desc {
+    width: 320px;
+  }
+
+  #schedule table .desc {
+    width: 180px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -476,35 +518,20 @@ footer .copyright {
     margin-top: 71px;
   }
 
-  #speakers .list .hexagon {
-    width: 143px;
-    height: 84px;
-    margin: 0px 40px 95px;
+  #speakers .list > .speaker {
+    display: block;
+    margin: 32px 16px;
+    width: 145px;
+    height: 167px;
   }
 
-  #speakers .list .hexagon:before,
-  #speakers .list .hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    /* -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg); */
-    background-color: inherit;
-    left: 21px;
+  #speakers .list .speaker .profile#imazine {
+    background-position-x: -106px;
   }
 
-  #speakers .list .hexagon:before {
-    top: -50px;
-    border-top: solid 2px white;
-    border-right: solid 2px white;
-  }
-  
-  #speakers .list .hexagon:after {
-    bottom: -50px;
-    border-bottom: solid 2px white;
-    border-left: solid 2px white;
+  #speakers .list .speaker .text {
+    position: relative;
+    top: -14px;
+    left: 64px;
   }
 }
