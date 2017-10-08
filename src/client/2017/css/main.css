@@ -237,7 +237,7 @@ section .subtitle span {
   border-spacing: 11px 12px;
 }
 
-#schedule table .desc {
+#schedule table .content {
   width: 300px;
 }
 
@@ -255,6 +255,32 @@ section .subtitle span {
   color: #2e2a76;
 
   margin-left: 12px;
+}
+
+#schedule table td .desc {
+  display: none;
+  width: 300px;
+  min-height: 280px;
+  background-color: #fafcfc;
+  position: fixed;
+  z-index: 10000;
+  top: 40%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -138px;
+  border-radius: 4px;
+  border-left: 6px solid #1a405c;
+  text-align: left;
+  padding: 30px 40px;
+  color: #2e3031;
+  box-sizing: border-box;
+  display: none;
+  max-height: 70%;
+  overflow: auto;
+}
+
+#schedule table td .desc.on {
+  display: block;
 }
 
 #venue {
@@ -437,6 +463,20 @@ footer .copyright {
   margin-top: 32px;
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.overlay.on {
+  display: block;
+}
+
 @media screen and (max-width: 320px) {
 
   #about .makenode {
@@ -447,7 +487,7 @@ footer .copyright {
     width: 320px;
   }
 
-  #schedule table .desc {
+  #schedule table .content {
     width: 180px;
   }
 }
