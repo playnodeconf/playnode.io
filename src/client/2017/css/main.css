@@ -14,6 +14,10 @@ body {
   height: 7500px;
 }
 
+p {
+  font-size: 9pt;
+}
+
 .menu {
   display: none;
 }
@@ -142,8 +146,8 @@ section .subtitle span {
   margin: 167px auto 0 auto;
   background-image: url('/2017/img/hexagon.png');
   background-size: inherit;
-  background-repeat: no-repeat;
-  background-position: 0% 56%;
+  background-repeat: repeat-x;
+  background-position: center 56%;
 }
 
 #about .title {
@@ -263,6 +267,10 @@ section .subtitle span {
   border-spacing: 11px 12px;
 }
 
+#schedule table .timeslot {
+  width: 90px;
+}
+
 #schedule table .content {
   width: 300px;
 }
@@ -362,7 +370,7 @@ section .subtitle span {
   color: #ffffff;
 }
 
-#contact .list {
+#organizers {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
@@ -420,7 +428,7 @@ section .subtitle span {
   margin: 24px 0;
 }
 
-#about .makenode {
+#about .makenode img {
   margin-top: 110px;
   margin-left: 200px;
   width: 229px;
@@ -461,7 +469,10 @@ section .subtitle span {
 }
 
 #contact .makenode {
-  margin-top: 287px;
+  margin: 180px auto 0 auto;
+}
+
+#contact .makenode img {
   width: 298px;
   height: 166px;
   object-fit: contain;
@@ -573,19 +584,31 @@ footer .copyright {
     margin: 24px auto;
   }
 
+  #about {
+    background-image: url('/2017/img/horizontal-div.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 920px;
+  }
+
   .play-node {
     width: 325px;
     height: 160px;
     float: left;
   }
 
-  .playnode-desc {
+  #about .playnode-desc {
     float: right;
   }
 
-  .makenode {
+  #about .makenode img {
     width: 382px;
     height: 214px;
+    float: right;
+  }
+
+  #speakers {
+    margin-top: -40px;
   }
 
   #speakers .list {
@@ -608,5 +631,44 @@ footer .copyright {
     position: relative;
     top: -14px;
     left: 64px;
+  }
+
+  #schedule table .timeslot {
+    width: 225px;
+  }
+
+  #schedule table .content {
+    width: 600px;
+  }
+
+  #contact {
+    text-align: left;
+  }
+
+  #organizers {
+    width: 960px;
+  }
+
+  .organizer {
+    width: 117px;
+    height: 135px;
+  }
+
+  .organizer .text .name {
+    font-size: 24pt;
+  }
+  
+  .organizer .text .organization {
+    font-size: 14pt;
+  }
+
+  #contact .makenode {
+    text-align: center;
+  }
+
+  #contact .makenode img {
+    width: 521px;
+    height: 144px;
+    object-fit: contain;
   }
 }
