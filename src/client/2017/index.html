@@ -99,7 +99,11 @@
     srcset="img/hexagon@2x.png 2x,
             img/hexagon@3x.png 3x"
     class="hexagon-png"> -->
-    <img src="img/about/makenode.png" class="makenode">
+    <picture class="makenode">
+      <source srcset="img/makenode@2x.png" media="(min-width: 960px)">
+      <source srcset="img/makenode.png">
+      <img src="img/makenode.png">
+    </picture>
     <div class="playnode-desc">
       <p>올해는 Make Node Great Again! 이라는 다소 발칙(?)한 슬로건으로 개최됩니다.<br><br>
         Node.js는 안정적인 릴리스를 하면서 서버 개발, 프런트 앤드 도구, 데스크톱 애플리케이션 등 다양한 분야에서 꾸준하게 인기를 끌고 있습니다.<br><br>
@@ -264,55 +268,55 @@
     </div>
     <table>
       <colgroup>
-        <col style="width: 90px;">
+        <col class="timeslot">
         <col class="content">
       </colgroup>
       <thead>
         <th>Time</th>
-        <th>Hall Name</th>
+        <th>B1 다빈치볼룸, 샤갈룸</th>
       </thead>
       <tbody>
         <tr>
-          <td>12:00 ~ 12:00</td>
+          <td>10:30 ~ 10:40</td>
           <td class="session">
-            Registration 접수
+            환영사
             <div class="desc">
-              <h5>제목</h5>
-              <p>TBD</p>
-              <h5>이름 | 소속</h5>
+              <h5>환영사</h5>
+              <p>한국 IBM 대표이사 사장</p>
+              <h5>장화진 | IBM</h5>
             </div>
           </td>
         </tr>
         <tr>
-          <td>12:00 ~ 12:00</td>
+          <td>10:40 ~ 11:10</td>
           <td class="session">
-            Registration 접수
+            오픈 테크놀러지와 개발자에 대한 IBM 의 방향
             <div class="desc">
-              <h5>제목</h5>
-              <p>TBD</p>
-              <h5>이름 | 소속</h5>
+              <h5>오픈 테크놀러지와 개발자에 대한 IBM 의 방향</h5>
+              <p>부사장, Developer Advocacy</p>
+              <h5>Jonas Jacobi | IBM</h5>
             </div>
           </td>
         </tr>
         <tr>
-          <td>12:00 ~ 12:00</td>
+          <td>11:10 ~ 11:40</td>
           <td class="session">
-            Registration 접수
+            Github 과 Watson 으로 하는 소프트웨어 개발
             <div class="desc">
-              <h5>제목</h5>
+              <h5>Github 과 Watson 으로 하는 소프트웨어 개발</h5>
               <p>TBD</p>
-              <h5>이름 | 소속</h5>
+              <h5>Christian Weber | Github</h5>
             </div>
           </td>
         </tr>
         <tr>
-          <td>12:00 ~ 12:00</td>
+          <td>11:40 ~ 12:10</td>
           <td class="session">
-            Registration 접수
+            서버리스, 클라우드 컴퓨팅 진화의 다음 단계
             <div class="desc">
-              <h5>제목</h5>
+              <h5>서버리스, 클라우드 컴퓨팅 진화의 다음 단계</h5>
               <p>TBD</p>
-              <h5>이름 | 소속</h5>
+              <h5>Michael M Behrendt | Openstack</h5>
             </div>
           </td>
         </tr>
@@ -326,12 +330,12 @@
     </div>
     <table>
       <colgroup>
-        <col style="width: 90px;">
+        <col class="timeslot">
         <col class="content">
       </colgroup>
       <thead>
         <th>Time</th>
-        <th>Hall A</th>
+        <th>4층 모네 C1</th>
       </thead>
       <tbody>
         <tr>
@@ -406,12 +410,12 @@
     </table>
     <table>
       <colgroup>
-        <col style="width: 90px;">
+        <col class="timeslot">
         <col class="content">
       </colgroup>
       <thead>
         <th>Time</th>
-        <th>Hall B</th>
+        <th>4층 모네 C2</th>
       </thead>
       <tbody>
         <tr>
@@ -531,7 +535,7 @@
               img/mini-hexagon-white@3x.png 3x">
       <span>Organizers</span>
     </div>
-    <div class="list">
+    <div id="organizers">
       <div class="organizer">
         <div class="profile" style="background-image: url('img/organizers/insanehong.jpeg');"></div>
         <div class="text">
@@ -575,10 +579,13 @@
         </div>
       </div>
     </div>
-    <img src="img/makenode.png"
-    srcset="img/makenode@2x.png 2x,
-            img/makenode@3x.png 3x"
-    class="makenode">
+    <div class="makenode">
+      <picture>
+        <source srcset="img/makenode@3x.png" media="(min-width: 960px)">
+        <source srcset="img/makenode.png">
+        <img src="img/makenode.png">
+      </picture>
+    </div>
   </section>
   <footer>
     <div class="social">
