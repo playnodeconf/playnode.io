@@ -203,6 +203,32 @@ section .subtitle span {
   font-size: 8pt;
 }
 
+.speaker .detail {
+  display: none;
+  width: 300px;
+  min-height: 280px;
+  background-color: #fafcfc;
+  position: fixed;
+  z-index: 10000;
+  top: 40%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -138px;
+  border-radius: 4px;
+  border-left: 6px solid #1a405c;
+  text-align: left;
+  padding: 30px 40px;
+  color: #2e3031;
+  box-sizing: border-box;
+  display: none;
+  max-height: 70%;
+  overflow: auto;
+}
+
+.speaker .detail.on {
+  display: block;
+}
+
 #schedule {
   margin-top: 110px;
   text-align: left;
@@ -340,25 +366,34 @@ section .subtitle span {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
 }
 
-#contact .list > div {
+.organizer {
   display: block;
-  margin: 32px 16px;
+  margin: 40px 16px;
+  width: 73px;
+  height: 84px;
 }
 
-#contact .list .hexagon .text {
+.organizer .profile {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  -webkit-clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+
+.organizer .text {
   position: relative;
-  top: 56px;
   left: 34px;
 }
 
-#contact .list .hexagon .text .name {
+.organizer .text .name {
   font-size: 12pt;
 }
 
-#contact .list .hexagon .text .organization {
+.organizer .text .organization {
   font-size: 8pt;
 }
 
