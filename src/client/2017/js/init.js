@@ -2,6 +2,10 @@
   // scroll
   smoothScroll.init();
 
+  document.querySelector('.apply').addEventListener('click', function(evt) {
+    location.href = 'https://www-01.ibm.com/events/wwe/grp/grp307.nsf/Registration.xsp?openform&seminar=ZF4BW9ES';
+  });
+
   // map
   var map = new naver.maps.Map('map', {
     center: new naver.maps.LatLng(37.5048160, 127.0271528),
@@ -70,28 +74,26 @@
   });
   navHandler();
 
+  var overlay = document.querySelector('.overlay');
+
   // speakers
   var deatilAll = document.querySelectorAll('#speakers li .detail');
-  var triangleAll = document.querySelectorAll('#speakers li .triangle');
+  // var triangleAll = document.querySelectorAll('#speakers li .triangle');
   Array.prototype.forEach.call(document.querySelectorAll('#speakers li'), function(el) {
     el.addEventListener('click', function(evt) {
       var detail = el.querySelector('.detail');
-      var oldClassNames = detail.className;
-      if (evt.target.tabName !== 'DIV') {
-        if (detail.classList.contains("on")) {
-          detail.classList.remove("on");
-          el.querySelector('.triangle').className = "triangle";
+      if (!evt.target.classList.contains('slide') && detail) {
+        if (!detail.classList.contains('on')) {
+          detail.className += ' on';
+          overlay.className += ' on';
         } else {
-          Array.prototype.forEach.call(deatilAll, function(el) { el.classList.remove("on"); });
-          Array.prototype.forEach.call(triangleAll, function(el) { el.classList.remove("on"); });
-          detail.className = oldClassNames + " on";
-          el.querySelector('.triangle').className = "triangle on";
+          detail.classList.remove('on');
+          overlay.className = 'overlay';
         }
       }
     });
   });
   // schedule
-  var overlay = document.querySelector('.overlay');
   Array.prototype.forEach.call(document.querySelectorAll('.session'), function(el) {
     el.addEventListener('click', function(evt) {
       var desc = el.querySelector('.desc');
