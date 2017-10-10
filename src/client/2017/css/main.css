@@ -26,11 +26,9 @@ nav.dark {
 nav ul li {
   list-style-type: none;
 }
-nav ul li a {
-  color: #a6aeae;
-}
-nav ul li.on a {
-  color: #2e3031;
+
+nav.on ul li a {
+  color: white;
 }
 
 .menu {
@@ -355,6 +353,13 @@ section .subtitle span {
   line-height: 0.6;
 }
 
+#map {
+  width: 320px;
+  height: 476px;
+  background-color: white;
+  margin: 0 auto;
+}
+
 #sponsor {
   margin-top: 147px;
 }
@@ -481,12 +486,6 @@ section .subtitle span {
   color: #2e2a76;
 }
 
-.map {
-  width: 320px;
-  height: 476px;
-  background-color: white;
-}
-
 #contact .subtitle {
   margin-top: 109px;
 }
@@ -546,7 +545,7 @@ footer .copyright {
   display: block;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
   #about .makenode img {
     margin-left: 75px;
@@ -618,16 +617,28 @@ footer .copyright {
     width: 325px;
     height: 160px;
     float: left;
+    margin-top: 70px;
+    margin-bottom: 160px;
   }
 
   #about .playnode-desc {
+    margin: 42px 70px 0 0;
+    float: right;
+  }
+
+  #about .playnode-desc p {
+    font-size: 19px;
+    line-height: 1.25;
+  }
+
+  #about .makenode {
+    margin: 200px 45px 0 0;
     float: right;
   }
 
   #about .makenode img {
     width: 382px;
     height: 214px;
-    float: right;
   }
 
   #speakers {
@@ -662,6 +673,11 @@ footer .copyright {
 
   #schedule table .content {
     width: 600px;
+  }
+
+  #map {
+    width: 960px;
+    height: 560px;
   }
 
   #contact {
