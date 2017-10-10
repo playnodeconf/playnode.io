@@ -382,11 +382,15 @@ section .subtitle span {
 }
 
 #contact .email {
+  text-align: center;
+}
+
+#contact .email a {
+  text-decoration: none;
+  color: #ffffff;
   font-family: NanumSquareR;
   font-size: 26px;
   line-height: 0.8;
-  text-align: center;
-  color: #ffffff;
 }
 
 #organizers {
