@@ -18,8 +18,27 @@ p {
   font-size: 9pt;
 }
 
+nav.dark {
+  background-color: #fff;
+  border-bottom: solid 2px #eaefef;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  color: #a6aeae;
+}
+nav ul li.on a {
+  color: #2e3031;
+}
+
 .menu {
   display: none;
+}
+
+nav.on .menu {
+  display: block;
 }
 
 .intro_png {
@@ -525,7 +544,7 @@ footer .copyright {
 
 @media screen and (max-width: 320px) {
 
-  #about .makenode {
+  #about .makenode img {
     margin-left: 75px;
   }
 
