@@ -2,9 +2,13 @@
   // scroll
   smoothScroll.init();
 
+  document.querySelector('.apply').addEventListener('click', function(evt) {
+    location.href = 'https://www-01.ibm.com/events/wwe/grp/grp307.nsf/Registration.xsp?openform&seminar=ZF4BW9ES';
+  });
+
   // map
   var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(37.504836, 127.027206),
+    center: new naver.maps.LatLng(37.5048160, 127.0271528),
     scaleControl: true,
     zoomControl: true,
     scrollWheel: false,
@@ -13,7 +17,7 @@
   });
 
   var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.504836, 127.027206),
+    position: new naver.maps.LatLng(37.5048160, 127.0271528),
     map: map
   });
 
@@ -27,8 +31,8 @@
   var speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
   var scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
   var venueTop = document.querySelector('#venue').offsetTop - navHeight;
-  var sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
-  var contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+  var sponsorsTop = document.querySelector('#sponsor').offsetTop - navHeight;
+  var contactusTop = document.querySelector('#contact').offsetTop - navHeight;
 
   var navHandler = function() {
     var top = body.scrollTop;
@@ -70,47 +74,27 @@
   });
   navHandler();
 
+  var overlay = document.querySelector('.overlay');
+
   // speakers
   var deatilAll = document.querySelectorAll('#speakers li .detail');
-  var triangleAll = document.querySelectorAll('#speakers li .triangle');
+  // var triangleAll = document.querySelectorAll('#speakers li .triangle');
   Array.prototype.forEach.call(document.querySelectorAll('#speakers li'), function(el) {
     el.addEventListener('click', function(evt) {
       var detail = el.querySelector('.detail');
-      var oldClassNames = detail.className;
-      if (evt.target.tabName !== 'DIV') {
-        if (detail.classList.contains("on")) {
-          detail.classList.remove("on");
-          el.querySelector('.triangle').className = "triangle";
+      if (!evt.target.classList.contains('slide') && detail) {
+        if (!detail.classList.contains('on')) {
+          detail.className += ' on';
+          overlay.className += ' on';
         } else {
-          Array.prototype.forEach.call(deatilAll, function(el) { el.classList.remove("on"); });
-          Array.prototype.forEach.call(triangleAll, function(el) { el.classList.remove("on"); });
-          detail.className = oldClassNames + " on";
-          el.querySelector('.triangle').className = "triangle on";
+          detail.classList.remove('on');
+          overlay.className = 'overlay';
         }
       }
     });
   });
   // schedule
-  var overlay = document.querySelector('.overlay');
   Array.prototype.forEach.call(document.querySelectorAll('.session'), function(el) {
-    el.addEventListener('mouseover', function(evt) {
-      if (el.parentNode.nextElementSibling) {
-        var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
-        if (speakers.length > 0) {
-          var index = el.getAttribute('data-order');
-          speakers[index].className += ' hover';
-        }
-      }
-    });
-    el.addEventListener('mouseout', function(evt) {
-      if (el.parentNode.nextElementSibling) {
-        var speakers = el.parentNode.nextElementSibling.querySelectorAll('.speaker');
-        if (speakers.length > 0) {
-          var index = el.getAttribute('data-order');
-          speakers[index].classList.remove('hover');
-        }
-      }
-    });
     el.addEventListener('click', function(evt) {
       var desc = el.querySelector('.desc');
       if (!evt.target.classList.contains('slide') && desc) {
@@ -131,27 +115,27 @@
       el.className = 'desc';
     });
   });
-
+  
   // mobile nav
-  document.querySelector('nav h1').addEventListener('click', function(evt) {
+  document.querySelector('.arrow-down').addEventListener('click', function(evt) {
     if (!nav.classList.contains('on')) {
       nav.className = 'on';
     } else {
-      nav.className = '';
+      nav.className = 'navbar';
     }
   });
   document.querySelector('nav ul').addEventListener('click', function(evt) {
     if (nav.classList.contains('on')) {
-      nav.className = '';
+      nav.className = 'navbar';
     }
   });
-
+  
   setInterval(function() {
     aboutTop = document.querySelector('#about').offsetTop - navHeight;
     speakersTop = document.querySelector('#speakers').offsetTop - navHeight;
     scheduleTop = document.querySelector('#schedule').offsetTop - navHeight;
     venueTop = document.querySelector('#venue').offsetTop - navHeight;
-    sponsorsTop = document.querySelector('#sponsors').offsetTop - navHeight;
-    contactusTop = document.querySelector('#contactus').offsetTop - navHeight;
+    sponsorsTop = document.querySelector('#sponsor').offsetTop - navHeight;
+    contactusTop = document.querySelector('#contact').offsetTop - navHeight;
   }, 2000);
 })();
