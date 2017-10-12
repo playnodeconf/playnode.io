@@ -77,17 +77,17 @@
   var overlay = document.querySelector('.overlay');
 
   // speakers
-  var deatilAll = document.querySelectorAll('#speakers li .detail');
+  var descAll = document.querySelectorAll('#speakers li .desc');
   // var triangleAll = document.querySelectorAll('#speakers li .triangle');
   Array.prototype.forEach.call(document.querySelectorAll('#speakers li'), function(el) {
     el.addEventListener('click', function(evt) {
-      var detail = el.querySelector('.detail');
-      if (!evt.target.classList.contains('slide') && detail) {
-        if (!detail.classList.contains('on')) {
-          detail.className += ' on';
+      var desc = el.querySelector('.desc');
+      if (!evt.target.classList.contains('slide') && desc) {
+        if (!desc.classList.contains('on')) {
+          desc.className += ' on';
           overlay.className += ' on';
         } else {
-          detail.classList.remove('on');
+          desc.classList.remove('on');
           overlay.className = 'overlay';
         }
       }
@@ -108,10 +108,10 @@
       }
     });
   });
-  var sessionDesc = document.querySelectorAll('.session .desc');
+  var desc = document.querySelectorAll('.desc');
   overlay.addEventListener('click', function(evt) {
     overlay.className = 'overlay';
-    Array.prototype.forEach.call(sessionDesc, function(el) {
+    Array.prototype.forEach.call(desc, function(el) {
       el.className = 'desc';
     });
   });
