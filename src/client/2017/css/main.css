@@ -28,11 +28,13 @@ nav ul li {
 }
 
 nav.on ul li a {
-  color: white;
+  color: #2e2a76;
+  text-decoration: none;
 }
 
 .menu {
   display: none;
+  background-color: white;
 }
 
 nav.on .menu {
@@ -224,7 +226,7 @@ section .subtitle span {
   font-size: 8pt;
 }
 
-.speaker .detail {
+.speaker .desc {
   display: none;
   width: 300px;
   min-height: 280px;
@@ -241,12 +243,11 @@ section .subtitle span {
   padding: 30px 40px;
   color: #2e3031;
   box-sizing: border-box;
-  display: none;
   max-height: 70%;
   overflow: auto;
 }
 
-.speaker .detail.on {
+.speaker .desc.on {
   display: block;
 }
 
@@ -491,7 +492,7 @@ section .subtitle span {
 }
 
 #contact .makenode {
-  margin: 180px auto 0 auto;
+  margin: 0px auto 240px auto;
 }
 
 #contact .makenode img {
@@ -510,7 +511,6 @@ footer {
   position: absolute;
   bottom: 0;
   overflow: hidden;
-  margin-top: 103px;
   height: 194px;
 }
 footer div {
@@ -572,6 +572,10 @@ footer .copyright {
 
   .arrow-down {
     display: none;
+  }
+
+  nav.on ul li a {
+    color: white;
   }
 
   .menu {
