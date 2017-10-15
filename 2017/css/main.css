@@ -14,10 +14,6 @@ body {
   height: 7500px;
 }
 
-p {
-  font-size: 9pt;
-}
-
 nav.dark {
   background-color: #fff;
   border-bottom: solid 2px #eaefef;
@@ -91,12 +87,12 @@ section .subtitle span {
   top: 28px;
   right: 18px;
 
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-radius: 4px;
-  
+
   border-top: 16px solid #2d2b76;
 }
 
@@ -140,6 +136,22 @@ section .subtitle span {
   bottom: -25px;
   border-bottom: solid 2px white;
   border-left: solid 2px white;
+}
+
+.purple {
+  color: #2e2a76;
+}
+.purple-border {
+  border-left: solid 2px #2e2a76;
+  border-right: solid 2px #2e2a76;
+}
+.purple-border:before {
+  border-top: solid 2px #2e2a76;
+  border-right: solid 2px #2e2a76;
+}
+.purple-border:after {
+  border-bottom: solid 2px #2e2a76;
+  border-left: solid 2px #2e2a76;
 }
 
 .apply {
@@ -276,7 +288,7 @@ section .subtitle span {
 
 #schedule table {
   table-layout: fixed;
-  width: 320px;
+  width: 80%;
   font-family: "Fugaz One";
   font-size: 18px;
   line-height: 1.25;
@@ -337,6 +349,7 @@ section .subtitle span {
 
 #venue {
   margin-top: 93px;
+  text-align: left;
 }
 
 #venue .title {
@@ -347,6 +360,7 @@ section .subtitle span {
 #venue .subtitle {
   margin-top: 60px;
 }
+
 #venue .subtitle span {
   color: #2e2a76;
   font-family: SDGdGulim;
@@ -354,15 +368,19 @@ section .subtitle span {
   line-height: 0.6;
 }
 
+#venue .address {
+  margin: 20px 0;
+}
+
 #map {
-  width: 320px;
+  width: 80%;
   height: 476px;
   background-color: white;
   margin: 0 auto;
 }
 
 #sponsor {
-  margin-top: 147px;
+  margin-top: 127px;
 }
 
 #sponsor .title {
@@ -371,11 +389,11 @@ section .subtitle span {
 }
 
 #sponsor .ibm {
-  margin-top: 153px;
+  margin-top: 73px;
 }
 
 #contact {
-  margin-top: 247px;
+  margin-top: 120px;
 }
 
 #contact .title {
@@ -467,24 +485,12 @@ section .subtitle span {
 
 .playnode-desc {
   margin: 24px auto;
-  width: 350px;
-  height: 147px;
+  padding-top: 10px;
   font-family: NanumSquareR;
-  font-size: 13.2px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 1.5;
   text-align: left;
   color: #ffffff;
-}
-
-.desc-purple {
-  width: 320px;
-  margin: 24px auto;
-  object-fit: contain;
-  font-family: SDGdGulim;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #2e2a76;
 }
 
 #contact .subtitle {
@@ -495,30 +501,21 @@ section .subtitle span {
   margin: 0px auto 200px auto;
 }
 
-#contact .makenode img {
-  width: 298px;
-  height: 166px;
-  object-fit: contain;
-}
-
 footer {
   display: table;
   width: 100%;
   background-color: #2c2c2c;
-  min-height: 82px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
   bottom: 0;
   overflow: hidden;
-  height: 194px;
 }
 footer div {
   /* display: table-cell; */
   vertical-align: middle;
 }
 footer .social {
-  margin-top: 64px;
   text-align: center;
 }
 footer .social a ~ a {
@@ -526,8 +523,6 @@ footer .social a ~ a {
 }
 footer .copyright {
   color: #525252;
-  line-height: 40px;
-  font-size: 18px;
   margin-top: 32px;
 }
 
@@ -552,11 +547,64 @@ footer .copyright {
   }
 
   .playnode-desc {
-    width: 320px;
+    width: 80%;
+  }
+
+  #about .playnode-desc {
+    line-height: 1.25;
+  }
+
+  #contact .playnode-desc {
+    line-height: 1.5;
   }
 
   #schedule table .content {
     width: 180px;
+  }
+
+  #venue .subtitle {
+    margin-left: 30px;
+  }
+
+  #venue .subtitle img {
+    max-width: 40%;
+  }
+
+  #venue .address {
+    margin: 10px 0;
+    margin-left: 30px;
+    padding-left: 5%;
+  }
+
+  #venue .address img {
+    max-width: 90%;
+  }
+
+  #contact .makenode {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  #contact .makenode img {
+    width: 50%;
+    max-width: 300px;
+    padding-top: 10%;
+  }
+
+  footer {
+    min-height: 42px;
+    height: 80px;
+  }
+
+  footer .social {
+    margin-top: 25px;
+  }
+
+  footer .copyright {
+    font-size: 8px;
+    padding-bottom: 25px;
+    margin-top: 10px;
   }
 }
 
@@ -608,6 +656,7 @@ footer .copyright {
   .intro_png {
     display: block;
     margin: 24px auto;
+    padding-left: 45px;
   }
 
   #about {
@@ -626,6 +675,7 @@ footer .copyright {
   }
 
   #about .playnode-desc {
+    width: 320px;
     margin: 42px 70px 0 0;
     float: right;
   }
@@ -636,7 +686,7 @@ footer .copyright {
   }
 
   #about .makenode {
-    margin: 200px 45px 0 0;
+    margin: 0 45px 0 0;
     float: right;
   }
 
@@ -679,6 +729,15 @@ footer .copyright {
     width: 600px;
   }
 
+  #venue .subtitle {
+    margin-left: 0;
+  }
+
+  #venue .address {
+    margin-left: 0;
+    padding-left: 48px;
+  }
+
   #map {
     width: 960px;
     height: 560px;
@@ -686,6 +745,10 @@ footer .copyright {
 
   #contact {
     text-align: left;
+  }
+
+  #contact .makenode {
+    margin-top: 350px;
   }
 
   #organizers {
@@ -700,18 +763,30 @@ footer .copyright {
   .organizer .text .name {
     font-size: 24pt;
   }
-  
+
   .organizer .text .organization {
     font-size: 14pt;
   }
 
-  #contact .makenode {
-    text-align: center;
-  }
-
   #contact .makenode img {
-    width: 521px;
+    width: 100%;
+    max-width: 521px;
     height: 144px;
     object-fit: contain;
+    padding: 0;
+  }
+
+  footer {
+    min-height: 82px;
+    height: 160px;
+  }
+
+  footer .social {
+    margin-top: 30px;
+  }
+
+  footer .copyright {
+    font-size: 18px;
+    padding-bottom: 25px;
   }
 }
