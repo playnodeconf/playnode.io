@@ -398,11 +398,12 @@ section .subtitle span {
 
 #contact .title {
   position: absolute;
-  left: -118px;
+  left: -160px;
+  width: 400px;
 }
 
 #contact .title a {
- text-decoration: none;
+  text-decoration: none;
   color: #2e2a76;
 }
 
@@ -795,3 +796,4 @@ footer .copyright {
     padding-bottom: 25px;
   }
 }
+
