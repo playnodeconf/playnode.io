@@ -398,7 +398,12 @@ section .subtitle span {
 
 #contact .title {
   position: absolute;
-  left: -32px;
+  left: -118px;
+}
+
+#contact .title a {
+ text-decoration: none;
+  color: #2e2a76;
 }
 
 #contact .playnode-desc {
