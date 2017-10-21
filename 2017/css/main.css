@@ -347,6 +347,15 @@ section .subtitle span {
   display: block;
 }
 
+#schedule table td .desc.on h5 {
+  background-color: #2e2a76;
+  color: white;
+}
+
+#schedule table td .desc.on p {
+  font-size: 11pt;
+}
+
 #venue {
   margin-top: 93px;
   text-align: left;
@@ -727,12 +736,22 @@ footer .copyright {
     left: 64px;
   }
 
+  .speaker .desc.on {
+    width: 640px;
+    margin-left: -320px;
+  }
+
   #schedule table .timeslot {
     width: 225px;
   }
 
   #schedule table .content {
     width: 600px;
+  }
+
+  #schedule table td .desc.on {
+    width: 640px;
+    margin-left: -320px;
   }
 
   #venue .subtitle {

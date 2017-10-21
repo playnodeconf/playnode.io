@@ -2,10 +2,6 @@
   // scroll
   smoothScroll.init();
 
-  document.querySelector('.apply').addEventListener('click', function(evt) {
-    location.href = 'https://www-01.ibm.com/events/wwe/grp/grp307.nsf/Registration.xsp?openform&seminar=ZF4BW9ES';
-  });
-
   // map
   var map = new naver.maps.Map('map', {
     center: new naver.maps.LatLng(37.5048160, 127.0271528),
