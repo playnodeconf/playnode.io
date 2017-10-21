@@ -263,6 +263,15 @@ section .subtitle span {
   display: block;
 }
 
+.speaker .desc.on h5 {
+  background-color: #2e2a76;
+  color: white;
+}
+
+.speaker .desc.on p {
+  font-size: 11pt;
+}
+
 #schedule {
   margin-top: 110px;
   text-align: left;
