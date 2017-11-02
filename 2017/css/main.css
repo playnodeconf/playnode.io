@@ -710,6 +710,28 @@ footer .copyright {
     line-height: 1.25;
   }
 
+  .developerconnect {
+    background-color: white;
+    padding: 2px;
+    font-size: .8em;
+    -webkit-transition: background-color 2s, -webkit-transform 2s;
+    transition: background-color 2s, transform 2s;
+  }
+
+  .developerconnect a {
+    color: #2e2a76;
+    text-decoration: none;
+  }
+
+  .developerconnect:hover {
+    background-color: transparent;
+    font-size: 1em;
+  }
+
+  .developerconnect:hover a {
+    color: white;
+  }
+
   #about .makenode {
     margin: 0 45px 0 0;
     float: right;
