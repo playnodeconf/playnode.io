@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
 
-  height: 7500px;
+  height: 8000px;
 }
 
 nav.dark {
@@ -416,8 +416,9 @@ section .subtitle span {
 
 #contact .title {
   position: absolute;
-  left: -160px;
-  width: 400px;
+  left: -130px;
+  width: 320px;
+  text-align: center;
 }
 
 #contact .title a {
@@ -606,7 +607,7 @@ footer .copyright {
 
   #contact .makenode {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 0;
   }
 
