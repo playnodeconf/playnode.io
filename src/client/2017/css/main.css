@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
 
-  height: 7500px;
+  height: 8000px;
 }
 
 nav.dark {
@@ -416,8 +416,9 @@ section .subtitle span {
 
 #contact .title {
   position: absolute;
-  left: -160px;
-  width: 400px;
+  left: -130px;
+  width: 320px;
+  text-align: center;
 }
 
 #contact .title a {
@@ -606,7 +607,7 @@ footer .copyright {
 
   #contact .makenode {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 0;
   }
 
@@ -707,6 +708,28 @@ footer .copyright {
   #about .playnode-desc p {
     font-size: 19px;
     line-height: 1.25;
+  }
+
+  .developerconnect {
+    background-color: white;
+    padding: 2px;
+    font-size: .8em;
+    -webkit-transition: background-color 2s, -webkit-transform 2s;
+    transition: background-color 2s, transform 2s;
+  }
+
+  .developerconnect a {
+    color: #2e2a76;
+    text-decoration: none;
+  }
+
+  .developerconnect:hover {
+    background-color: transparent;
+    font-size: 1em;
+  }
+
+  .developerconnect:hover a {
+    color: white;
   }
 
   #about .makenode {
