@@ -713,7 +713,6 @@ footer .copyright {
   .developerconnect {
     background-color: white;
     padding: 2px;
-    font-size: .8em;
     -webkit-transition: background-color 2s, -webkit-transform 2s;
     transition: background-color 2s, transform 2s;
   }
@@ -725,7 +724,6 @@ footer .copyright {
 
   .developerconnect:hover {
     background-color: transparent;
-    font-size: 1em;
   }
 
   .developerconnect:hover a {
