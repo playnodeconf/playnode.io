@@ -710,10 +710,10 @@ footer .copyright {
     line-height: 1.25;
   }
 
+<<<<<<< HEAD
   .developerconnect {
     background-color: white;
     padding: 2px;
-    font-size: .8em;
     -webkit-transition: background-color 2s, -webkit-transform 2s;
     transition: background-color 2s, transform 2s;
   }
@@ -725,13 +725,14 @@ footer .copyright {
 
   .developerconnect:hover {
     background-color: transparent;
-    font-size: 1em;
   }
 
   .developerconnect:hover a {
     color: white;
   }
 
+=======
+>>>>>>> parent of 3e092e8... Update 2017-11-02T13:32:14.287Z
   #about .makenode {
     margin: 0 45px 0 0;
     float: right;
