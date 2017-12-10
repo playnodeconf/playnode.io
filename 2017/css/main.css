@@ -365,6 +365,15 @@ section .subtitle span {
   font-size: 11pt;
 }
 
+.glyph-icon {
+  margin-left: 4px;
+}
+
+.glyph-icon img {
+  width:16px;
+  height:16px;
+}
+
 #venue {
   margin-top: 93px;
   text-align: left;
