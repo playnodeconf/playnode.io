@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99.5" height="99.5">
+    <text fill="#FFF" font-family="Fugaz One" font-size="48" transform="matrix(.7 0 0 .7 -.14 61.518)">
+        About
+    </text>
+    <path fill="none" stroke="#FFF" d="M49.655 98.501L6.956 74V24.998L49.655.496l42.698 24.502V74L49.655 98.501z"/>
+</svg>

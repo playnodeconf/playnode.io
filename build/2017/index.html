@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>play.node 2017 - Node.js Conference</title>
+  <meta name="description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <link rel="canonical" href="http://playnode.io/2017">
+  <meta name="keywords" content="playnode, nodejs, node, node.js, conference">
+  <meta name="robots" content="'index, follow">
+  <meta property="og:title" content="play.node 2017 - Node.js Conference">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://playnode.io/2017">
+  <meta property="og:image" content="http://playnode.io/2017/img/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <meta property="og:site_name" content="play.node 2017">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="fb:app_id" content="808686202580087">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@playnodeconf">
+  <meta name="twitter:creator" content="@playnodeconf">
+  <meta name="twitter:title" content="play.node 2017 - Node.js Conference">
+  <meta name="twitter:description" content="play.node는 Node.js conference로서 국내외 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리입니다. 또한, 여러 분야의 사람들이 한자리에 모일 수 있는 즐거운 개발자 축제 같은 행사이기도 합니다.">
+  <meta name="twitter:image" content="http://playnode.io/2017/img/twitter-card.png">
+  <meta name="twitter:url" content="http://playnode.io/2017">
+  <link rel="shortcut icon" type="image/x-icon" href="/2017/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-65739442-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div><img src="img/logo-thumb.png"
+      srcset="img/logo-thumb@2x.png 2x,
+              img/logo-thumb@3x.png 3x"
+      class="logo-thumb">
+    </div>
+    <ul class="menu">
+      <li><a data-scroll href="#about">About</a></li>
+      <li><a data-scroll href="#speakers">Speakers</a></li>
+      <li><a data-scroll href="#schedule">Schedule</a></li>
+      <li><a data-scroll href="#venue">Venue</a></li>
+      <li><a data-scroll href="#sponsor">Sponsor</a></li>
+      <li><a data-scroll href="#contact">Contact</a></li>
+    </ul>
+    <div class="arrow-down"></div>
+  </nav>
+  <section id="intro" class="dark wide">
+    <img src="img/logo.png"
+    srcset="img/logo@2x.png 2x,
+            img/logo@3x.png 3x"
+    class="logo">
+    <div class="intro_txt">
+      <img src="img/title-date.png">
+      <br/>
+      <img src="img/title-hotelname.png">
+    </div>
+    <img src="img/intro-txt.png"
+    srcset="img/intro-txt@2x.png 2x,
+            img/intro-txt@3x.png 3x"
+    class="intro_png">
+  </section>
+
+  <section id="registration" class="dark wide">
+    <h1>등록이 마감되었습니다.</h1>
+  </section>
+
+  <section id="about">
+    <div class="hexagon"><span class="title">About</span></div>
+    <!-- <img src="img/about.png"
+    srcset="img/about@2x.png 2x,
+            img/about@3x.png 3x"
+    class="title"> -->
+    <img src="img/about/play-node@2x.png" class="play-node">
+    <div class="playnode-desc">
+      <p>play.node는 비영리 Node.js 개발자 컨퍼런스입니다.<br><br>
+        2012년 Node.js 커뮤니티 octobersky.js의 주최로 처음 시작된 이후 올해로 4회를 맞았습니다.<br><br>
+        올해 play.node는 작년과 같이 IBM의 후원을 받아 IBM DeveloperConnect 2017 과 한자리에서 공동으로 개최됩니다.<br><br>
+        play.node에 참가하면 <span class="developerconnect"><a href="http://www-903.ibm.com/kr/devcon2017/#agenda" target="_blank">DeveloperConnect 2017</a></span> 의 세션도 들을 수 있습니다.
+      </p>
+    </div>
+    <!-- <img src="img/hexagon.png"
+    srcset="img/hexagon@2x.png 2x,
+            img/hexagon@3x.png 3x"
+    class="hexagon-png"> -->
+    <picture class="makenode">
+      <source srcset="img/makenode@2x.png" media="(min-width: 960px)">
+      <source srcset="img/makenode.png">
+      <img src="img/makenode.png">
+    </picture>
+    <div class="playnode-desc">
+      <p>올해는 Make Node Great Again! 이라는 다소 발칙(?)한 슬로건으로 개최됩니다.<br><br>
+        Node.js는 안정적인 릴리스를 하면서 서버 개발, 프런트 앤드 도구, 데스크톱 애플리케이션 등 다양한 분야에서 꾸준하게 인기를 끌고 있습니다.<br><br>
+        이번 play.node에서는 국내외 Node.js 개발자들이 서로 교류하고 그동안 쌓아온 경험을 공유하며 더욱 Great하게 발전하는 자리가 되기를 바라고 있습니다.
+      </p>
+    </div>
+  </section>
+  <section id="speakers">
+    <div class="hexagon"><span class="title">Speakers</span></div>
+    <div class="list">
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/hyoungsik.park.png');"></div>
+        <div class="text">
+          <div class="name">박형식</div>
+          <div class="organization">텀블벅</div>
+        </div>
+        <div class="desc">
+          <h5>박형식 | 텀블벅</h5>
+          <p>텀블벅에서 Software Engineer로 누구나 창조적인 시도를 할 수 있는 기술 기반을 만들고 있습니다.</p>
+          <h5>Serverless + GraphQL + Relay</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/seungyeon.lee.jpg');"></div>
+        <div class="text">
+          <div class="name">조승연</div>
+          <div class="organization">Knowre</div>
+        </div>
+        <div class="desc">
+          <h5>조승연 | Knowre</h5>
+          <p>6년 된 수학 교육 스타트업 Knowre의 창업자이자 CTO로 일하고 있습니다. 개발자가 행복할 수 있는 개발팀을 만드는 방법에 대해 언제나 고민하고 있습니다.</p>
+          <h5>GraphQL in action: REST와 이별할 때 생각해야 하는 것들</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/hyunsub.han.jpeg');"></div>
+        <div class="text">
+          <div class="name">한현섭</div>
+          <div class="organization">TELEPASEE</div>
+        </div>
+        <div class="desc">
+          <h5>한현섭 | TELEPASEE</h5>
+          <p>취미로 미식축구를 하고 있는 개발자입니다. <br>
+              미식축구는 롱패스에, 프로그래밍은 함수형에 반해 시작하게 되었습니다. <br>
+              현재 TELEPASEE에서는 시스템 기획/개발을 담당하고 있습니다.</p>
+          <h5>ramda.js와 함께 하는 간단 API 서버 만들기</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/outsideris.jpg');"></div>
+        <div class="text">
+          <div class="name">변정훈</div>
+          <div class="organization">SmartStudy</div>
+        </div>
+        <div class="desc">
+          <h5>변정훈 | SmartStudy</h5>
+          <p>SmartStudy에서 웹 애플리케이션 개발 및 인프라스트럭처 구축을 같이하고 있습니다. 웹개발을 주로 해왔고 새로운 기술에 관심이 많고 글도 종종 쓰고 있습니다.</p>
+          <h5>Node.js API 서버 성능 개선기</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div id="imazine" class="profile" style="background-image: url('img/speakers/imazine.jpg');"></div>
+        <div class="text">
+          <div class="name">박일호</div>
+          <div class="organization">카카오</div>
+        </div>
+        <div class="desc">
+          <h5>박일호 | Kakao</h5>
+          <p>카카오에서 다음 자동차 서비스 개발을 담당하고 있습니다.</p>
+          <h5>Node.js 로 협력적 멀티태스킹 처리하기</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/kwangnam.heo.jpg');"></div>
+        <div class="text">
+          <div class="name">허광남</div>
+          <div class="organization">OKKY, 헬로네이처</div>
+        </div>
+        <div class="desc">
+          <h5>허광남 | OKKY, 헬로네이처</h5>
+          <p>okdevtv.com 을 통해서 프로그래밍 방송을 하는 BJ입니다.</p>
+          <h5>클라우드 시대의 node.js 가 좋은 이유</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/byoungjin.kim.jpg');"></div>
+        <div class="text">
+          <div class="name">김병진</div>
+          <div class="organization">플리토</div>
+        </div>
+        <div class="desc">
+          <h5>김병진 | 플리토</h5>
+          <p>플리토에서 백엔드 개발을 하고 있습니다.</p>
+          <h5>Typescript, Express, Decorator, Angular</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/heejong.ahn.jpg');"></div>
+        <div class="text">
+          <div class="name">안희종</div>
+          <div class="organization">하이퍼커넥트</div>
+        </div>
+        <div class="desc">
+          <h5>안희종 | 하이퍼커넥트</h5>
+          <p>React를 비롯한 모던 웹 프레임워크를 이용해 매끄러운 유저 경험을 전달하는 제품을 만듭니다. 프론트엔드 프로그래머로서, 자바스크립트 코어 언어와 전반적 생태계에 관심이 많습니다. 훌륭한 타입 시스템을 가진 언어로 작업하는 것을 선호합니다.</p>
+          <h5>TypeScript와 Flow: 자바스크립트 개발에 정적 타이핑 도입하기</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/seokjune.kim.jpg');"></div>
+        <div class="text">
+          <div class="name">김석준</div>
+          <div class="organization">Streami</div>
+        </div>
+        <div class="desc">
+          <h5>김석준 | Streami</h5>
+          <p>JS 풀스택 웹 개발자. 필요하면 뭐든지 합니다.</p>
+          <h5>Raspberry Pi 와 Node.js, React-Native 로 만드는 스마트 조명 셋</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/seungho.han.png');"></div>
+        <div class="text">
+          <div class="name">한승호</div>
+          <div class="organization">에멘탈</div>
+        </div>
+        <div class="desc">
+          <h5>한승호 | 에멘탈</h5>
+          <p>에멘탈 CTO 역할을 하고 있습니다. 구성원들 효율적인 개발을 위한 환경 구축에 전념하고 있습니다. 단순한 기능 구현에서 나아가서비스를 만들고자합니다 :)</p>
+          <h5>Monorepo with Lerna</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/juneyoung.choi.jpg');"></div>
+        <div class="text">
+          <div class="name">최준영</div>
+          <div class="organization">Revisolution</div>
+        </div>
+        <div class="desc">
+          <h5>최준영 | Revisolution</h5>
+          <p>먼저 자바스크립트에 정적 타이핑을 도입하기 위한 가장 대표적인 두 시도인 Flow와 TypeScript를 소개 및 비교합니다.
+              그 후, 적당한 규모의 자바스크립트 프로젝트에 Flow를 도입한 후 몇 달이 지나 전체 코드베이스를 TypeScript로 갈아엎은 이유와 경험,
+              그 과정에서 얻은 교훈 등을 소개합니다.
+              자바스크립트를 이용해 보다 안정적으로 개발하고 싶은 분, 정적 타이핑을 도입하려 하고 있지만 TypeScript와 Flow 중 망설이고 계신 분,
+              Flow를 이용한 프로젝트를 TypeScript로 다시 짜고 싶지만 엄두가 안 나는 분께서 들으시는 걸 염두에 두고 발표할 생각입니다.
+          </p>
+          <h5>console.log 따윈 쓰지않는 강력한 디버깅</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/woongjae.lee.jpg');"></div>
+        <div class="text">
+          <div class="name">이웅재</div>
+          <div class="organization">스튜디오씨드코리아</div>
+        </div>
+        <div class="desc">
+          <h5>이웅재 | 스튜디오씨드코리아</h5>
+          <p>함수형 프로그래밍 라이브러리인 ramda.js 소개와 이를 통한 간단한 API서버를 만들어 보면서 사용 사례들을 공유합니다.'</p>
+          <p>Electron 으로 만들어진 앱을 실행파일과 설치파일로 패키징하려면 여러가지 설정이 필요합니다. <br>이런 부분을 쉽고 간편하게 도와주기 위한 패키징 앱을 Electron 을 이용해서 만들고, 원클릭으로 배포까지 할수 있도록 하는 패키징 프로그램을 만드는 이야기를 들려 드리려고 합니다.</p>
+          <h5>Electron 패키징 머신 구축기</h5>
+        </div>
+      </li>
+      <li class="speaker">
+        <div class="profile" style="background-image: url('img/speakers/kyoungwook.park.png');"></div>
+        <div class="text">
+          <div class="name">박경욱</div>
+          <div class="organization">카카오</div>
+        </div>
+        <div class="desc">
+          <h5>박경욱 | 카카오</h5>
+          <p>광고 도메인에서 SDK 개발하는 Frontend 개발자입니다.</p>
+          <h5>When hardware met Node-RED</h5>
+        </div>
+      </li>
+    </div>
+  </section>
+  <section id="schedule">
+    <div class="hexagon purple-border"><span class="title purple">Schedule</span></div>
+    <div class="subtitle">
+      <img src="img/twinkle.png"
+        srcset="img/twinkle@2x.png 2x,
+                img/twinkle@3x.png 3x"
+        class="twinkle">
+      <span>DeveloperConnect 2017 Keynote</span>
+    </div>
+    <table>
+      <colgroup>
+        <col class="timeslot">
+        <col class="content">
+      </colgroup>
+      <thead>
+        <th>Time</th>
+        <th>2층 세잔</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10:30 ~ 10:40</td>
+          <td class="session">
+            환영사
+            <div class="desc">
+              <h5>환영사</h5>
+              <p>한국 IBM 대표이사 사장</p>
+              <h5>장화진 | IBM</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>10:40 ~ 11:10</td>
+          <td class="session">
+            오픈 테크놀러지와 개발자에 대한 IBM 의 방향
+            <div class="desc">
+              <h5>오픈 테크놀러지와 개발자에 대한 IBM 의 방향</h5>
+              <p>Head of Developer Advocacy, Worldwide</p>
+              <h5>Jonas Jacobi | IBM</h5>
+              <p>Jonas는 세계적인 웹, 모바일 및 IoT 분야의 선구자이자 이 분야 여러 책의 저자입니다. Jonas는 새로운 산업 표준 중 하나인 World Wide Web과 IETF WebSocket의 기준을 주관하는 W3C의 창립자 중 하나이며, 기술 담당 부사장, 마케팅 및 전략 부사장, 공동 창립자 겸 CEO 등을 역임해 왔습니다. 현재 Jonas는 IBM에서 개발자 관련 전략과 실행을 담당하고 있습니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>11:10 ~ 11:40</td>
+          <td class="session">
+            Github 과 Watson 으로 하는 소프트웨어 개발
+            <div class="desc">
+              <h5>Github 과 Watson 으로 하는 소프트웨어 개발</h5>
+              <p>GitHub은 인터넷 상의 소프트웨어 개발 표준입니다. 수백만 명의 개발자가 GitHub을 사용하면서, 이제 개발자는 더 나은 코드를 다른 개발자들과 함께 작성하기 위해 GitHub을 이용한 협업을 합니다. 오픈 소스 프로젝트가 번성했고, 취미로 개발을 하는 사람들도 어설프게 참여하고 있으며, 엔터프라이즈 기업들은 GitHub으로 운영을 현대화했습니다. GitHub의 데이터에 IBM Watson을 사용하여 흥미롭고 가치있는 질문에 답할 수 있습니다.<br>
+              <ul>
+                <li>우리 회사의 개발자는 얼마나 행복합니까?</li>
+                <li>우리 팀은 효율적으로 체계화되어 있습니까?</li>
+                <li>우리 팀은 얼마나 잘 협업하고 있습니까?</li>
+              </ul>
+              협업을 하면 더 좋은 코드를 작성할 수 있습니다. Watson의 도움으로 GitHub은 소프트웨어 개발과 관련된 인간적 요인도 수치화 할 수 있습니다. </p>
+              <h5>Christian Weber | Github</h5>
+              <p>Christian Weber는 GitHub의 솔루션 엔지니어입니다. 수년간의 금융업계에서의 경험을 토대로, Christian은 이제 GitHub에서 소프트웨어 개발자들이 더 나은 소프트웨어를 작성하는 데 도움을 주고 있습니다. Christian의 관심사는 개발자들의 행복과 오토메이션 그리고 강아지입니다. </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>11:40 ~ 12:10</td>
+          <td class="session">
+            서버리스, 클라우드 컴퓨팅 진화의 다음 단계
+            <div class="desc">
+              <h5>서버리스, 클라우드 컴퓨팅 진화의 다음 단계</h5>
+              <p>서버리스 및 이벤트 주도 애플리케이션 아키텍처는 지난 몇 년 사이 IT 업계에서 굉장한 핫토픽이 되었습니다. VM, 컨테이너 또는 PaaS와 같은 기존의 컴퓨팅 모델과 비교시 거부할 수 없을 정도로 장점이 많습니다. 막대한 비용적인 이점, 높은 개발 속도, 확장 및 HA에 대한 걱정이 없습니다.<br><br>
+              이 세션에서는 어떻게 서버리스가 작동하지는지와 이에 따른 장점, 그리고 IBM Cloud Functions 및 Apache OpenWhisk가 핵심 요소인 이 영역에서 IBM의 기술적 전략과 특히 잘 맞는 워크로드 예제를 소개합니다. </p>
+              <h5>Michael M Behrendt | Openstack</h5>
+              <p> Michael Behrendt, Distinguished Engineer, Serverless / FaaS &amp; OpenWhisk Chief Architect
+              Michael Behrendt는 IBM Watson &amp; Cloud Platform 조직의 Distinguished Engineer이자, Function-as-a-service/서버리스 오퍼링인 IBM Cloud Functions와 OpenWhisk를 오픈소스 기술로 제공하는 수석 아키텍트입니다. IBM Bluemix의 핵심 플랫폼의 수석 아키텍트였으며 초기 창립 멤버 중 한 명입니다.<br><br>
+
+              이전에는 IBM의 클라우드 컴퓨팅 레퍼런스 아키텍처의 수석 아키텍트이자 전세계의 엔터프라이즈 고객을 위한 클라우드를 구현해 온 다수의 실무 경험이 있는 클라우드 아키텍트였으며, IBM의 클라우드 포트폴리오에 대한 주요 제품 개발을 주도해왔습니다.<br><br>
+
+              Michael은 13 년 이상 Cloud Computing에서 근무했으며 35 개의 특허를 보유하고 있습니다. 현재 독일 Boeblingen의 IBM R&D 연구소에서 근무하고 있습니다.</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="subtitle">
+      <img src="img/mini-hexagon.png"
+      srcset="img/mini-hexagon@2x.png 2x,
+              img/mini-hexagon@3x.png 3x">
+      <span>play.node();</span>
+    </div>
+    <table>
+      <colgroup>
+        <col class="timeslot">
+        <col class="content">
+      </colgroup>
+      <thead>
+        <th>Time</th>
+        <th>2층 세잔 B</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>13:00 - 13:35</td>
+          <td class="session">
+            Serverless + GraphQL + Relay
+            <div class="desc">
+              <h5>Serverless + GraphQL + Relay</h5>
+              <p>필요한 리소스만을 요청하고 사용하는 API를 만든 여정기</p>
+              <h5>박형식 | 텀블벅</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>13:40 - 14:15</td>
+          <td class="session">
+            GraphQL in action: REST와 이별할 때 생각해야 하는 것들
+            <div class="desc">
+              <h5>GraphQL in action: REST와 이별할 때 생각해야 하는 것들</h5>
+              <p>REST의 시대가 저물어 가고, 이제 업계는 GraphQL이라는 새로운 API 체계로의 이동을 준비하고 있습니다.<br><br>
+              이 발표에서는 REST API의 문제점, GraphQL의 간략한 소개, node.js에서 기존의 REST API로부터 GraphQL로의 이동을 준비하는 방법, 그 과정에서 발생되는 흔한 패턴들(쿼리 최적화와 DataLoader, Recursive structure, 스키마/모델의 파편화, 다양한 DBMS와의 동시 연결) 의 트러블슈팅, 그리고 GraphQL의 라이센스와 특허 이슈 등을 이야기하고자 합니다.</p>
+              <h5>조승연 | Knowre</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>14:20 - 14:55</td>
+          <td class="session">
+            ramda.js 와 함께 하는 간단 API 서버 만들기
+            <div class="desc">
+              <h5>ramda.js와 함께 하는 간단 API 서버 만들기</h5>
+              <p>함수형 프로그래밍 라이브러리인 ramda.js 소개와 이를 통한 간단한 API서버를 만들어 보면서 사용 사례들을 공유합니다.</p>
+              <h5>한현섭 | TELEPASEE</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>15:20 - 16: 00</td>
+          <td class="session">
+            Node.js API 서버 성능 개선기
+            <div class="desc">
+              <h5>Node.js API 서버 성능 개선기</h5>
+              <p>최근 구축한 API 서버의 성능을 개선하는 과정을 설명하려고 합니다. Node.js 성능 튜닝팁을 정리하는 내용이라기 보다는 실제 애플리케이션에서 성능을 측정하고 개선점을 찾기 위해서 과정을 설명하려고 합니다. Stress Test 도구를 사용해서 API 서버를 프로덕션 환경과 동일하게 트래픽을 발생시키고 APM 도구를 선정해서 서버의 성능을 파악하고 개선하면서 분석하는 과정을 보여주려고 합니다.</p>
+              <h5>변정훈 | SmartStudy</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>16:00 - 16:40</td>
+          <td class="session">
+            Node.js 로 협력적 멀티태스킹 처리하기
+            <div class="desc">
+              <h5>Node.js 로 협력적 멀티태스킹 처리하기</h5>
+              <p>이제 더이상 c#의 coroutine을 부러워 할 필요가 없습니다(?).!<br><br>
+              ES7 feature를 제공하는 nodeJS로 협력적 멀티태스킹을 활용하여 Transactional 한 데이터를 마이그레이션한 경험을 공유합니다.</p>
+              <h5>박일호 | Kakao</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>16:40 - 17: 20</td>
+          <td class="session">
+            클라우드 시대의 node.js 가 좋은 이유
+            <div class="desc">
+              <h5>클라우드 시대의 node.js 가 좋은 이유</h5>
+              <p>임대서버 사용시 메모리는 비용입니다. 노드 앱으로 가볍게 서비스 구축하는 방법을 공유합니다.</p>
+              <h5>허광남 | OKKY, 헬로네이처</h5>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <colgroup>
+        <col class="timeslot">
+        <col class="content">
+      </colgroup>
+      <thead>
+        <th>Time</th>
+        <th>4층 모네 D</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>13:00 - 13:35</td>
+          <td class="session">
+            Typescript, Express, Decorator, Angular
+            <div class="desc">
+              <h5>Typescript, Express, Decorator, Angular</h5>
+              <p>Express + AngularJS1.x 로 만들어진 플리토 백오피스 서비스를 TypeScript와 Decorator를 적용한 Express 백엔드와 Angular 4로 개편하였습니다. 클라이언트와 백엔드 모두 TypeScript를 사용하면서 같은 모델 공유한 경험과 서버에서 공통적으로 적용되는 코드들을 Decorator로 만들면서 얻은 이점을 공유하고싶습니다.</p>
+              <h5>김병진 | 플리토</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>13:40 - 14:15</td>
+          <td class="session">
+            TypeScript와 Flow: 자바스크립트 개발에 정적 타이핑 도입하기
+            <div class="desc">
+              <h5>TypeScript와 Flow: 자바스크립트 개발에 정적 타이핑 도입하기</h5>
+              <p>먼저 자바스크립트에 정적 타이핑을 도입하기 위한 가장 대표적인 두 시도인 Flow와 TypeScript를 소개 및 비교합니다.
+                  그 후, 적당한 규모의 자바스크립트 프로젝트에 Flow를 도입한 후 몇 달이 지나 전체 코드베이스를 TypeScript로 갈아엎은 이유와 경험,
+                  그 과정에서 얻은 교훈 등을 소개합니다.<br>
+                  자바스크립트를 이용해 보다 안정적으로 개발하고 싶은 분, 정적 타이핑을 도입하려 하고 있지만 TypeScript와 Flow 중 망설이고 계신 분,
+                  Flow를 이용한 프로젝트를 TypeScript로 다시 짜고 싶지만 엄두가 안 나는 분께서 들으시는 걸 염두에 두고 발표할 생각입니다.
+              </p>
+              <h5>안희종 | 하이퍼커넥트</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>14:20 - 14:55</td>
+          <td class="session">
+            Raspberry Pi 와 Node.js, React-Native 로 만드는 스마트 조명 셋
+            <div class="desc">
+              <h5>Raspberry Pi 와 Node.js, React-Native 로 만드는 스마트 조명 셋</h5>
+              <p>Raspberry Pi 에 Node.js 를 올려서 스마트 조명을 만들고 있습니다.<br>
+                  React-Native 로 앱을 작성하여 Javascript 풀 스택 셋으로 스마트 조명을 위한 기술 셋을 구현했습니다.<br>
+                  bluetooth 와 wifi 등 여러가지 기술을 사용하여 개발할 수 있는 구조를 설명합니다.</p>
+              <h5>김석준 | Streami</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>15:20 - 16: 00</td>
+          <td class="session">
+            Monorepo with Lerna
+            <div class="desc">
+              <h5>Monorepo with Lerna</h5>
+              <p>수많은 모듈을 하나의 저장소에서 개발하는 monorepo의 장단점을 알아보고,
+                learn을 이용한 효율적인 개발 환경구축과 경험을 공유합니다.</p>
+              <h5>한승호 | 에멘탈</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>16:00 - 16:40</td>
+          <td class="session">
+            console.log 따윈 쓰지않는 강력한 디버깅
+            <div class="desc">
+              <h5>console.log 따윈 쓰지않는 강력한 디버깅</h5>
+              <p>너의 툴은 이미 너의 잘못을 알고있다. <br>
+                  타입스크립트와 VS Code를 활용하여 전천후(프론트엔드와 백엔드 그리고 런타임 전후)에서 사용가능한 디버깅 경험을 공유해보려 합니다.</p>
+              <h5>최준영 | Revisolution</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>16:40 - 17: 20</td>
+          <td class="session">
+              Electron 패키징 머신 구축기
+            <div class="desc">
+              <h5>Electron 패키징 머신 구축기</h5>
+              <p>Electron 으로 만들어진 앱을 실행파일과 설치파일로 패키징하려면 여러가지 설정이 필요합니다. <br>
+                  이런 부분을 쉽고 간편하게 도와주기 위한 패키징 앱을 Electron 을 이용해서 만들고,
+                  원클릭으로 배포까지 할수 있도록 하는 패키징 프로그램을 만드는 이야기를 들려 드리려고 합니다.</p>
+              <h5>이웅재 | 스튜디오씨드코리아</h5>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="venue">
+    <div class="hexagon purple-border"><span class="title purple">Venue</span></div>
+    <div class="subtitle">
+      <img src="img/twinkle.png"
+      srcset="img/twinkle@2x.png 2x,
+              img/twinkle@3x.png 3x"
+      class="twinkle">
+      <img src="img/hotel-name.png">
+    </div>
+    <div class="address">
+      <img src="img/hotel-address.png">
+    </div>
+    <div id="map"></div>
+  </section>
+  <section id="sponsor">
+    <div class="hexagon purple-border"><span class="title purple">Sponsor</span></div>
+    <img src="img/ibm.png"
+    srcset="img/ibm@2x.png 2x,
+            img/ibm@3x.png 3x"
+    class="ibm">
+  </section>
+  <section id="contact">
+    <div class="hexagon"><span class="title"><a href="http://www-903.ibm.com/kr/devcon2017/" target="_blank">DeveloperConnect</a></span></div>
+    <div class="playnode-desc">
+      <p>play.node는 Node.js를 사랑하는 운영진들의 자발적인 봉사로 운영되는 비영리 컨퍼런스입니다.
+        <br>문의사항이나 제안하실 것이 있다면 아래 연락처로 보내주세요.
+      </p>
+    </div>
+    <div class="email"><a href="mailto:playnodeconf@gmail.com">playnodeconf@gmail.com</a></div>
+    <div class="subtitle">
+      <img src="img/mini-hexagon-white.png"
+      srcset="img/mini-hexagon-white@2x.png 2x,
+              img/mini-hexagon-white@3x.png 3x">
+      <span>Organizers</span>
+    </div>
+    <div id="organizers">
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/insanehong.jpeg');"></div>
+        <div class="text">
+          <div class="name">김덕홍</div>
+          <div class="organization">Naver</div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/mrfoundation.jpg');"></div>
+        <div class="text">
+          <div class="name">김호연</div>
+          <div class="organization">Nexon</div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/rikapo.jpg');"></div>
+        <div class="text">
+          <div class="name">정진솔</div>
+          <div class="organization">Nexon</div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/maylee.jpg');"></div>
+        <div class="text">
+          <div class="name">이정희</div>
+          <div class="organization">우아한형제들</div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/pod.jpg');"></div>
+        <div class="text">
+          <div class="name">박수철</div>
+          <div class="organization"></div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/daclouds.jpg');"></div>
+        <div class="text">
+          <div class="name">석종일</div>
+          <div class="organization">EA</div>
+        </div>
+      </div>
+      <div class="organizer">
+        <div class="profile" style="background-image: url('img/organizers/limdh.jpg');"></div>
+        <div class="text">
+          <div class="name">임대현</div>
+          <div class="organization">Naver Labs</div>
+        </div>
+      </div>
+    </div>
+    <div class="makenode">
+      <picture>
+        <source srcset="img/makenode@3x.png" media="(min-width: 960px)">
+        <source srcset="img/makenode.png">
+        <img src="img/makenode.png">
+      </picture>
+    </div>
+  </section>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/playnodeconf/"><img src="img/fb-f-logo-white-58.png"
+      srcset="img/fb-f-logo-white-58@2x.png 2x,
+              img/fb-f-logo-white-58@3x.png 3x"
+      class="FB-f-Logo__white_58"></a>
+      <a href="https://twitter.com/playnodeconf"><img src="img/twitter-logo-white.png"
+      srcset="img/twitter-logo-white@2x.png 2x,
+              img/twitter-logo-white@3x.png 3x"
+      class="TwitterLogo_white"></a>
+      <a href="https://github.com/playnodeconf/ama"><img src="img/git-hub-mark-light-64-px.png"
+      srcset="img/git-hub-mark-light-64-px@2x.png 2x,
+              img/git-hub-mark-light-64-px@3x.png 3x"
+      class="GitHub-Mark-Light-64px"></a>
+    </div>
+    <div class="copyright">Copyright © play.node 2017. All Rights Reserved.</div>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=3u2TPgI0Ite0WHU7pwS_"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>

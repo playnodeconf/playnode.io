@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="308" height="573">
+    <defs>
+        <filter id="a" width="34" height="16" x="274" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut"/>
+            <feFlood flood-color="#000" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".58" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <text fill="#FFF" font-family="Sandoll Gyeokdonggulim" font-size="36" transform="matrix(.73838 0 0 .73377 21.638 527.898)">
+        2017. 11. 9
+    </text>
+    <text fill="#FFF" font-family="Sandoll Gyeokdonggulim" font-size="36" transform="matrix(.73838 0 0 .73377 .407 567.884)">
+        르 메르디앙 서울
+    </text>
+    <path fill="#2E2A76" fill-rule="evenodd" d="M290.496 15.003l-16.5-15.005h33l-16.5 15.005z" filter="url(#a)"/>
+</svg>
